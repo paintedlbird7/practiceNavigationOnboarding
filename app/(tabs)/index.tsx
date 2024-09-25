@@ -1,24 +1,40 @@
-import { Image, StyleSheet, Platform, View, Text } from "react-native";
-
+import { Image, StyleSheet, Platform, View, Text, TouchableOpacity, Button } from "react-native";
 import { HelloWave } from "@/components/HelloWave";
 import ParallaxScrollView from "@/components/ParallaxScrollView";
 import { ThemedText } from "@/components/ThemedText";
 import { ThemedView } from "@/components/ThemedView";
+import { Alert } from "react-native";
 
 export default function HomeScreen() {
+  const handleImagePress = () => {
+    // Action when image is clicked, e.g., navigate to another screen or show an alert
+    console.log("Image clicked!");
+  };
+  const handlePress = () => console.log("text pressed")
   return (
     <>
-     
       <ParallaxScrollView
         headerBackgroundColor={{ light: "#A1CEDC", dark: "#1D3D47" }}
         headerImage={
-          <Image source={require("@/assets/images/RP_my_logo.png")} />
+          <TouchableOpacity onPress={handleImagePress}>
+            <Image source={require("@/assets/images/RP_my_logo.png")} />
+          </TouchableOpacity>
         }
       >
         <ThemedView style={styles.titleContainer}></ThemedView>
       </ParallaxScrollView>
       <View style={styles.container}>
-        <Text>hello </Text>
+        <Text numberOfLines={1} onPress={handlePress}>hello a really really long textreally really long text really really long text really really long text
+        </Text>
+        <Button 
+        color="orange"
+        title="Click Me" 
+        onPress={() => Alert.alert("My title", "My message", [
+          {text: "Yes", onPress:( ) => console.log("Yes")},
+          {text: "No", onPress:( ) => console.log("Yes")},
+
+        ])} />
+        {/* </Button> */}
       </View>
     </>
   );
