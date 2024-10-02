@@ -14,6 +14,7 @@ import ParallaxScrollView from "@/components/ParallaxScrollView";
 import { ThemedView } from "@/components/ThemedView";
 import { useEffect, useState } from "react";
 import { useNavigation } from 'expo-router';
+import MapView, { Marker } from 'react-native-maps';
 
 export default function HomeScreen() {
   const [searchQuery, setSearchQuery] = useState(""); // Single search query
@@ -23,15 +24,17 @@ export default function HomeScreen() {
 
   // Dummy data for taco trucks with images
   const data = [
-    { id: '1', name: 'Tacos El Primo', location: '95127', description: 'Popular for authentic Mexican street tacos.', image: require("../assets/images/taco1.jpg") },
-    { id: '2', name: 'La Calle Tacos', location: '95122', description: 'Known for their delicious carne asada and al pastor tacos.', image: require("../assets/images/taco2.jpg") },
-    { id: '3', name: 'Tacos El Dorado', location: '95116', description: 'Famous for crispy tacos and fresh ingredients.', image: require("../assets/images/taco3.jpg") },
-    { id: '4', name: 'El Tapatio Taco Truck', location: '95148', description: 'Serving amazing birria tacos and quesadillas.', image: require("../assets/images/taco4.jpg") },
-    { id: '5', name: 'Taqueria La Vaca', location: '95127', description: 'Great for fish tacos and unique flavors.', image: require("../assets/images/taco5.jpg") },
-    { id: '6', name: 'Tacos Michoacan', location: '95116', description: 'A local favorite with authentic flavors.', image: require("../assets/images/taco6.jpg") },
-    { id: '7', name: 'Tacos El Gordo', location: '95122', description: 'Known for their giant tacos and amazing sauces.', image: require("../assets/images/taco7.jpg") },
-    { id: '8', name: 'El Rey Taco Truck', location: '95148', description: 'Specializes in tacos de lengua and tripa.', image: require("../assets/images/taco8.jpg") },
+    { id: '1', name: 'Tacos El Primo', location: '95127', description: 'Popular for authentic Mexican street tacos.', image: require("../assets/images/taco1.jpg"), latitude: 37.3352, longitude: -121.8830 },
+    { id: '2', name: 'La Calle Tacos', location: '95122', description: 'Known for their delicious carne asada and al pastor tacos.', image: require("../assets/images/taco2.jpg"), latitude: 37.3200, longitude: -121.8700 },
+    // { id: '3', name: 'Tacos El Dorado', location: '95116', description: 'Famous for crispy tacos and fresh ingredients.', image: require("../assets/images/taco3.jpg") },
+    // { id: '4', name: 'El Tapatio Taco Truck', location: '95148', description: 'Serving amazing birria tacos and quesadillas.', image: require("../assets/images/taco4.jpg") },
+    // { id: '5', name: 'Taqueria La Vaca', location: '95127', description: 'Great for fish tacos and unique flavors.', image: require("../assets/images/taco5.jpg") },
+    // { id: '6', name: 'Tacos Michoacan', location: '95116', description: 'A local favorite with authentic flavors.', image: require("../assets/images/taco6.jpg") },
+    // { id: '7', name: 'Tacos El Gordo', location: '95122', description: 'Known for their giant tacos and amazing sauces.', image: require("../assets/images/taco7.jpg") },
+    // { id: '8', name: 'El Rey Taco Truck', location: '95148', description: 'Specializes in tacos de lengua and tripa.', image: require("../assets/images/taco8.jpg") },
   ];
+  //TODO: Add latitude and longitude for the other taco trucks...
+
 
   const navigation = useNavigation();
 
@@ -123,22 +126,41 @@ export default function HomeScreen() {
 
       {/* Modal for displaying selected truck details */}
       {selectedTruck && (
-        <Modal
-          animationType="slide"
-          transparent={true}
-          visible={modalVisible}
-          onRequestClose={closeModal}
+  <Modal
+    animationType="slide"
+    transparent={true}
+    visible={modalVisible}
+    onRequestClose={closeModal}
+  >
+    <View style={styles.modalContainer}>
+      <View style={styles.modalContent}>
+        <Image source={selectedTruck.image} style={styles.modalImage} />
+        <Text style={styles.modalTitle}>{selectedTruck.name}</Text>
+        <Text style={styles.modalLocation}>Zip Code: {selectedTruck.location}</Text>
+        <Text style={styles.modalDescription}>{selectedTruck.description}</Text>
+
+        {/* Map component */}
+        <MapView
+          style={styles.map}
+          initialRegion={{
+            latitude: selectedTruck.latitude,
+            longitude: selectedTruck.longitude,
+            latitudeDelta: 0.01,
+            longitudeDelta: 0.01,
+          }}
         >
-          <View style={styles.modalContainer}>
-            <View style={styles.modalContent}>
-              <Image source={selectedTruck.image} style={styles.modalImage} />
-              <Text style={styles.modalTitle}>{selectedTruck.name}</Text>
-              <Text style={styles.modalLocation}>Zip Code: {selectedTruck.location}</Text>
-              <Text style={styles.modalDescription}>{selectedTruck.description}</Text>
-              <Button title="Close" onPress={closeModal} />
-            </View>
-          </View>
-        </Modal>
+          <Marker
+            coordinate={{ latitude: selectedTruck.latitude, longitude: selectedTruck.longitude }}
+            title={selectedTruck.name}
+          />
+        </MapView>
+
+        <Button title="Close" onPress={closeModal} />
+      </View>
+    </View>
+  </Modal>
+
+
       )}
     </>
   );
@@ -237,4 +259,10 @@ const styles = StyleSheet.create({
     color: "#444",
     marginBottom: 20,
   },
+    map: {
+      width: '100%',
+      height: 200, // Set the height as needed
+      borderRadius: 10,
+      marginVertical: 10,
+    },
 });
