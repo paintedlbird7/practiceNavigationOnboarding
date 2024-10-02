@@ -1,10 +1,84 @@
-import { Image, StyleSheet, View, Text, TouchableOpacity, Alert, TextInput } from "react-native";
+import {
+  Image,
+  StyleSheet,
+  View,
+  Text,
+  TouchableOpacity,
+  Alert,
+  TextInput,
+  FlatList,
+  Modal,
+  Button,
+} from "react-native";
 import ParallaxScrollView from "@/components/ParallaxScrollView";
 import { ThemedView } from "@/components/ThemedView";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useNavigation } from 'expo-router';
 
 export default function HomeScreen() {
-  const [searchQuery, setSearchQuery] = useState('');
+  const [searchQuery, setSearchQuery] = useState(""); // Single search query
+  const [filteredData, setFilteredData] = useState([]);
+  const [modalVisible, setModalVisible] = useState(false); // Modal visibility
+  const [selectedTruck, setSelectedTruck] = useState(null); // Selected truck data
+
+  // Dummy data for taco trucks with images
+  const data = [
+    { id: '1', name: 'Tacos El Primo', location: '95127', description: 'Popular for authentic Mexican street tacos.', image: require("../assets/images/taco1.jpg") },
+    { id: '2', name: 'La Calle Tacos', location: '95122', description: 'Known for their delicious carne asada and al pastor tacos.', image: require("../assets/images/taco2.jpg") },
+    { id: '3', name: 'Tacos El Dorado', location: '95116', description: 'Famous for crispy tacos and fresh ingredients.', image: require("../assets/images/taco3.jpg") },
+    { id: '4', name: 'El Tapatio Taco Truck', location: '95148', description: 'Serving amazing birria tacos and quesadillas.', image: require("../assets/images/taco4.jpg") },
+    { id: '5', name: 'Taqueria La Vaca', location: '95127', description: 'Great for fish tacos and unique flavors.', image: require("../assets/images/taco5.jpg") },
+    { id: '6', name: 'Tacos Michoacan', location: '95116', description: 'A local favorite with authentic flavors.', image: require("../assets/images/taco6.jpg") },
+    { id: '7', name: 'Tacos El Gordo', location: '95122', description: 'Known for their giant tacos and amazing sauces.', image: require("../assets/images/taco7.jpg") },
+    { id: '8', name: 'El Rey Taco Truck', location: '95148', description: 'Specializes in tacos de lengua and tripa.', image: require("../assets/images/taco8.jpg") },
+  ];
+
+  const navigation = useNavigation();
+
+  useEffect(() => {
+    if (navigation) {
+      navigation.setOptions({
+        headerLargeTitle: true,
+      });
+    }
+  }, [navigation]);
+
+  const handleSearch = () => {
+    if (searchQuery.trim() !== "") {
+      const results = data.filter(
+        (item) =>
+          item.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+          item.location.includes(searchQuery)
+      );
+      setFilteredData(results);
+
+      if (results.length === 0) {
+        Alert.alert("No results found.");
+      }
+    } else {
+      Alert.alert("Please enter a search term.");
+    }
+  };
+
+  // Open the modal and set selected truck
+  const openModal = (item) => {
+    setSelectedTruck(item);
+    setModalVisible(true);
+  };
+
+  const renderItem = ({ item }) => (
+    <TouchableOpacity style={styles.resultItem} onPress={() => openModal(item)}>
+      <Text style={styles.resultText}>{item.name}</Text>
+      <Text style={styles.resultLocation}>Zip Code: {item.location}</Text>
+      <Text style={styles.resultDescription}>{item.description}</Text>
+    </TouchableOpacity>
+  );
+
+  // Close modal
+  const closeModal = () => {
+    setModalVisible(false);
+    setSelectedTruck(null);
+  };
 
   return (
     <>
@@ -18,48 +92,54 @@ export default function HomeScreen() {
       </ParallaxScrollView>
 
       <View style={styles.container}>
-        {/* Horizontal layout for Search Bar and Button */}
+        {/* Single Search Box */}
         <View style={styles.searchContainer}>
           <TextInput
             style={styles.searchBar}
-            placeholder="Search..."
+            placeholder="Search taco trucks or enter zip code"
             value={searchQuery}
             onChangeText={(text) => setSearchQuery(text)}
           />
-          <TouchableOpacity 
-            style={styles.searchButton} 
-            onPress={() => Alert.alert("Search", `Searching for: ${searchQuery}`)}
+          <TouchableOpacity
+            style={styles.searchButton}
+            onPress={handleSearch}
           >
             <Text style={styles.buttonText}>Search</Text>
           </TouchableOpacity>
         </View>
 
-        {/* Vertical layout: Texts above Button */}
-        <View style={styles.verticalLayout}>
-          {/* Horizontal layout for "Write A Review" and "Events" */}
-          <View style={styles.horizontalLine}>
-            <Text style={styles.horizontalText}>Write A Review</Text>
-            <Text style={styles.horizontalText}>Events</Text>
-          </View>
-
-          {/* Vertical layout for "Login" and "SignUp" */}
-          <View style={styles.textContainer}>
-            <Text style={styles.verticalText}>Login</Text>
-            <Text style={styles.verticalText}>SignUp</Text>
-          </View>
-
-          {/* Button below the text */}
-          <TouchableOpacity 
-            style={styles.button} 
-            onPress={() => Alert.alert("My title", "My message", [
-              { text: "Yes", onPress: () => console.log("Yes") },
-              { text: "No", onPress: () => console.log("No") },
-            ])}
-          >
-            <Text style={styles.buttonText}>Click Me</Text>
-          </TouchableOpacity>
-        </View>
+        {/* Search Results */}
+        {filteredData.length > 0 ? (
+          <FlatList
+            data={filteredData}
+            renderItem={renderItem}
+            keyExtractor={(item) => item.id}
+            style={styles.resultsList}
+          />
+        ) : (
+          <Text style={styles.noResultsText}>No results to display</Text>
+        )}
       </View>
+
+      {/* Modal for displaying selected truck details */}
+      {selectedTruck && (
+        <Modal
+          animationType="slide"
+          transparent={true}
+          visible={modalVisible}
+          onRequestClose={closeModal}
+        >
+          <View style={styles.modalContainer}>
+            <View style={styles.modalContent}>
+              <Image source={selectedTruck.image} style={styles.modalImage} />
+              <Text style={styles.modalTitle}>{selectedTruck.name}</Text>
+              <Text style={styles.modalLocation}>Zip Code: {selectedTruck.location}</Text>
+              <Text style={styles.modalDescription}>{selectedTruck.description}</Text>
+              <Button title="Close" onPress={closeModal} />
+            </View>
+          </View>
+        </Modal>
+      )}
     </>
   );
 }
@@ -73,64 +153,88 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
   },
   searchContainer: {
-    flexDirection: 'row', // Horizontal layout for search bar and button
-    alignItems: 'center',  // Vertically align items in the center
-    width: '100%',
-    marginBottom: 20, // Adds space below the search area
+    flexDirection: "row",
+    alignItems: "center",
+    width: "100%",
+    marginBottom: 20,
   },
   searchBar: {
     height: 40,
-    flex: 1, // Allows the search bar to take up available space
-    borderColor: '#ccc',
+    flex: 1,
+    borderColor: "#ccc",
     borderWidth: 1,
     borderRadius: 10,
     paddingHorizontal: 10,
-    marginRight: 10, // Space between search bar and button
+    marginRight: 10,
   },
   searchButton: {
-    backgroundColor: 'orange',
+    backgroundColor: "orange",
     paddingVertical: 10,
     paddingHorizontal: 20,
     borderRadius: 5,
-  },
-  verticalLayout: {
-    flexDirection: 'column',  // Layout items in a column (text on top, button below)
-    justifyContent: 'center',  // Center everything vertically
-    alignItems: 'center',      // Align all content horizontally in the center
-    width: '100%',
-  },
-  horizontalLine: {
-    flexDirection: 'row',  // Layout "Write A Review" and "Events" in a row
-    justifyContent: 'space-between',  // Space between the two text items
-    width: '100%',
-    paddingHorizontal: 20,
-    marginBottom: 10,  // Space between horizontal and vertical text containers
-  },
-  textContainer: {
-    flexDirection: 'column',  // Layout "Login" and "SignUp" in a column
-    alignItems: 'center',
-    marginBottom: 20,  // Adds space between text and button
-  },
-  horizontalText: {
-    fontSize: 18,
-    fontWeight: 'bold',
-  },
-  verticalText: {
-    fontSize: 18,
-    fontWeight: 'bold',
-    marginVertical: 5,  // Adds space between "Login" and "SignUp"
-  },
-  button: {
-    backgroundColor: 'orange',
-    paddingVertical: 10,
-    paddingHorizontal: 20,
-    borderRadius: 5,
-    alignItems: 'center',  // Centers the button text horizontally
-    justifyContent: 'center',  // Centers the button text vertically
   },
   buttonText: {
-    color: 'white',
+    color: "white",
     fontSize: 16,
-    textAlign: 'center',
+    textAlign: "center",
+  },
+  resultsList: {
+    width: "100%",
+  },
+  resultItem: {
+    padding: 15,
+    borderBottomWidth: 1,
+    borderBottomColor: "#ccc",
+    backgroundColor: "#f9f9f9",
+  },
+  resultText: {
+    fontSize: 18,
+    fontWeight: "bold",
+  },
+  resultLocation: {
+    fontSize: 14,
+    color: "#666",
+  },
+  resultDescription: {
+    fontSize: 14,
+    color: "#444",
+  },
+  noResultsText: {
+    fontSize: 16,
+    color: "#888",
+  },
+  modalContainer: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "rgba(0, 0, 0, 0.5)", // Semi-transparent background
+  },
+  modalContent: {
+    width: "80%",
+    backgroundColor: "white",
+    borderRadius: 10,
+    padding: 20,
+    alignItems: "center",
+  },
+  modalImage: {
+    width: '100%',
+    height: 200,
+    borderRadius: 10,
+    marginBottom: 10,
+  },
+  modalTitle: {
+    fontSize: 22,
+    fontWeight: "bold",
+    marginBottom: 10,
+  },
+  modalLocation: {
+    fontSize: 16,
+    color: "#666",
+    marginBottom: 10,
+  },
+  modalDescription: {
+    fontSize: 16,
+    color: "#444",
+    marginBottom: 20,
   },
 });
