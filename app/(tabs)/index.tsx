@@ -7,6 +7,8 @@ import {
   Alert,
   TextInput,
   FlatList,
+  Modal,
+  Button,
 } from "react-native";
 import ParallaxScrollView from "@/components/ParallaxScrollView";
 import { ThemedView } from "@/components/ThemedView";
@@ -16,17 +18,19 @@ import { useNavigation } from 'expo-router';
 export default function HomeScreen() {
   const [searchQuery, setSearchQuery] = useState(""); // Single search query
   const [filteredData, setFilteredData] = useState([]);
+  const [modalVisible, setModalVisible] = useState(false); // Modal visibility
+  const [selectedTruck, setSelectedTruck] = useState(null); // Selected truck data
 
-  // Dummy data for taco trucks
+  // Dummy data for taco trucks with images
   const data = [
-    { id: '1', name: 'Tacos El Primo', location: '95127', description: 'Popular for authentic Mexican street tacos.' },
-    { id: '2', name: 'La Calle Tacos', location: '95122', description: 'Known for their delicious carne asada and al pastor tacos.' },
-    { id: '3', name: 'Tacos El Dorado', location: '95116', description: 'Famous for crispy tacos and fresh ingredients.' },
-    { id: '4', name: 'El Tapatio Taco Truck', location: '95148', description: 'Serving amazing birria tacos and quesadillas.' },
-    { id: '5', name: 'Taqueria La Vaca', location: '95127', description: 'Great for fish tacos and unique flavors.' },
-    { id: '6', name: 'Tacos Michoacan', location: '95116', description: 'A local favorite with authentic flavors.' },
-    { id: '7', name: 'Tacos El Gordo', location: '95122', description: 'Known for their giant tacos and amazing sauces.' },
-    { id: '8', name: 'El Rey Taco Truck', location: '95148', description: 'Specializes in tacos de lengua and tripa.' },
+    { id: '1', name: 'Tacos El Primo', location: '95127', description: 'Popular for authentic Mexican street tacos.', image: require("../assets/images/taco1.jpg") },
+    // { id: '2', name: 'La Calle Tacos', location: '95122', description: 'Known for their delicious carne asada and al pastor tacos.', image: require("../assets/images/taco2.jpg") },
+    // { id: '3', name: 'Tacos El Dorado', location: '95116', description: 'Famous for crispy tacos and fresh ingredients.', image: require("../assets/images/taco3.jpg") },
+    // { id: '4', name: 'El Tapatio Taco Truck', location: '95148', description: 'Serving amazing birria tacos and quesadillas.', image: require("../assets/images/taco4.jpg") },
+    // { id: '5', name: 'Taqueria La Vaca', location: '95127', description: 'Great for fish tacos and unique flavors.', image: require("../assets/images/taco5.jpg") },
+    // { id: '6', name: 'Tacos Michoacan', location: '95116', description: 'A local favorite with authentic flavors.', image: require("../assets/images/taco6.jpg") },
+    // { id: '7', name: 'Tacos El Gordo', location: '95122', description: 'Known for their giant tacos and amazing sauces.', image: require("../assets/images/taco7.jpg") },
+    // { id: '8', name: 'El Rey Taco Truck', location: '95148', description: 'Specializes in tacos de lengua and tripa.', image: require("../assets/images/taco8.jpg") },
   ];
 
   const navigation = useNavigation();
@@ -41,7 +45,6 @@ export default function HomeScreen() {
 
   const handleSearch = () => {
     if (searchQuery.trim() !== "") {
-      // Filter the data based on the search query (name or location)
       const results = data.filter(
         (item) =>
           item.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -57,13 +60,25 @@ export default function HomeScreen() {
     }
   };
 
+  // Open the modal and set selected truck
+  const openModal = (item) => {
+    setSelectedTruck(item);
+    setModalVisible(true);
+  };
+
   const renderItem = ({ item }) => (
-    <View style={styles.resultItem}>
+    <TouchableOpacity style={styles.resultItem} onPress={() => openModal(item)}>
       <Text style={styles.resultText}>{item.name}</Text>
       <Text style={styles.resultLocation}>Zip Code: {item.location}</Text>
       <Text style={styles.resultDescription}>{item.description}</Text>
-    </View>
+    </TouchableOpacity>
   );
+
+  // Close modal
+  const closeModal = () => {
+    setModalVisible(false);
+    setSelectedTruck(null);
+  };
 
   return (
     <>
@@ -105,6 +120,26 @@ export default function HomeScreen() {
           <Text style={styles.noResultsText}>No results to display</Text>
         )}
       </View>
+
+      {/* Modal for displaying selected truck details */}
+      {selectedTruck && (
+        <Modal
+          animationType="slide"
+          transparent={true}
+          visible={modalVisible}
+          onRequestClose={closeModal}
+        >
+          <View style={styles.modalContainer}>
+            <View style={styles.modalContent}>
+              <Image source={selectedTruck.image} style={styles.modalImage} />
+              <Text style={styles.modalTitle}>{selectedTruck.name}</Text>
+              <Text style={styles.modalLocation}>Zip Code: {selectedTruck.location}</Text>
+              <Text style={styles.modalDescription}>{selectedTruck.description}</Text>
+              <Button title="Close" onPress={closeModal} />
+            </View>
+          </View>
+        </Modal>
+      )}
     </>
   );
 }
@@ -167,5 +202,39 @@ const styles = StyleSheet.create({
   noResultsText: {
     fontSize: 16,
     color: "#888",
+  },
+  modalContainer: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "rgba(0, 0, 0, 0.5)", // Semi-transparent background
+  },
+  modalContent: {
+    width: "80%",
+    backgroundColor: "white",
+    borderRadius: 10,
+    padding: 20,
+    alignItems: "center",
+  },
+  modalImage: {
+    width: '100%',
+    height: 200,
+    borderRadius: 10,
+    marginBottom: 10,
+  },
+  modalTitle: {
+    fontSize: 22,
+    fontWeight: "bold",
+    marginBottom: 10,
+  },
+  modalLocation: {
+    fontSize: 16,
+    color: "#666",
+    marginBottom: 10,
+  },
+  modalDescription: {
+    fontSize: 16,
+    color: "#444",
+    marginBottom: 20,
   },
 });
