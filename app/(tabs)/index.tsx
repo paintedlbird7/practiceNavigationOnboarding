@@ -14,11 +14,10 @@ import { useEffect, useState } from "react";
 import { useNavigation } from 'expo-router';
 
 export default function HomeScreen() {
-  const [searchQuery1, setSearchQuery1] = useState("");
-  const [searchQuery2, setSearchQuery2] = useState("");
+  const [searchQuery, setSearchQuery] = useState(""); // Single search query
   const [filteredData, setFilteredData] = useState([]);
 
-  // Dummy data for taco trucks in East San Jose, covering multiple zip codes
+  // Dummy data for taco trucks
   const data = [
     { id: '1', name: 'Tacos El Primo', location: '95127', description: 'Popular for authentic Mexican street tacos.' },
     { id: '2', name: 'La Calle Tacos', location: '95122', description: 'Known for their delicious carne asada and al pastor tacos.' },
@@ -30,7 +29,6 @@ export default function HomeScreen() {
     { id: '8', name: 'El Rey Taco Truck', location: '95148', description: 'Specializes in tacos de lengua and tripa.' },
   ];
 
-  // Correctly calling the useNavigation hook
   const navigation = useNavigation();
 
   useEffect(() => {
@@ -41,14 +39,13 @@ export default function HomeScreen() {
     }
   }, [navigation]);
 
-  // Search functionality with dummy data
   const handleSearch = () => {
-    if (searchQuery1.trim() !== "" || searchQuery2.trim() !== "") {
-      // Filter the data based on searchQuery1 (name) and searchQuery2 (zip code for East San Jose)
+    if (searchQuery.trim() !== "") {
+      // Filter the data based on the search query (name or location)
       const results = data.filter(
         (item) =>
-          item.name.toLowerCase().includes(searchQuery1.toLowerCase()) &&
-          item.location.includes(searchQuery2)
+          item.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+          item.location.includes(searchQuery)
       );
       setFilteredData(results);
 
@@ -60,7 +57,6 @@ export default function HomeScreen() {
     }
   };
 
-  // Render individual search results
   const renderItem = ({ item }) => (
     <View style={styles.resultItem}>
       <Text style={styles.resultText}>{item.name}</Text>
@@ -81,35 +77,19 @@ export default function HomeScreen() {
       </ParallaxScrollView>
 
       <View style={styles.container}>
-        {/* First Search Box and Button */}
+        {/* Single Search Box */}
         <View style={styles.searchContainer}>
           <TextInput
             style={styles.searchBar}
-            placeholder="Search taco trucks"
-            value={searchQuery1}
-            onChangeText={(text) => setSearchQuery1(text)}
+            placeholder="Search taco trucks or enter zip code"
+            value={searchQuery}
+            onChangeText={(text) => setSearchQuery(text)}
           />
           <TouchableOpacity
             style={styles.searchButton}
             onPress={handleSearch}
           >
             <Text style={styles.buttonText}>Search</Text>
-          </TouchableOpacity>
-        </View>
-
-        {/* Second Search Box and Button */}
-        <View style={styles.searchContainer}>
-          <TextInput
-            style={styles.searchBar}
-            placeholder="Enter zip code (e.g., 95127)"
-            value={searchQuery2}
-            onChangeText={(text) => setSearchQuery2(text)}
-          />
-          <TouchableOpacity
-            style={styles.searchButton}
-            onPress={handleSearch}
-          >
-            <Text style={styles.buttonText}>Near</Text>
           </TouchableOpacity>
         </View>
 
@@ -138,19 +118,19 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
   },
   searchContainer: {
-    flexDirection: "row", // Horizontal layout for search bar and button
-    alignItems: "center", // Vertically align items in the center
+    flexDirection: "row",
+    alignItems: "center",
     width: "100%",
-    marginBottom: 20, // Adds space below the search area
+    marginBottom: 20,
   },
   searchBar: {
     height: 40,
-    flex: 1, // Allows the search bar to take up available space
+    flex: 1,
     borderColor: "#ccc",
     borderWidth: 1,
     borderRadius: 10,
     paddingHorizontal: 10,
-    marginRight: 10, // Space between search bar and button
+    marginRight: 10,
   },
   searchButton: {
     backgroundColor: "orange",
