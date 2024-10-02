@@ -5,12 +5,22 @@ import {
   View,
   TouchableOpacity,
   Text,
+  Alert, // Import Alert
 } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-// import Login from "../LoginScreen.js/LoginScreen";
 
 function WelcomeScreen(props) {
   const navigation = useNavigation();
+
+  const showLoginAlert = () => {
+    Alert.alert("Login", "Login button pressed", [{ text: "OK" }]);
+    navigation.navigate('LoginScreen');
+  };
+
+  const showRegisterAlert = () => {
+    Alert.alert("Register", "Register button pressed", [{ text: "OK" }]);
+    navigation.navigate('RegisterScreen');
+  };
 
   return (
     <ImageBackground
@@ -21,7 +31,7 @@ function WelcomeScreen(props) {
         {/* Login Button */}
         <TouchableOpacity
           style={styles.loginButton}
-          onPress={() => navigation.navigate('LoginScreen')}
+          onPress={showLoginAlert} // Call the alert function
         >
           <Text style={styles.buttonText}>Login</Text>
         </TouchableOpacity>
@@ -29,7 +39,7 @@ function WelcomeScreen(props) {
         {/* Register Button */}
         <TouchableOpacity
           style={styles.registerButton}
-          onPress={() => navigation.navigate('RegisterScreen')}
+          onPress={showRegisterAlert} // Call the alert function
         >
           <Text style={styles.buttonText}>Register</Text>
         </TouchableOpacity>
