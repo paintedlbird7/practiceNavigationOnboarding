@@ -24,13 +24,13 @@ export default function HomeScreen() {
   // Dummy data for taco trucks with images
   const data = [
     { id: '1', name: 'Tacos El Primo', location: '95127', description: 'Popular for authentic Mexican street tacos.', image: require("../assets/images/taco1.jpg") },
-    // { id: '2', name: 'La Calle Tacos', location: '95122', description: 'Known for their delicious carne asada and al pastor tacos.', image: require("../assets/images/taco2.jpg") },
-    // { id: '3', name: 'Tacos El Dorado', location: '95116', description: 'Famous for crispy tacos and fresh ingredients.', image: require("../assets/images/taco3.jpg") },
-    // { id: '4', name: 'El Tapatio Taco Truck', location: '95148', description: 'Serving amazing birria tacos and quesadillas.', image: require("../assets/images/taco4.jpg") },
-    // { id: '5', name: 'Taqueria La Vaca', location: '95127', description: 'Great for fish tacos and unique flavors.', image: require("../assets/images/taco5.jpg") },
-    // { id: '6', name: 'Tacos Michoacan', location: '95116', description: 'A local favorite with authentic flavors.', image: require("../assets/images/taco6.jpg") },
-    // { id: '7', name: 'Tacos El Gordo', location: '95122', description: 'Known for their giant tacos and amazing sauces.', image: require("../assets/images/taco7.jpg") },
-    // { id: '8', name: 'El Rey Taco Truck', location: '95148', description: 'Specializes in tacos de lengua and tripa.', image: require("../assets/images/taco8.jpg") },
+    { id: '2', name: 'La Calle Tacos', location: '95122', description: 'Known for their delicious carne asada and al pastor tacos.', image: require("../assets/images/taco2.jpg") },
+    { id: '3', name: 'Tacos El Dorado', location: '95116', description: 'Famous for crispy tacos and fresh ingredients.', image: require("../assets/images/taco3.jpg") },
+    { id: '4', name: 'El Tapatio Taco Truck', location: '95148', description: 'Serving amazing birria tacos and quesadillas.', image: require("../assets/images/taco4.jpg") },
+    { id: '5', name: 'Taqueria La Vaca', location: '95127', description: 'Great for fish tacos and unique flavors.', image: require("../assets/images/taco5.jpg") },
+    { id: '6', name: 'Tacos Michoacan', location: '95116', description: 'A local favorite with authentic flavors.', image: require("../assets/images/taco6.jpg") },
+    { id: '7', name: 'Tacos El Gordo', location: '95122', description: 'Known for their giant tacos and amazing sauces.', image: require("../assets/images/taco7.jpg") },
+    { id: '8', name: 'El Rey Taco Truck', location: '95148', description: 'Specializes in tacos de lengua and tripa.', image: require("../assets/images/taco8.jpg") },
   ];
 
   const navigation = useNavigation();
