@@ -24,14 +24,14 @@ export default function HomeScreen() {
 
   // Dummy data for taco trucks with images
   const data = [
-    { id: '1', name: 'Tacos El Primo', location: '95127', description: 'Popular for authentic Mexican street tacos.', image: require("../assets/images/taco1.jpg"), latitude: 37.3352, longitude: -121.8830 },
-    { id: '2', name: 'La Calle Tacos', location: '95122', description: 'Known for their delicious carne asada and al pastor tacos.', image: require("../assets/images/taco2.jpg"), latitude: 37.3200, longitude: -121.8700 },
-    { id: '3', name: 'Tacos El Dorado', location: '95116', description: 'Famous for crispy tacos and fresh ingredients.', image: require("../assets/images/taco3.jpg"), latitude: 37.3200, longitude: -121.8700 },
-    { id: '4', name: 'El Tapatio Taco Truck', location: '95148', description: 'Serving amazing birria tacos and quesadillas.', image: require("../assets/images/taco4.jpg"), latitude: 37.3200, longitude: -121.8700 },
-    { id: '5', name: 'Taqueria La Vaca', location: '95127', description: 'Great for fish tacos and unique flavors.', image: require("../assets/images/taco5.jpg"), latitude: 37.3200, longitude: -121.8700 },
-    { id: '6', name: 'Tacos Michoacan', location: '95116', description: 'A local favorite with authentic flavors.', image: require("../assets/images/taco6.jpg"), latitude: 37.3352, longitude: -121.8830 },
-    { id: '7', name: 'Tacos El Gordo', location: '95122', description: 'Known for their giant tacos and amazing sauces.', image: require("../assets/images/taco7.jpg"), latitude: 37.3352, longitude: -121.8830 },
-    { id: '8', name: 'El Rey Taco Truck', location: '95148', description: 'Specializes in tacos de lengua and tripa.', image: require("../assets/images/taco8.jpg"), latitude: 37.3352, longitude: -121.8830 },
+    { id: '1', name: 'Tacos Los Tres Reyes', location: '95122', description: 'Popular for authentic Mexican street tacos.', image: require("../assets/images/taco1.jpg"), latitude: 37.349080, longitude: -121.829437 },
+    { id: '2', name: 'La Oaxaquense Food Truck', location: '95116', description: 'Known for their delicious carne asada and al pastor tacos.', image: require("../assets/images/taco2.jpg"), latitude: 37.378892, longitude: 121.867202 },
+    { id: '3', name: 'Orale taco truck', location: '95116', description: 'Famous for crispy tacos and fresh ingredients.', image: require("../assets/images/taco3.jpg"), latitude: 37.389258, longitude: -121.844543 },
+    { id: '4', name: 'El Señor De Los Tacos Food Truck', location: '95127', description: 'Serving amazing birria tacos and quesadillas.', image: require("../assets/images/taco4.jpg"), latitude: 37.357079, longitude: -121.825904 },
+    { id: '5', name: 'Tacos Chencho', location: '95127', description: 'Great for fish tacos and unique flavors.', image: require("../assets/images/taco5.jpg"), latitude: 37.362264, longitude: -121.819381 },
+    { id: '6', name: 'Tacos Huandacareo Food Truck', location: '95127', description: 'A local favorite with authentic flavors.', image: require("../assets/images/taco6.jpg"), latitude: 37.359126, longitude: -121.827793 },
+    { id: '7', name: 'Tacos Montero Food Truck', location: '95122', description: 'Known for their giant tacos and amazing sauces.', image: require("../assets/images/taco7.jpg"), latitude: 37.339885, longitude: -121.853027 },
+    { id: '8', name: 'Hugos Tacos Food Truck', location: '95122', description: 'Specializes in tacos de lengua and tripa.', image: require("../assets/images/taco8.jpg"), latitude: 37.321594, longitude: -121.8830 },
   ];
   //TODO: Add latitude and longitude for the other taco trucks...
 
@@ -70,7 +70,8 @@ export default function HomeScreen() {
   };
 
   const renderItem = ({ item }) => (
-    <TouchableOpacity style={styles.resultItem} onPress={() => openModal(item)}>
+    <TouchableOpacity style={styles.resultItem} 
+    onPress={() => openModal(item)}>
       <Text style={styles.resultText}>{item.name}</Text>
       <Text style={styles.resultLocation}>Zip Code: {item.location}</Text>
       <Text style={styles.resultDescription}>{item.description}</Text>
@@ -86,12 +87,12 @@ export default function HomeScreen() {
   return (
     <>
       <ParallaxScrollView
-        headerBackgroundColor={{ light: "#A1CEDC", dark: "#1D3D47" }}
-        headerImage={
-          <Image source={require("../assets/images/RP_my_logo.png")} />
-        }
+        headerBackgroundColor={{ light: "", dark: "#1D3D47" }}
+        // headerImage={
+        //   <Image source={require("../assets/images/rp_my_logo.png")} />
+        // }
       >
-        <ThemedView style={styles.titleContainer}></ThemedView>
+        <ThemedView></ThemedView>
       </ParallaxScrollView>
 
       <View style={styles.container}>
