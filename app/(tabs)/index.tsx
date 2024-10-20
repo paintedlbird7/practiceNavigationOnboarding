@@ -90,14 +90,12 @@ export default function HomeScreen() {
 
   return (
     <>
-      <ParallaxScrollView
-        headerBackgroundColor={{ light: "", dark: "#1D3D47" }}
-        // headerImage={
-        //   <Image source={require("../assets/images/rp_my_logo.png")} />
-        // }
-      >
-        <ThemedView></ThemedView>
-      </ParallaxScrollView>
+    <View style={styles.imageContainer}>
+  <Image 
+    source={require("../assets/images/rp_my_logo.png")} // Replace with the actual path to your image
+    style={styles.headerImage}
+  />
+</View>
 
       <View style={styles.container}>
         {/* Single Search Box */}
@@ -175,7 +173,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#fff",
-    justifyContent: "center",
+    justifyContent: "space-evenly",
     alignItems: "center",
     paddingHorizontal: 20,
   },
@@ -266,8 +264,17 @@ const styles = StyleSheet.create({
   },
     map: {
       width: '100%',
-      height: 200, // Set the height as needed
+      height: 200, 
       borderRadius: 10,
       marginVertical: 10,
     },
+    imageContainer: {
+      alignItems: 'center',
+      marginBottom: 20,
+    },
+    headerImage: {
+      width: '100%',
+      height: 200, 
+      resizeMode: 'cover',
+    },    
 });

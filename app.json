@@ -2,7 +2,7 @@
   "expo": {
     "name": "Rosa's Taco Truck Finder",
     "slug": "Rosa",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "orientation": "portrait",
     "icon": "./assets/images/rpLogo.png", 
     "scheme": "myapp",

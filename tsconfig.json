@@ -11,6 +11,6 @@
   "include": [
     "**/*.ts",
     "**/*.tsx",
-    "app/(tabs)/WelcomeScreen.js"
+    // "app/(tabs)/WelcomeScreen.js"
   ]
 }
