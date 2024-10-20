@@ -16,6 +16,12 @@
     }
   },
   "submit": {
-    "production": {}
+    "production": {
+      "ios": {
+        "appleId": "paintedl.bird@gmail.com",
+        "ascAppId": "6737158564",
+        "appleTeamId": "A9E6SCUUGA"
+      }
+    }
   }
 }
