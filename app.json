@@ -4,7 +4,7 @@
     "slug": "Rosa",
     "version": "1.0.1",
     "orientation": "portrait",
-    "icon": "./assets/images/rpLogo.png", 
+    "icon": "./assets/images/rp_icon_1024x1024.png", 
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "splash": {
