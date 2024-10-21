@@ -37,8 +37,15 @@ export default function HomeScreen() {
       { id: '11', name: 'Tacos Mi Reynita', location: '94603', description: 'Famous for authentic Tijuana-style street tacos with fresh salsas.', image: require("../assets/images/taco11.jpg"), latitude: 37.738624, longitude: -122.166524 },
       { id: '12', name: 'Tacos Santiaguito', location: '95129', description: 'Known for its rich, slow-cooked meats and flavorful toppings.', image: require("../assets/images/taco12.jpg"), latitude: 37.322381, longitude: -121.970633 },
       { id: '13', name: 'Tacos El Plebe', location: '95112', description: 'Specializes in street tacos with a variety of fillings including carne asada and al pastor.', image: require("../assets/images/taco13.jpg"), latitude: 37.327337, longitude: -121.820249 }, 
-      { id: '14', name: 'Rosario\'s Tacos', location: '95110', description: 'A local favorite, Rosario\'s Tacos serves up authentic Mexican tacos with homemade tortillas and fresh ingredients.', image: require("../assets/images/taco14.jpg"), latitude: 37.321136, longitude: -121.884015 }
-      ];
+      { id: '14', name: 'Rosario\'s Tacos', location: '95110', description: 'A local favorite, Rosario\'s Tacos serves up authentic Mexican tacos with homemade tortillas and fresh ingredients.', image: require("../assets/images/taco14.jpg"), latitude: 37.321136, longitude: -121.884015 },
+      { id: '15', name: 'Mariscos y Tacos Los Compas', location: '95122', description: 'Seafood tacos and delicious salsas.', image: require("../assets/images/taco15.jpg"), latitude: 37.341984, longitude: -121.842094 },
+      { id: '16', name: 'Spartan Taco', location: '95112', description: 'A popular spot for students with a wide range of tacos.', image: require("../assets/images/taco16.jpg"), latitude: 37.338529, longitude: -121.850009 }, 
+      { id: '17', name: 'Tustacos Taqueria', location: '95008', description: 'Known for its variety of tacos and quick service.', image: require("../assets/images/taco17.jpg"), latitude: 37.287990, longitude: -121.974990 },
+      { id: '18', name: 'Taco De Oro Taco Truck', location: '94089', description: 'Well-loved for golden tacos and delicious fillings.', image: require("../assets/images/taco18.jpg"), latitude: 37.406231, longitude: -121.996075 },
+      { id: '19', name: 'Famosa Taqueria', location: '95112', description: 'A family-run taqueria with authentic flavors.', image: require("../assets/images/taco19.jpg"), latitude: 37.323020, longitude: -121.872353 },
+      { id: '20', name: 'Taco Genesis', location: '95127', description: 'Great for late-night tacos with spicy sauces.', image: require("../assets/images/taco20.jpg"), latitude: 37.353422, longitude: -121.822666 }, 
+    ];
+    //TODO: fix l&l for Spartan Taco, get actual pictures from yelp reviews
 
   const navigation = useNavigation();
 
