@@ -44,8 +44,8 @@ export default function HomeScreen() {
       { id: '18', name: 'Taco De Oro Taco Truck', location: '94089', description: 'Well-loved for golden tacos and delicious fillings.', image: require("../assets/images/taco18.jpg"), latitude: 37.406231, longitude: -121.996075 },
       { id: '19', name: 'Famosa Taqueria', location: '95112', description: 'A family-run taqueria with authentic flavors.', image: require("../assets/images/taco19.jpg"), latitude: 37.323020, longitude: -121.872353 },
       { id: '20', name: 'Taco Genesis', location: '95127', description: 'Great for late-night tacos with spicy sauces.', image: require("../assets/images/taco20.jpg"), latitude: 37.353422, longitude: -121.822666 }, 
-    ];
-    //TODO: fix l&l for Spartan Taco, get actual pictures from yelp reviews
+      { id: '21', name: 'Tacos El ValleSJ', location: '95136', description: 'Serves up authentic tacos with bold flavors and fresh ingredients.', image: require("../assets/images/taco21.jpg"), latitude: 37.26023, longitude: -121.86311 },  
+  ];
 
   const navigation = useNavigation();
 
@@ -70,6 +70,8 @@ export default function HomeScreen() {
         Alert.alert("No results found.");
       }
     } else {
+      // Clear the filteredData when the search query is empty
+      setFilteredData([]);
       Alert.alert("Please enter a search term.");
     }
   };
@@ -81,8 +83,7 @@ export default function HomeScreen() {
   };
 
   const renderItem = ({ item }) => (
-    <TouchableOpacity style={styles.resultItem} 
-    onPress={() => openModal(item)}>
+    <TouchableOpacity style={styles.resultItem} onPress={() => openModal(item)}>
       <Text style={styles.resultText}>{item.name}</Text>
       <Text style={styles.resultLocation}>Zip Code: {item.location}</Text>
       <Text style={styles.resultDescription}>{item.description}</Text>
@@ -97,12 +98,12 @@ export default function HomeScreen() {
 
   return (
     <>
-    <View style={styles.imageContainer}>
-  <Image 
-    source={require("../assets/images/rp_my_logo.png")} // Replace with the actual path to your image
-    style={styles.headerImage}
-  />
-</View>
+      <View style={styles.imageContainer}>
+        <Image 
+          source={require("../assets/images/rp_my_logo.png")} // Replace with the actual path to your image
+          style={styles.headerImage}
+        />
+      </View>
 
       <View style={styles.container}>
         {/* Single Search Box */}
