@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Rosa's Taco Truck Finder",
-    "slug": "Rosa",
+    "slug": "find-east-san-jose-taco-truck",
     "version": "1.0.1",
     "orientation": "portrait",
     "icon": "./assets/images/rp_icon_1024x1024.png", 
@@ -23,7 +23,7 @@
     "package": "com.paintedlbird7.Rosa",
     "extra": {
       "eas": {
-        "projectId": "2acc88ee-9e5c-4a23-9ff3-9d1f1e08d4aa"
+        "projectId": "find-east-san-jose-taco-truck"
       }
     }
   },
