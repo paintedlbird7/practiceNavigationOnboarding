@@ -104,7 +104,7 @@ export default function HomeScreen() {
           style={styles.headerImage}
         />
       </View>
-
+<Text style={styles.headerText}>Discover the Best Taco Trucks in Your Area!</Text>
       <View style={styles.container}>
         {/* Single Search Box */}
         <View style={styles.searchContainer}>
@@ -284,5 +284,13 @@ const styles = StyleSheet.create({
       width: '100%',
       height: 200, 
       resizeMode: 'cover',
-    },    
+    },  
+    headerText: {
+      fontSize: 23,
+      fontWeight: "bold",
+      textAlign: "center",
+      marginBottom: 20,
+      color: "#333",
+    },
+      
 });
