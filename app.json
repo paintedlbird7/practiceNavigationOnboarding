@@ -1,8 +1,8 @@
 {
   "expo": {
     "name": "Rosa's Taco Truck Finder",
-    "slug": "find-east-san-jose-taco-truck",
-    "version": "1.0.1",
+    "slug": "Rosa",
+    "version": "1.0.3",
     "orientation": "portrait",
     "icon": "./assets/images/rp_icon_1024x1024.png", 
     "scheme": "myapp",
@@ -14,7 +14,8 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.paintedlbird7.Rosa"
+      "bundleIdentifier": "com.paintedlbird7.Rosa",
+      "buildNumber": "13"
     },
     "android": {
       "adaptiveIcon": null,
@@ -23,7 +24,7 @@
     "package": "com.paintedlbird7.Rosa",
     "extra": {
       "eas": {
-        "projectId": "find-east-san-jose-taco-truck"
+        "projectId": "2acc88ee-9e5c-4a23-9ff3-9d1f1e08d4aa"
       }
     }
   },

@@ -263,7 +263,7 @@ const styles = StyleSheet.create({
     resizeMode: 'cover',
   },
   headerText: {
-    fontSize: 23,
+    fontSize: 20,
     fontWeight: "bold",
     textAlign: "center",
     marginBottom: 20,
