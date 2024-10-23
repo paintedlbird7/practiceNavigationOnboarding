@@ -108,7 +108,23 @@ export default function HomeScreen() {
       <Text style={styles.headerText}>Discover the Best Taco Trucks in Your Area!</Text>
 
       <View style={styles.container}>
-        <View style={styles.searchContainer}>
+      <View style={styles.searchContainer}>
+          <TextInput
+            style={styles.searchBar}
+            placeholder="Search taco trucks or enter zip code"
+            value={searchQuery}
+            onChangeText={(text) => setSearchQuery(text)}
+            onSubmitEditing={handleSearch} // Submit when return/enter is pressed
+          />
+          <TouchableOpacity
+            style={styles.searchButton}
+            onPress={handleSearch} // Submit when the search button is pressed
+          >
+            <Text style={styles.buttonText}>Search</Text>
+          </TouchableOpacity>
+        </View>
+
+        {/* <View style={styles.searchContainer}>
           <TextInput
             style={styles.searchBar}
             placeholder="Search taco trucks or enter zip code"
@@ -121,7 +137,7 @@ export default function HomeScreen() {
           >
             <Text style={styles.buttonText}>Search</Text>
           </TouchableOpacity>
-        </View>
+        </View> */}
 
         {filteredData.length > 0 ? (
           <FlatList
