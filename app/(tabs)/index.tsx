@@ -124,21 +124,6 @@ export default function HomeScreen() {
           </TouchableOpacity>
         </View>
 
-        {/* <View style={styles.searchContainer}>
-          <TextInput
-            style={styles.searchBar}
-            placeholder="Search taco trucks or enter zip code"
-            value={searchQuery}
-            onChangeText={(text) => setSearchQuery(text)}
-          />
-          <TouchableOpacity
-            style={styles.searchButton}
-            onPress={handleSearch}
-          >
-            <Text style={styles.buttonText}>Search</Text>
-          </TouchableOpacity>
-        </View> */}
-
         {filteredData.length > 0 ? (
           <FlatList
             data={filteredData}
