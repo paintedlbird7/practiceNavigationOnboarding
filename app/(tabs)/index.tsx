@@ -13,6 +13,7 @@ import {
 } from "react-native";
 import { useEffect, useState } from "react";
 import { useNavigation } from 'expo-router';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import MapView, { Marker } from 'react-native-maps';
 
 export default function HomeScreen() {
@@ -20,22 +21,30 @@ export default function HomeScreen() {
   const [filteredData, setFilteredData] = useState([]);
   const [modalVisible, setModalVisible] = useState(false); 
   const [selectedTruck, setSelectedTruck] = useState(null); 
-  const [ratings, setRatings] = useState({}); // State to hold ratings for each truck
+  const [ratings, setRatings] = useState({}); // State to store ratings
 
   const data = [
     { id: '1', name: 'Tacos Los Tres Reyes', location: '95122', description: 'Popular for authentic Mexican street tacos.', image: require("../assets/images/taco1.jpg"), latitude: 37.349080, longitude: -121.829437 },
-    // ... other taco trucks ...
+    // ... other taco trucks
     { id: '20', name: 'Taco Genesis', location: '95127', description: 'Great for late-night tacos with spicy sauces.', image: require("../assets/images/taco20.jpg"), latitude: 37.353422, longitude: -121.822666 }, 
   ];
 
-  const { width } = Dimensions.get('window');
   const navigation = useNavigation();
 
   useEffect(() => {
-    navigation.setOptions({
-      headerLargeTitle: true,
-    });
-  }, [navigation]);
+    const loadRatings = async () => {
+      try {
+        const storedRatings = await AsyncStorage.getItem('ratings');
+        if (storedRatings) {
+          setRatings(JSON.parse(storedRatings));
+        }
+      } catch (error) {
+        console.error("Failed to load ratings", error);
+      }
+    };
+
+    loadRatings();
+  }, []);
 
   const handleSearch = () => {
     if (searchQuery.trim() !== "") {
@@ -45,7 +54,6 @@ export default function HomeScreen() {
           item.location.includes(searchQuery)
       );
       setFilteredData(results);
-
       if (results.length === 0) {
         Alert.alert("No results found.");
       }
@@ -60,12 +68,21 @@ export default function HomeScreen() {
     setModalVisible(true);
   };
 
-  const handleRating = (truckId, rating) => {
-    setRatings((prevRatings) => ({
-      ...prevRatings,
-      [truckId]: rating,
-    }));
-    Alert.alert(`You rated ${selectedTruck.name} ${rating} stars!`);
+  const closeModal = () => {
+    setModalVisible(false);
+    setSelectedTruck(null);
+  };
+
+  const handleRating = async (truckId, rating) => {
+    const updatedRatings = { ...ratings, [truckId]: rating };
+    setRatings(updatedRatings);
+    
+    try {
+      await AsyncStorage.setItem('ratings', JSON.stringify(updatedRatings));
+      Alert.alert(`You rated ${selectedTruck.name} ${rating} stars!`);
+    } catch (error) {
+      console.error("Failed to save rating", error);
+    }
   };
 
   const renderItem = ({ item }) => (
@@ -73,16 +90,11 @@ export default function HomeScreen() {
       <Text style={styles.resultText}>{item.name}</Text>
       <Text style={styles.resultLocation}>Zip Code: {item.location}</Text>
       <Text style={styles.resultDescription}>{item.description}</Text>
-      <Text style={styles.resultRating}>
-        Rating: {ratings[item.id] ? ratings[item.id] : 'Not rated yet'}
-      </Text>
+      {ratings[item.id] && (
+        <Text style={styles.ratingText}>Rating: {ratings[item.id]} ★</Text>
+      )}
     </TouchableOpacity>
   );
-
-  const closeModal = () => {
-    setModalVisible(false);
-    setSelectedTruck(null);
-  };
 
   return (
     <>
@@ -100,12 +112,12 @@ export default function HomeScreen() {
             style={styles.searchBar}
             placeholder="Search taco trucks or enter zip code"
             value={searchQuery}
-            onChangeText={setSearchQuery}
-            onSubmitEditing={handleSearch} 
+            onChangeText={(text) => setSearchQuery(text)}
+            onSubmitEditing={handleSearch}
           />
           <TouchableOpacity
             style={styles.searchButton}
-            onPress={handleSearch} 
+            onPress={handleSearch}
           >
             <Text style={styles.buttonText}>Search</Text>
           </TouchableOpacity>
@@ -137,6 +149,14 @@ export default function HomeScreen() {
               <Text style={styles.modalLocation}>Zip Code: {selectedTruck.location}</Text>
               <Text style={styles.modalDescription}>{selectedTruck.description}</Text>
 
+              <View style={styles.ratingContainer}>
+                {[1, 2, 3, 4, 5].map((star) => (
+                  <TouchableOpacity key={star} onPress={() => handleRating(selectedTruck.id, star)}>
+                    <Text style={styles.ratingStar}>{star} ★</Text>
+                  </TouchableOpacity>
+                ))}
+              </View>
+
               <MapView
                 style={styles.map}
                 initialRegion={{
@@ -151,14 +171,6 @@ export default function HomeScreen() {
                   title={selectedTruck.name}
                 />
               </MapView>
-
-              <View style={styles.ratingContainer}>
-                {[1, 2, 3, 4, 5].map((star) => (
-                  <TouchableOpacity key={star} onPress={() => handleRating(selectedTruck.id, star)}>
-                    <Text style={styles.star}>★</Text>
-                  </TouchableOpacity>
-                ))}
-              </View>
 
               <Button title="Close" onPress={closeModal} />
             </View>
@@ -222,9 +234,9 @@ const styles = StyleSheet.create({
     fontSize: 14,
     color: "#444",
   },
-  resultRating: {
+  ratingText: {
     fontSize: 14,
-    color: "#444",
+    color: "gold",
     marginTop: 5,
   },
   noResultsText: {
@@ -235,7 +247,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "rgba(0, 0, 0, 0.5)", 
+    backgroundColor: "rgba(0, 0, 0, 0.5)",
   },
   modalContent: {
     width: "80%",
@@ -271,21 +283,12 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     marginVertical: 10,
   },
-  ratingContainer: {
-    flexDirection: "row",
-    marginTop: 10,
-  },
-  star: {
-    fontSize: 24,
-    color: "#FFD700", // Gold color for stars
-    marginHorizontal: 2,
-  },
   imageContainer: {
     alignItems: 'center',
     marginBottom: 20,
   },
   headerImage: {
-    width: '90%', 
+    width: '90%',
     height: 200, 
     resizeMode: 'cover',
   },
@@ -295,5 +298,13 @@ const styles = StyleSheet.create({
     textAlign: "center",
     marginBottom: 20,
     color: "#333",
+  },
+  ratingContainer: {
+    flexDirection: "row",
+    marginVertical: 10,
+  },
+  ratingStar: {
+    fontSize: 24,
+    marginHorizontal: 5,
   },
 });
