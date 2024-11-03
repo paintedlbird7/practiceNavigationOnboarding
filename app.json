@@ -4,7 +4,7 @@
     "slug": "Rosa",
     "version": "1.0.4",
     "orientation": "portrait",
-    "icon": "./assets/images/rp_icon_1024x1024.png", 
+    "icon": "./assets/images/rp_icon_1024x1024.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "splash": {
@@ -15,11 +15,14 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.paintedlbird7.Rosa",
-      "buildNumber": "14"
+      "buildNumber": "14",
+      "googleServicesFile": "./GoogleService-Info.plist",
+      "useFrameworks": "static"
     },
     "android": {
       "adaptiveIcon": null,
-      "package": "com.paintedlbird7.Rosa"
+      "package": "com.paintedlbird7.Rosa",
+      "googleServicesFile": "./google-services.json"
     },
     "package": "com.paintedlbird7.Rosa",
     "extra": {
@@ -34,14 +37,13 @@
     "favicon": "./assets/images/favicon.png"
   },
   "plugins": [
-    "expo-router"
+    "expo-router",
+    "@react-native-firebase/app",
+    "@react-native-firebase/auth",
+    "@react-native-firebase/crashlytics",
+    "expo-build-properties"
   ],
   "experiments": {
     "typedRoutes": true
-  },
-  "extra": {
-    "eas": {
-      "projectId": "2acc88ee-9e5c-4a23-9ff3-9d1f1e08d4aa"
-    }
   }
 }
