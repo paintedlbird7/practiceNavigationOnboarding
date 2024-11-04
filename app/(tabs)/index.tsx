@@ -64,6 +64,19 @@ export default function HomeScreen() {
     }
   };
 
+
+
+  const handleRating = async (truckId, rating) => {
+    const updatedRatings = { ...ratings, [truckId]: rating };
+    setRatings(updatedRatings);
+
+    try {
+      await AsyncStorage.setItem("ratings", JSON.stringify(updatedRatings));
+      Alert.alert(`You rated ${selectedTruck.name} ${rating} stars!`);
+    } catch (error) {
+      console.error("Failed to save rating", error);
+    }
+  };
   const openModal = (item) => {
     setSelectedTruck(item);
     setModalVisible(true);
@@ -74,28 +87,16 @@ export default function HomeScreen() {
     setSelectedTruck(null);
   };
 
-  // const handleRating = async (truckId, rating) => {
-  //   const updatedRatings = { ...ratings, [truckId]: rating };
-  //   setRatings(updatedRatings);
-
-  //   try {
-  //     await AsyncStorage.setItem("ratings", JSON.stringify(updatedRatings));
-  //     Alert.alert(`You rated ${selectedTruck.name} ${rating} stars!`);
-  //   } catch (error) {
-  //     console.error("Failed to save rating", error);
-  //   }
-  // };
-
-  // const renderItem = ({ item }) => (
-  //   <TouchableOpacity style={styles.resultItem} onPress={() => openModal(item)}>
-  //     <Text style={styles.resultText}>{item.name}</Text>
-  //     <Text style={styles.resultLocation}>Zip Code: {item.location}</Text>
-  //     <Text style={styles.resultDescription}>{item.description}</Text>
-  //     {ratings[item.id] && (
-  //       <Text style={styles.ratingText}>Rating: {ratings[item.id]} ★</Text>
-  //     )}
-  //   </TouchableOpacity>
-  // );
+  const renderItem = ({ item }) => (
+    <TouchableOpacity style={styles.resultItem} onPress={() => openModal(item)}>
+      <Text style={styles.resultText}>{item.name}</Text>
+      <Text style={styles.resultLocation}>Zip Code: {item.location}</Text>
+      <Text style={styles.resultDescription}>{item.description}</Text>
+      {ratings[item.id] && (
+        <Text style={styles.ratingText}>Rating: {ratings[item.id]} ★</Text>
+      )}
+    </TouchableOpacity>
+  );
 
   return (
     <>
@@ -123,11 +124,7 @@ export default function HomeScreen() {
           truck={selectedTruck}
           modalVisible={modalVisible}
           closeModal={() => setModalVisible(false)}
-          handleRating={(truckId, rating) => {
-            const updatedRatings = { ...ratings, [truckId]: rating };
-            setRatings(updatedRatings);
-            AsyncStorage.setItem('ratings', JSON.stringify(updatedRatings));
-          }}
+          handleRating={handleRating}
         />
       )}
     </>
@@ -145,7 +142,6 @@ export default function HomeScreen() {
         // >
           // <View style={styles.modalContainer}>
           //   <View style={styles.modalContent}>
-          //     <Image source={selectedTruck.image} style={styles.modalImage} />
           //     <Text style={styles.modalTitle}>{selectedTruck.name}</Text>
           //     <Text style={styles.modalLocation}>
           //       Zip Code: {selectedTruck.location}
@@ -154,10 +150,10 @@ export default function HomeScreen() {
           //       {selectedTruck.description}
           //     </Text>
 
-              // <View style={styles.ratingContainer}>
-              //   {[1, 2, 3, 4, 5].map((star) => ( */}
-              {/* //     <TouchableOpacity */}
-              {/* //       key={star}
+              <View style={styles.ratingContainer}>
+                [1, 2, 3, 4, 5].map((star) => (
+                  <TouchableOpacity */}
+                    //  key={star}
               //       onPress={() => handleRating(selectedTruck.id, star)}
               //     >
               //       <Text style={styles.ratingStar}>{star} ★</Text>
