@@ -8,12 +8,14 @@ const styles = StyleSheet.create({
     paddingHorizontal: '5%',
     width: "90%",
   },
-  searchContainer: {
+  searchBarContainer: {
     flexDirection: "row",
     alignItems: "center",
     width: "90%",
     marginBottom: 20,
     marginLeft: 18,
+    borderBottomColor: '#FFA500', // Set bottom border color to match button
+    borderBottomWidth: 2,
   },
   searchBar: {
     height: 40,

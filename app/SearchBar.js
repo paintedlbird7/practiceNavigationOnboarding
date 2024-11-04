@@ -4,7 +4,7 @@ import styles from './Styles';
 
 export default function SearchBar({ searchQuery, setSearchQuery, handleSearch }) {
   return (
-    <View style={styles.searchContainer}>
+    <View style={styles.searchBarContainer}>
       <TextInput
         style={styles.searchBar}
         placeholder="Search taco trucks or enter zip code"
