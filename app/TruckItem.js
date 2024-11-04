@@ -1,7 +1,7 @@
 // TruckItem.js
 import React from 'react';
 import { TouchableOpacity, Text } from 'react-native';
-import styles from './Styles';
+import styles from './styles';
 
 const TruckItem = ({ truck, openModal, rating }) => (
   <TouchableOpacity style={styles.resultItem} onPress={() => openModal(truck)}>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, Image, Modal, Button, TouchableOpacity } from 'react-native';
-import styles from './Styles';
+import styles from './styles';
 import TruckMap from './TruckMap';
 import CustomAlert from './CustomAlert'; // Import CustomAlert
 

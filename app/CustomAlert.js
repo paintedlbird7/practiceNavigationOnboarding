@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
-import styles from "./Styles";
+import styles from "./styles";
 
 export default function CustomAlert({ visible, message, onClose }) {
   if (!visible) return null;

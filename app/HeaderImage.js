@@ -1,6 +1,6 @@
 // HeaderImage.js
 import { View, Image, Text, } from "react-native";
-import styles from "./Styles";
+import styles from "./styles";
 
 export default function HeaderImage() {
     return (
