@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, Image, Modal, Button, TouchableOpacity } from "react-native";
 import MapView, { Marker } from 'react-native-maps';
-import styles from "./styles";
+import styles from "./Styles";
 import index from "./(tabs)/index";
 
 export default function TruckModal({ truck, modalVisible, closeModal, handleRating }) {

@@ -1,7 +1,7 @@
 import { Text, TouchableOpacity, Alert } from "react-native";
 import React, { useEffect, useState } from "react";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import styles from "../styles";
+import styles from "../Styles";
 import { tacoTruckData } from "../(tabs)/tacoTruckData";
 import HeaderImage from "../HeaderImage";
 import SearchBar from "../SearchBar";

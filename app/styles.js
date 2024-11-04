@@ -6,12 +6,14 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#fff",
     paddingHorizontal: '5%',
+    width: "90%",
   },
   searchContainer: {
     flexDirection: "row",
     alignItems: "center",
-    width: "100%",
+    width: "90%",
     marginBottom: 20,
+    marginLeft: 18,
   },
   searchBar: {
     height: 40,
@@ -20,7 +22,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderRadius: 10,
     paddingHorizontal: 10,
-    marginRight: 10,
+    // marginRight: 70,
   },
   searchButton: {
     backgroundColor: "orange",

@@ -1,6 +1,6 @@
 import React from "react";
 import { FlatList, Text, TouchableOpacity, View } from "react-native";
-import styles from "./styles";
+import styles from "./Styles";
 
 export default function TruckList({ filteredData, openModal, ratings }) {
   const renderItem = ({ item }) => (
