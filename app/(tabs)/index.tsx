@@ -11,7 +11,7 @@ import {
   Button,
   Dimensions,
 } from "react-native";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigation } from "expo-router";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import MapView, { Marker } from "react-native-maps";
@@ -19,6 +19,9 @@ import styles from "../styles";
 import { tacoTruckData } from "../(tabs)/tacoTruckData";
 import HeaderImage from "../HeaderImage";
 import SearchBar from "../SearchBar";
+import TruckList from "../TruckList";
+import TruckModal from "../TruckModal";
+
 
 export default function HomeScreen() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -27,9 +30,8 @@ export default function HomeScreen() {
   const [selectedTruck, setSelectedTruck] = useState(null);
   const [ratings, setRatings] = useState({}); // State to store ratings
 
-  const data = tacoTruckData; // Use the imported data
-
   const navigation = useNavigation();
+  const data = tacoTruckData; // Use the imported data
 
   useEffect(() => {
     const loadRatings = async () => {
@@ -42,7 +44,6 @@ export default function HomeScreen() {
         console.error("Failed to load ratings", error);
       }
     };
-
     loadRatings();
   }, []);
 
@@ -107,33 +108,23 @@ export default function HomeScreen() {
         setSearchQuery={setSearchQuery}
         handleSearch={handleSearch}
       />
-
-     
+      <TruckList
+  filteredData={filteredData}
+  openModal={openModal}  // Use openModal here instead of setSelectedTruck
+  ratings={ratings}
+/>
+           {selectedTruck && (
+        <TruckModal
+          truck={selectedTruck}
+          modalVisible={modalVisible}
+          closeModal={closeModal}
+          handleRating={handleRating}
+        />
+      )}
 
       <View style={styles.container}>
         <View style={styles.searchContainer}>
-          {/* <TextInput
-            style={styles.searchBar}
-            placeholder="Search taco trucks or enter zip code"
-            value={searchQuery}
-            onChangeText={(text) => setSearchQuery(text)}
-            onSubmitEditing={handleSearch}
-          /> */}
-          {/* <TouchableOpacity style={styles.searchButton} onPress={handleSearch}>
-            <Text style={styles.buttonText}>Search</Text>
-          </TouchableOpacity> */}
         </View>
-
-        {filteredData.length > 0 ? (
-          <FlatList
-            data={filteredData}
-            renderItem={renderItem}
-            keyExtractor={(item) => item.id}
-            style={styles.resultsList}
-          />
-        ) : (
-          <Text style={styles.noResultsText}>No results to display</Text>
-        )}
       </View>
 
       {selectedTruck && (
