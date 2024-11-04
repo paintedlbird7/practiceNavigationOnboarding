@@ -1,8 +1,8 @@
-// import React from 'react';
-// import { Alert } from 'react-native';
+import React from 'react';
+import MapView, { Marker } from 'react-native-maps';
+import styles from './styles';
 
-// const CustomAlert = (message) => {
-//   Alert.alert("Notification", message);
-// };
+export default function CustomAlert(){
+    <Text>hi</Text>
+}
 
-// export default CustomAlert;
