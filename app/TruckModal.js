@@ -1,48 +1,50 @@
+// TruckModal.js
 import React from 'react';
-import { View, Text, StyleSheet, } from 'react-native';
+import { View, Text, Image, Modal, Button, TouchableOpacity } from "react-native";
+import MapView, { Marker } from 'react-native-maps';
+import styles from "./styles";
 
-const MyComponent = ({ title, }) => {
+export default function TruckModal({ truck, modalVisible, closeModal, handleRating }) {
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>{title}</Text>
-    </View>
+    <Modal
+      animationType="slide"
+      transparent={true}
+      visible={modalVisible}
+      onRequestClose={closeModal}
+    >
+      <View style={styles.modalContainer}>
+        <View style={styles.modalContent}>
+          <Image source={truck.image} style={styles.modalImage} />
+          <Text style={styles.modalTitle}>{truck.name}</Text>
+          <Text style={styles.modalLocation}>Zip Code: {truck.location}</Text>
+          <Text style={styles.modalDescription}>{truck.description}</Text>
+
+          <View style={styles.ratingContainer}>
+            {[1, 2, 3, 4, 5].map((star) => (
+              <TouchableOpacity key={star} onPress={() => handleRating(truck.id, star)}>
+                <Text style={styles.ratingStar}>{star} ★</Text>
+              </TouchableOpacity>
+            ))}
+          </View>
+
+          <MapView
+            style={styles.map}
+            initialRegion={{
+              latitude: truck.latitude,
+              longitude: truck.longitude,
+              latitudeDelta: 0.01,
+              longitudeDelta: 0.01,
+            }}
+          >
+            <Marker
+              coordinate={{ latitude: truck.latitude, longitude: truck.longitude }}
+              title={truck.name}
+            />
+          </MapView>
+
+          <Button title="Close" onPress={closeModal} />
+        </View>
+      </View>
+    </Modal>
   );
-};
-
-export default MyComponent;
-
-const styles = StyleSheet.create({
-  container: {
-    padding: 16,
-    backgroundColor: '#f9f9f9',
-    borderRadius: 8,
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.1,
-    shadowRadius: 8,
-    elevation: 4,
-    marginBottom: 16,
-  },
-  title: {
-    fontSize: 18,
-    fontWeight: 'bold',
-    marginBottom: 8,
-  },
-//   description: {
-//     fontSize: 14,
-//     color: '#666',
-//     marginBottom: 12,
-//   },
-//   button: {
-//     backgroundColor: '#007AFF',
-//     paddingVertical: 10,
-//     paddingHorizontal: 16,
-//     borderRadius: 4,
-//     alignItems: 'center',
-//   },
-//   buttonText: {
-//     color: '#fff',
-//     fontSize: 16,
-//     fontWeight: '600',
-//   },
-});
+}

@@ -30,7 +30,7 @@ export default function HomeScreen() {
   const [selectedTruck, setSelectedTruck] = useState(null);
   const [ratings, setRatings] = useState({}); // State to store ratings
 
-  const navigation = useNavigation();
+  // const navigation = useNavigation();
   const data = tacoTruckData; // Use the imported data
 
   useEffect(() => {
@@ -74,31 +74,32 @@ export default function HomeScreen() {
     setSelectedTruck(null);
   };
 
-  const handleRating = async (truckId, rating) => {
-    const updatedRatings = { ...ratings, [truckId]: rating };
-    setRatings(updatedRatings);
+  // const handleRating = async (truckId, rating) => {
+  //   const updatedRatings = { ...ratings, [truckId]: rating };
+  //   setRatings(updatedRatings);
 
-    try {
-      await AsyncStorage.setItem("ratings", JSON.stringify(updatedRatings));
-      Alert.alert(`You rated ${selectedTruck.name} ${rating} stars!`);
-    } catch (error) {
-      console.error("Failed to save rating", error);
-    }
-  };
+  //   try {
+  //     await AsyncStorage.setItem("ratings", JSON.stringify(updatedRatings));
+  //     Alert.alert(`You rated ${selectedTruck.name} ${rating} stars!`);
+  //   } catch (error) {
+  //     console.error("Failed to save rating", error);
+  //   }
+  // };
 
-  const renderItem = ({ item }) => (
-    <TouchableOpacity style={styles.resultItem} onPress={() => openModal(item)}>
-      <Text style={styles.resultText}>{item.name}</Text>
-      <Text style={styles.resultLocation}>Zip Code: {item.location}</Text>
-      <Text style={styles.resultDescription}>{item.description}</Text>
-      {ratings[item.id] && (
-        <Text style={styles.ratingText}>Rating: {ratings[item.id]} ★</Text>
-      )}
-    </TouchableOpacity>
-  );
+  // const renderItem = ({ item }) => (
+  //   <TouchableOpacity style={styles.resultItem} onPress={() => openModal(item)}>
+  //     <Text style={styles.resultText}>{item.name}</Text>
+  //     <Text style={styles.resultLocation}>Zip Code: {item.location}</Text>
+  //     <Text style={styles.resultDescription}>{item.description}</Text>
+  //     {ratings[item.id] && (
+  //       <Text style={styles.ratingText}>Rating: {ratings[item.id]} ★</Text>
+  //     )}
+  //   </TouchableOpacity>
+  // );
 
   return (
     <>
+   
       <HeaderImage />
       <Text style={styles.headerText}>
         Discover the Best Taco Trucks in Your Area!
@@ -109,76 +110,81 @@ export default function HomeScreen() {
         handleSearch={handleSearch}
       />
       <TruckList
-  filteredData={filteredData}
-  openModal={openModal}  // Use openModal here instead of setSelectedTruck
-  ratings={ratings}
-/>
-           {selectedTruck && (
+        filteredData={filteredData}
+        openModal={openModal}
+        ratings={ratings}
+      />
+          {/* <View style={styles.container}>
+        <View style={styles.searchContainer}>
+        </View>
+      </View> */}
+      {selectedTruck && (
         <TruckModal
           truck={selectedTruck}
           modalVisible={modalVisible}
-          closeModal={closeModal}
-          handleRating={handleRating}
+          closeModal={() => setModalVisible(false)}
+          handleRating={(truckId, rating) => {
+            const updatedRatings = { ...ratings, [truckId]: rating };
+            setRatings(updatedRatings);
+            AsyncStorage.setItem('ratings', JSON.stringify(updatedRatings));
+          }}
         />
-      )}
-
-      <View style={styles.container}>
-        <View style={styles.searchContainer}>
-        </View>
-      </View>
-
-      {selectedTruck && (
-        <Modal
-          animationType="slide"
-          transparent={true}
-          visible={modalVisible}
-          onRequestClose={closeModal}
-        >
-          <View style={styles.modalContainer}>
-            <View style={styles.modalContent}>
-              <Image source={selectedTruck.image} style={styles.modalImage} />
-              <Text style={styles.modalTitle}>{selectedTruck.name}</Text>
-              <Text style={styles.modalLocation}>
-                Zip Code: {selectedTruck.location}
-              </Text>
-              <Text style={styles.modalDescription}>
-                {selectedTruck.description}
-              </Text>
-
-              <View style={styles.ratingContainer}>
-                {[1, 2, 3, 4, 5].map((star) => (
-                  <TouchableOpacity
-                    key={star}
-                    onPress={() => handleRating(selectedTruck.id, star)}
-                  >
-                    <Text style={styles.ratingStar}>{star} ★</Text>
-                  </TouchableOpacity>
-                ))}
-              </View>
-
-              <MapView
-                style={styles.map}
-                initialRegion={{
-                  latitude: selectedTruck.latitude,
-                  longitude: selectedTruck.longitude,
-                  latitudeDelta: 0.01,
-                  longitudeDelta: 0.01,
-                }}
-              >
-                <Marker
-                  coordinate={{
-                    latitude: selectedTruck.latitude,
-                    longitude: selectedTruck.longitude,
-                  }}
-                  title={selectedTruck.name}
-                />
-              </MapView>
-
-              <Button title="Close" onPress={closeModal} />
-            </View>
-          </View>
-        </Modal>
       )}
     </>
   );
 }
+
+   
+
+      {/* {selectedTruck && ( */}
+        {/* // <Modal */}
+        {/* //   animationType="slide"
+        //   transparent={true}
+        //   visible={modalVisible}
+        //   onRequestClose={closeModal}
+        // >
+          // <View style={styles.modalContainer}>
+          //   <View style={styles.modalContent}>
+          //     <Image source={selectedTruck.image} style={styles.modalImage} />
+          //     <Text style={styles.modalTitle}>{selectedTruck.name}</Text>
+          //     <Text style={styles.modalLocation}>
+          //       Zip Code: {selectedTruck.location}
+          //     </Text>
+          //     <Text style={styles.modalDescription}>
+          //       {selectedTruck.description}
+          //     </Text>
+
+              // <View style={styles.ratingContainer}>
+              //   {[1, 2, 3, 4, 5].map((star) => ( */}
+              {/* //     <TouchableOpacity */}
+              {/* //       key={star}
+              //       onPress={() => handleRating(selectedTruck.id, star)}
+              //     >
+              //       <Text style={styles.ratingStar}>{star} ★</Text>
+              //     </TouchableOpacity>
+              //   ))}
+              // </View> */}
+
+              {/* // <MapView
+              //   style={styles.map}
+              //   initialRegion={{
+              //     latitude: selectedTruck.latitude,
+              //     longitude: selectedTruck.longitude,
+              //     latitudeDelta: 0.01,
+              //     longitudeDelta: 0.01,
+              //   }}
+              // >
+              //   <Marker
+              //     coordinate={{
+              //       latitude: selectedTruck.latitude,
+              //       longitude: selectedTruck.longitude,
+              //     }}
+              //     title={selectedTruck.name}
+              //   />
+              // </MapView>
+
+      //         <Button title="Close" onPress={closeModal} />
+      //       </View>
+      //     </View>
+      //   </Modal>
+      // )} */}
