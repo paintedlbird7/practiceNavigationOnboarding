@@ -167,30 +167,32 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
 
-  container2: {
-    flex: 1,
-    padding: 20,
-    backgroundColor: '#fff',
-  },
-  input: {
-    height: 40,
-    borderColor: '#ccc',
-    borderWidth: 1,
-    borderRadius: 5,
-    paddingHorizontal: 10,
-    marginBottom: 10,
-  },
-  submitButton: {
-    backgroundColor: 'orange',
-    paddingVertical: 10,
-    paddingHorizontal: 20,
-    borderRadius: 5,
-    alignItems: 'center',
-  },
-  buttonText: {
-    color: 'white',
-    fontSize: 16,
-  },
+  // container2: {
+  //   flex: 1,
+  //   padding: 120,
+  //   backgroundColor: '#fff',
+  //   justifyContent: 'flex-start',
+  //   // marginTop: 120,
+  // },
+  // input: {
+  //   height: 40,
+  //   borderColor: '#ccc',
+  //   borderWidth: 1,
+  //   borderRadius: 5,
+  //   paddingHorizontal: 10,
+  //   marginBottom: 10,
+  // },
+  // submitButton: {
+  //   backgroundColor: 'orange',
+  //   paddingVertical: 10,
+  //   paddingHorizontal: 20,
+  //   borderRadius: 5,
+  //   alignItems: 'center',
+  // },
+  // buttonText: {
+  //   color: 'white',
+  //   fontSize: 16,
+  // },
 });
 
 export default styles;
