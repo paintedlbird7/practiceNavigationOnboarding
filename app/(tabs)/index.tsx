@@ -17,6 +17,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import MapView, { Marker } from 'react-native-maps';
 import styles from "../styles";
 import { tacoTruckData } from "../(tabs)/tacoTruckData";
+import HeaderImage from "../HeaderImage";
 
 export default function HomeScreen() {
   const [searchQuery, setSearchQuery] = useState(""); 
@@ -96,12 +97,7 @@ export default function HomeScreen() {
 
   return (
     <>
-      <View style={styles.imageContainer}>
-        <Image 
-          source={require("../assets/images/rp_my_logo.png")} 
-          style={styles.headerImage}
-        />
-      </View>
+    <HeaderImage/>
       <Text style={styles.headerText}>Discover the Best Taco Trucks in Your Area!</Text>
 
       <View style={styles.container}>
