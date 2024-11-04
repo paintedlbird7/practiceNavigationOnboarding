@@ -1,10 +1,18 @@
 import React from 'react';
 import { View, Text, Image, Modal, Button, TouchableOpacity } from 'react-native';
-import MapView, { Marker } from 'react-native-maps';
 import styles from './styles';
 import TruckMap from './TruckMap';
+import CustomAlert from './CustomAlert'; // Import CustomAlert
 
-export default function TruckModal({ truck, modalVisible, closeModal, handleRating }) {
+export default function TruckModal({ 
+  truck, 
+  modalVisible, 
+  closeModal, 
+  handleRating, 
+  alertVisible, 
+  alertMessage, 
+  onClose 
+}) {
   return (
     <Modal
       animationType="slide"
@@ -35,6 +43,13 @@ export default function TruckModal({ truck, modalVisible, closeModal, handleRati
 
           <Button title="Close" onPress={closeModal} />
         </View>
+
+        {/* Custom Alert inside TruckModal */}
+        <CustomAlert
+          visible={alertVisible}
+          message={alertMessage}
+          onClose={onClose}
+        />
       </View>
     </Modal>
   );
