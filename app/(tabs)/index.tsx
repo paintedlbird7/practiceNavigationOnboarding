@@ -69,17 +69,6 @@ export default function HomeScreen() {
     setSelectedTruck(null);
   };
 
-  const renderItem = ({ item }) => (
-    <TouchableOpacity style={styles.resultItem} onPress={() => openModal(item)}>
-      <Text style={styles.resultText}>{item.name}</Text>
-      <Text style={styles.resultLocation}>Zip Code: {item.location}</Text>
-      <Text style={styles.resultDescription}>{item.description}</Text>
-      {ratings[item.id] && (
-        <Text style={styles.ratingText}>Rating: {ratings[item.id]} ★</Text>
-      )}
-    </TouchableOpacity>
-  );
-
   return (
     <>
       {/* <View style={styles.container}>
