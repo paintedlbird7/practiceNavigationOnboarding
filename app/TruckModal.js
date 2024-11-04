@@ -2,6 +2,7 @@ import React from 'react';
 import { View, Text, Image, Modal, Button, TouchableOpacity } from 'react-native';
 import MapView, { Marker } from 'react-native-maps';
 import styles from './styles';
+import TruckMap from './TruckMap';
 
 export default function TruckModal({ truck, modalVisible, closeModal, handleRating }) {
   return (
@@ -26,20 +27,11 @@ export default function TruckModal({ truck, modalVisible, closeModal, handleRati
             ))}
           </View>
 
-          <MapView
-            style={styles.map}
-            initialRegion={{
-              latitude: truck.latitude,
-              longitude: truck.longitude,
-              latitudeDelta: 0.01,
-              longitudeDelta: 0.01,
-            }}
-          >
-            <Marker
-              coordinate={{ latitude: truck.latitude, longitude: truck.longitude }}
-              title={truck.name}
-            />
-          </MapView>
+          <TruckMap 
+            latitude={truck.latitude} 
+            longitude={truck.longitude} 
+            name={truck.name} 
+          />
 
           <Button title="Close" onPress={closeModal} />
         </View>
