@@ -1,6 +1,6 @@
 import React from 'react';
 import MapView, { Marker } from 'react-native-maps';
-import styles from './styles';
+import styles from './Styles';
 
 const TruckMap = ({ latitude, longitude, name }) => {
   return (
