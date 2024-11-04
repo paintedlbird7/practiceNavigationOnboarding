@@ -12,18 +12,19 @@ import {
   Dimensions,
 } from "react-native";
 import { useEffect, useState } from "react";
-import { useNavigation } from 'expo-router';
-import AsyncStorage from '@react-native-async-storage/async-storage';
-import MapView, { Marker } from 'react-native-maps';
+import { useNavigation } from "expo-router";
+import AsyncStorage from "@react-native-async-storage/async-storage";
+import MapView, { Marker } from "react-native-maps";
 import styles from "../styles";
 import { tacoTruckData } from "../(tabs)/tacoTruckData";
 import HeaderImage from "../HeaderImage";
+import SearchBar from "../SearchBar";
 
 export default function HomeScreen() {
-  const [searchQuery, setSearchQuery] = useState(""); 
+  const [searchQuery, setSearchQuery] = useState("");
   const [filteredData, setFilteredData] = useState([]);
-  const [modalVisible, setModalVisible] = useState(false); 
-  const [selectedTruck, setSelectedTruck] = useState(null); 
+  const [modalVisible, setModalVisible] = useState(false);
+  const [selectedTruck, setSelectedTruck] = useState(null);
   const [ratings, setRatings] = useState({}); // State to store ratings
 
   const data = tacoTruckData; // Use the imported data
@@ -33,7 +34,7 @@ export default function HomeScreen() {
   useEffect(() => {
     const loadRatings = async () => {
       try {
-        const storedRatings = await AsyncStorage.getItem('ratings');
+        const storedRatings = await AsyncStorage.getItem("ratings");
         if (storedRatings) {
           setRatings(JSON.parse(storedRatings));
         }
@@ -75,9 +76,9 @@ export default function HomeScreen() {
   const handleRating = async (truckId, rating) => {
     const updatedRatings = { ...ratings, [truckId]: rating };
     setRatings(updatedRatings);
-    
+
     try {
-      await AsyncStorage.setItem('ratings', JSON.stringify(updatedRatings));
+      await AsyncStorage.setItem("ratings", JSON.stringify(updatedRatings));
       Alert.alert(`You rated ${selectedTruck.name} ${rating} stars!`);
     } catch (error) {
       console.error("Failed to save rating", error);
@@ -97,24 +98,30 @@ export default function HomeScreen() {
 
   return (
     <>
-    <HeaderImage/>
-      <Text style={styles.headerText}>Discover the Best Taco Trucks in Your Area!</Text>
+      <HeaderImage />
+      <Text style={styles.headerText}>
+        Discover the Best Taco Trucks in Your Area!
+      </Text>
+      <SearchBar
+        searchQuery={searchQuery}
+        setSearchQuery={setSearchQuery}
+        handleSearch={handleSearch}
+      />
+
+     
 
       <View style={styles.container}>
         <View style={styles.searchContainer}>
-          <TextInput
+          {/* <TextInput
             style={styles.searchBar}
             placeholder="Search taco trucks or enter zip code"
             value={searchQuery}
             onChangeText={(text) => setSearchQuery(text)}
             onSubmitEditing={handleSearch}
-          />
-          <TouchableOpacity
-            style={styles.searchButton}
-            onPress={handleSearch}
-          >
+          /> */}
+          {/* <TouchableOpacity style={styles.searchButton} onPress={handleSearch}>
             <Text style={styles.buttonText}>Search</Text>
-          </TouchableOpacity>
+          </TouchableOpacity> */}
         </View>
 
         {filteredData.length > 0 ? (
@@ -140,12 +147,19 @@ export default function HomeScreen() {
             <View style={styles.modalContent}>
               <Image source={selectedTruck.image} style={styles.modalImage} />
               <Text style={styles.modalTitle}>{selectedTruck.name}</Text>
-              <Text style={styles.modalLocation}>Zip Code: {selectedTruck.location}</Text>
-              <Text style={styles.modalDescription}>{selectedTruck.description}</Text>
+              <Text style={styles.modalLocation}>
+                Zip Code: {selectedTruck.location}
+              </Text>
+              <Text style={styles.modalDescription}>
+                {selectedTruck.description}
+              </Text>
 
               <View style={styles.ratingContainer}>
                 {[1, 2, 3, 4, 5].map((star) => (
-                  <TouchableOpacity key={star} onPress={() => handleRating(selectedTruck.id, star)}>
+                  <TouchableOpacity
+                    key={star}
+                    onPress={() => handleRating(selectedTruck.id, star)}
+                  >
                     <Text style={styles.ratingStar}>{star} ★</Text>
                   </TouchableOpacity>
                 ))}
@@ -161,7 +175,10 @@ export default function HomeScreen() {
                 }}
               >
                 <Marker
-                  coordinate={{ latitude: selectedTruck.latitude, longitude: selectedTruck.longitude }}
+                  coordinate={{
+                    latitude: selectedTruck.latitude,
+                    longitude: selectedTruck.longitude,
+                  }}
                   title={selectedTruck.name}
                 />
               </MapView>
