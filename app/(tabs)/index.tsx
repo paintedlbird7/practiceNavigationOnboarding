@@ -17,6 +17,7 @@ export default function HomeScreen() {
 
   const data = tacoTruckData; // Use the imported data
 
+  // show ratings in local storage
   useEffect(() => {
     const loadRatings = async () => {
       try {
@@ -31,6 +32,7 @@ export default function HomeScreen() {
     loadRatings();
   }, []);
 
+  // ability to search and filter results
   const handleSearch = () => {
     if (searchQuery.trim() !== "") {
       const results = data.filter(
@@ -48,6 +50,7 @@ export default function HomeScreen() {
     }
   };
 
+  // handles ratings
   const handleRating = async (truckId, rating) => {
     const updatedRatings = { ...ratings, [truckId]: rating };
     setRatings(updatedRatings);
@@ -59,11 +62,14 @@ export default function HomeScreen() {
       console.error("Failed to save rating", error);
     }
   };
+
+  // opens modal
   const openModal = (item) => {
     setSelectedTruck(item);
     setModalVisible(true);
   };
 
+  // closes modal
   const closeModal = () => {
     setModalVisible(false);
     setSelectedTruck(null);
@@ -76,9 +82,6 @@ export default function HomeScreen() {
         </View>
       </View> */}
       <HeaderImage />
-      <Text style={styles.headerText}>
-        Discover the Best Taco Trucks in Your Area!
-      </Text>
       <SearchBar
         searchQuery={searchQuery}
         setSearchQuery={setSearchQuery}
