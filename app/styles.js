@@ -64,6 +64,7 @@ const styles = StyleSheet.create({
   noResultsText: {
     fontSize: 16,
     color: "#888",
+    marginLeft: 98,
   },
   modalContainer: {
     flex: 1,
@@ -115,11 +116,14 @@ const styles = StyleSheet.create({
     resizeMode: 'cover',
   },
   headerText: {
-    fontSize: 20,
+    fontSize: 25,
     fontWeight: "bold",
     textAlign: "center",
     marginBottom: 20,
     color: "#333",
+    marginLeft: 68,
+    marginRight: 68,
+
   },
   ratingContainer: {
     flexDirection: "row",
