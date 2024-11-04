@@ -1,4 +1,3 @@
-// TruckModal.js
 import React from 'react';
 import { View, Text, Image, Modal, Button, TouchableOpacity } from "react-native";
 import MapView, { Marker } from 'react-native-maps';
