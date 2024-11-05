@@ -50,32 +50,54 @@ const styles = StyleSheet.create({
   },
   resultItem: {
     padding: 15,
-    borderBottomWidth: 1,
-    borderBottomColor: "#ccc",
-    backgroundColor: "#f9f9f9",
-  },
-  resultText: {
-    fontSize: 18,
-    fontWeight: "bold",
-  },
-  resultLocation: {
-    fontSize: 14,
-    color: "#666",
-  },
-  resultDescription: {
-    fontSize: 14,
-    color: "#444",
-  },
-  ratingText: {
-    fontSize: 14,
-    color: "gold",
-    marginTop: 5,
-  },
-  noResultsText: {
-    fontSize: 16,
-    color: "#888",
-    marginLeft: 98,
-  },
+    marginVertical: 8,
+    marginHorizontal: 16,
+    borderRadius: 10,
+    backgroundColor: '#fff',
+
+    // Shadow for iOS
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+
+     // Shadow for Android
+     elevation: 5,
+    },
+    // padding: 15,
+    // borderBottomWidth: 1,
+    // borderBottomColor: "#ccc",
+    // backgroundColor: "#f9f9f9",
+
+    resultText: {
+      fontSize: 18,
+      fontWeight: 'bold',
+    },
+    resultLocation: {
+      fontSize: 14,
+      color: '#888',
+      marginTop: 4,
+    },
+    resultDescription: {
+      fontSize: 14,
+      color: '#666',
+      marginTop: 4,
+    },
+    ratingText: {
+      fontSize: 14,
+      color: '#ff9500',
+      marginTop: 4,
+    },
+    noResultsText: {
+      textAlign: 'center',
+      marginTop: 20,
+      fontSize: 16,
+      color: '#888',
+    },
+    resultsList: {
+      paddingHorizontal: 10,
+    },
+
   modalContainer: {
     flex: 1,
     justifyContent: "center",
