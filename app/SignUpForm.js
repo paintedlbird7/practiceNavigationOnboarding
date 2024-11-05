@@ -53,6 +53,11 @@ export default function SignUpForm() {
   return (
     <ScrollView contentContainerStyle={styles.scrollViewContent}>
       <View style={styles.container2}>
+        {/* Header Description */}
+        <Text style={styles.headerText}>
+          Please fill out the form below to submit your taco truck details.
+        </Text>
+
         <TextInput
           style={styles.input}
           placeholder="Truck Name to be Added"
@@ -99,6 +104,21 @@ const styles = StyleSheet.create({
   container2: {
     padding: 20,
     backgroundColor: '#fff',
+  },
+  headerText: {
+    fontSize: 29,
+    fontWeight: "bold",
+    textAlign: "center",
+    marginBottom: 20,
+    color: "#333",
+    marginLeft: 68,
+    marginRight: 68,
+
+    // fontSize: 18,
+    // fontWeight: 'bold',
+    // textAlign: 'center',
+    // marginBottom: 20,
+    // color: '#333',
   },
   input: {
     height: 40,

@@ -8,7 +8,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Ionicons } from '@expo/vector-icons';
 import { createStackNavigator } from '@react-navigation/stack';
 import HomeScreen from '../app/(tabs)/index';
-import SignUpScreen from '../app/Sign Up Form';
+import SignUpScreen from './SignUpForm';
 import ProfileScreen from '../app/ProfileScreen';
 // import SettingsScreen from './screens/SettingsScreen'; // New tab screen
 import { useColorScheme } from '@/hooks/useColorScheme';
@@ -57,7 +57,7 @@ export default function RootLayout() {
       >
         <Tab.Screen name="Home" component={HomeScreen} options={{ title: 'Home' }} />
         <Tab.Screen name="SignUp" component={SignUpScreen} options={{ title: 'Sign Up' }} />
-        <Tab.Screen name="Profile" component={ProfileScreen} options={{ title: 'Profile' }} />
+        {/* <Tab.Screen name="Profile" component={ProfileScreen} options={{ title: 'Profile' }} /> */}
         {/* <Tab.Screen name="Settings" component={SettingsScreen} options={{ title: 'Settings' }} /> New tab */}
       </Tab.Navigator>
     );
