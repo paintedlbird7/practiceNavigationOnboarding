@@ -192,32 +192,9 @@ const styles = StyleSheet.create({
     color: 'white',
     fontWeight: 'bold',
   },
-
-  // container2: {
+  // scrollView: {
   //   flex: 1,
-  //   padding: 120,
-  //   backgroundColor: '#fff',
-  //   justifyContent: 'flex-start',
-  //   // marginTop: 120,
-  // },
-  // input: {
-  //   height: 40,
-  //   borderColor: '#ccc',
-  //   borderWidth: 1,
-  //   borderRadius: 5,
-  //   paddingHorizontal: 10,
-  //   marginBottom: 10,
-  // },
-  // submitButton: {
-  //   backgroundColor: 'orange',
-  //   paddingVertical: 10,
-  //   paddingHorizontal: 20,
-  //   borderRadius: 5,
-  //   alignItems: 'center',
-  // },
-  // buttonText: {
-  //   color: 'white',
-  //   fontSize: 16,
+  //   padding: 10,  // Adjust the padding as needed
   // },
 });
 

@@ -1,7 +1,7 @@
 import { Text, TouchableOpacity, ScrollView } from "react-native";
 import React, { useEffect, useState } from "react";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import styles from "../Styles";
+import styles from "../styles";
 import { tacoTruckData } from "../(tabs)/tacoTruckData";
 import HeaderImage from "../HeaderImage";
 import SearchBar from "../SearchBar";
@@ -10,6 +10,7 @@ import TruckModal from "../TruckModal";
 import CustomAlert from '../CustomAlert';
 import SignUpForm from '../SignUpForm';
 import SearchSection from '../SearchSection';
+import TruckDetails from '../TruckDetails';
 
 export default function HomeScreen() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -89,12 +90,21 @@ export default function HomeScreen() {
         setSearchQuery={setSearchQuery}
         handleSearch={handleSearch}
       />
-      <TruckList
-        filteredData={filteredData}
-        openModal={openModal}
-        ratings={ratings}
-      />
-      
+  
+      <ScrollView style={styles.scrollView}>
+        <TruckDetails
+          filteredData={filteredData}
+          openModal={openModal}
+          ratings={ratings}
+          selectedTruck={selectedTruck}
+          modalVisible={modalVisible}
+          closeModal={closeModal}
+          handleRating={handleRating}
+          alertVisible={alertVisible}
+          alertMessage={alertMessage}
+        />
+      </ScrollView>
+
       {selectedTruck && (
         <TruckModal
           truck={selectedTruck}
