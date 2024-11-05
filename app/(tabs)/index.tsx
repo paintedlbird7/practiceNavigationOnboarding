@@ -72,6 +72,7 @@ export default function HomeScreen() {
   const openModal = (item) => {
     setSelectedTruck(item);
     setModalVisible(true);
+    setAlertVisible(false); // Ensure alert is not visible when opening the modal
   };
 
   const closeModal = () => {

@@ -64,10 +64,6 @@ const styles = StyleSheet.create({
      // Shadow for Android
      elevation: 5,
     },
-    // padding: 15,
-    // borderBottomWidth: 1,
-    // borderBottomColor: "#ccc",
-    // backgroundColor: "#f9f9f9",
 
     resultText: {
       fontSize: 18,
