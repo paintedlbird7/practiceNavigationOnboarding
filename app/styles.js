@@ -148,7 +148,7 @@ const styles = StyleSheet.create({
     resizeMode: 'cover',
   },
   headerText: {
-    fontSize: 25,
+    fontSize: 29,
     fontWeight: "bold",
     textAlign: "center",
     marginBottom: 20,
