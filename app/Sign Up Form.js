@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { View, TextInput, TouchableOpacity, Text, Alert, StyleSheet, ScrollView } from 'react-native';
 
 export default function SignUpForm() {
-
   const [formData, setFormData] = useState({
     name: '',
     location: '',
@@ -52,7 +51,7 @@ export default function SignUpForm() {
   };
 
   return (
-    <>
+    <ScrollView contentContainerStyle={styles.scrollViewContent}>
       <View style={styles.container2}>
         <TextInput
           style={styles.input}
@@ -87,7 +86,7 @@ export default function SignUpForm() {
           <Text style={styles.buttonText}>{isSubmitting ? 'Submitting...' : 'Submit'}</Text>
         </TouchableOpacity>
       </View>
-    </>
+    </ScrollView>
   );
 }
 
