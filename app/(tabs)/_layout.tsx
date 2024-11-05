@@ -23,15 +23,15 @@ export default function TabLayout() {
           ),
         }}
       />
-         {/* <Tabs.Screen
-        name="index"
+         <Tabs.Screen
+        name="form"
         options={{
           title: 'Sign Up A Taco Truck',
           tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon name={focused ? 'SignUpForm2' : 'SignUpForm-outline'} color={color} />
+            <TabBarIcon name={focused ? 'SignUpForm' : 'car-outline'} color={color} />
           ),
         }}
-      /> */}
+      />
       {/* <Tabs.Screen
         name="explore"
         options={{

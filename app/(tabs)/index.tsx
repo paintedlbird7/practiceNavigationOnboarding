@@ -8,7 +8,7 @@ import SearchBar from "../SearchBar";
 import TruckList from "../TruckList";
 import TruckModal from "../TruckModal";
 import CustomAlert from '../CustomAlert';
-import SignUpForm from './SignUpForm';
+import SignUpForm from '../Sign Up Form';
 
 export default function HomeScreen() {
   const [searchQuery, setSearchQuery] = useState("");

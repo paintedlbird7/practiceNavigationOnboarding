@@ -62,7 +62,7 @@ export default function SignUpForm() {
         />
         <TextInput
           style={styles.input}
-          placeholder="Location (Zip Code)"
+          placeholder="Zip Code"
           value={formData.location}
           onChangeText={(value) => handleChange('location', value)}
         />
