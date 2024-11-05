@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { View, TextInput, TouchableOpacity, Text, Alert, StyleSheet, ScrollView } from 'react-native';
+import styles from "./styles";
 
 export default function SignUpForm() {
   const [formData, setFormData] = useState({
@@ -94,49 +95,3 @@ export default function SignUpForm() {
     </ScrollView>
   );
 }
-
-// Define styles here
-const styles = StyleSheet.create({
-  scrollViewContent: {
-    flexGrow: 1,
-    justifyContent: 'center',
-  },
-  container2: {
-    padding: 20,
-    backgroundColor: '#fff',
-  },
-  headerText: {
-    fontSize: 27,
-    fontWeight: "bold",
-    textAlign: "center",
-    marginBottom: 20,
-    color: "#333",
-    marginLeft: 68,
-    marginRight: 68,
-
-    // fontSize: 18,
-    // fontWeight: 'bold',
-    // textAlign: 'center',
-    // marginBottom: 20,
-    // color: '#333',
-  },
-  input: {
-    height: 40,
-    borderColor: '#ccc',
-    borderWidth: 1,
-    borderRadius: 5,
-    paddingHorizontal: 10,
-    marginBottom: 10,
-  },
-  submitButton: {
-    backgroundColor: 'orange',
-    paddingVertical: 10,
-    paddingHorizontal: 20,
-    borderRadius: 5,
-    alignItems: 'center',
-  },
-  buttonText: {
-    color: 'white',
-    fontSize: 16,
-  },
-});

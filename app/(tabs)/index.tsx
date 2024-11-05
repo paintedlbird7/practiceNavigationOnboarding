@@ -9,6 +9,7 @@ import TruckList from "../TruckList";
 import TruckModal from "../TruckModal";
 import CustomAlert from '../CustomAlert';
 import SignUpForm from '../SignUpForm';
+import SearchSection from '../SearchSection';
 
 export default function HomeScreen() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -93,7 +94,7 @@ export default function HomeScreen() {
         openModal={openModal}
         ratings={ratings}
       />
-
+      
       {selectedTruck && (
         <TruckModal
           truck={selectedTruck}
