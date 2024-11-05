@@ -1,4 +1,4 @@
-import { Text, TouchableOpacity } from "react-native";
+import { Text, TouchableOpacity, ScrollView } from "react-native";
 import React, { useEffect, useState } from "react";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import styles from "../Styles";
@@ -8,7 +8,7 @@ import SearchBar from "../SearchBar";
 import TruckList from "../TruckList";
 import TruckModal from "../TruckModal";
 import CustomAlert from '../CustomAlert';
-import SignUpForm from '../SignUpForm';
+import SignUpForm from '../Sign Up Form';
 
 export default function HomeScreen() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -80,7 +80,7 @@ export default function HomeScreen() {
   };
 
   return (
-    <>
+    <ScrollView contentContainerStyle={{ flexGrow: 1 }}>
       <HeaderImage />
       <SearchBar
         searchQuery={searchQuery}
@@ -100,11 +100,11 @@ export default function HomeScreen() {
           modalVisible={modalVisible}
           closeModal={closeModal}
           handleRating={handleRating}
-          alertVisible={alertVisible} // Pass alert visibility
-          alertMessage={alertMessage} // Pass alert message
-          onClose={() => setAlertVisible(false)} // Pass close handler for the alert
+          alertVisible={alertVisible}
+          alertMessage={alertMessage}
+          onClose={() => setAlertVisible(false)}
         />
       )}
-    </>
+    </ScrollView>
   );
 }
