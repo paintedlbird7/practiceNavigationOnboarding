@@ -14,8 +14,16 @@ const styles = StyleSheet.create({
     width: "90%",
     marginBottom: 20,
     marginLeft: 18,
-    borderBottomColor: '#FFA500', // Set bottom border color to match button
+    marginTop: 30,  // Increase this value as needed
+    borderBottomColor: '#FFA500',
     borderBottomWidth: 2,
+    // flexDirection: "row",
+    // alignItems: "center",
+    // width: "90%",
+    // marginBottom: 20,
+    // marginLeft: 18,
+    // borderBottomColor: '#FFA500', // Set bottom border color to match button
+    // borderBottomWidth: 2,
   },
   searchBar: {
     height: 40,

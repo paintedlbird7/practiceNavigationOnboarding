@@ -52,7 +52,7 @@ export default function SignUpForm() {
   };
 
   return (
-    <ScrollView contentContainerStyle={styles.scrollViewContent}>
+    <>
       <View style={styles.container2}>
         <TextInput
           style={styles.input}
@@ -87,7 +87,7 @@ export default function SignUpForm() {
           <Text style={styles.buttonText}>{isSubmitting ? 'Submitting...' : 'Submit'}</Text>
         </TouchableOpacity>
       </View>
-    </ScrollView>
+    </>
   );
 }
 

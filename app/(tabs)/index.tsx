@@ -80,7 +80,7 @@ export default function HomeScreen() {
   };
 
   return (
-    <ScrollView contentContainerStyle={{ flexGrow: 1 }}>
+    <>
       <HeaderImage />
       <SearchBar
         searchQuery={searchQuery}
@@ -105,6 +105,6 @@ export default function HomeScreen() {
           onClose={() => setAlertVisible(false)}
         />
       )}
-    </ScrollView>
+    </>
   );
 }
