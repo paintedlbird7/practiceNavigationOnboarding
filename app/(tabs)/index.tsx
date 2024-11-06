@@ -102,7 +102,7 @@ export default function HomeScreen() {
           style={styles.headerImage}
         />
       </View>
-      <Text style={styles.headerText}>Discover the Best Taco Trucks in Your Area!</Text>
+      <Text style={styles.headerText}>Discover The Best Taco Trucks In Your Area!</Text>
 
       <View style={styles.container}>
         <View style={styles.searchContainer}>
