@@ -7,7 +7,7 @@ import HeaderImage from "../HeaderImage";
 import SearchBar from "../SearchBar";
 import TruckList from "../TruckList";
 import TruckModal from "../TruckModal";
-import CustomAlert from '../CustomAlert';
+import CustomAlert from '../CustomAlert'; // Assuming this is your custom alert component
 import SignUpForm from '../SignUpForm';
 
 export default function HomeScreen() {
@@ -36,7 +36,11 @@ export default function HomeScreen() {
   }, []);
 
   const handleSearch = () => {
-    if (searchQuery.trim() !== "") {
+    // Check if the search query is empty
+    if (searchQuery.trim() === "") {
+      // Show alert when there's no input
+      showAlert("Type keyword in the search bar");
+    } else {
       const results = data.filter(
         (item) =>
           item.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -46,15 +50,12 @@ export default function HomeScreen() {
       if (results.length === 0) {
         showAlert("No results found.");
       }
-    } else {
-      setFilteredData([]);
-      showAlert("Please enter a search term.");
     }
   };
 
   const showAlert = (message) => {
     setAlertMessage(message);
-    setAlertVisible(true);
+    setAlertVisible(true); // Make the alert visible
   };
 
   const handleRating = async (truckId, rating) => {
@@ -107,6 +108,14 @@ export default function HomeScreen() {
           alertVisible={alertVisible}
           alertMessage={alertMessage}
           onClose={() => setAlertVisible(false)}
+        />
+      )}
+
+      {/* Displaying the alert if it's visible */}
+      {alertVisible && (
+        <CustomAlert
+          message={alertMessage}
+          onClose={() => setAlertVisible(false)} 
         />
       )}
     </>

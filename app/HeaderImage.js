@@ -10,7 +10,7 @@ export default function HeaderImage() {
           style={styles.headerImage}
         />
    <Text style={styles.headerText}>
-        Discover the Best Taco Trucks in Your Area!
+        Discover The Best Taco Trucks In Your Area!
       </Text>
       </View>
     );

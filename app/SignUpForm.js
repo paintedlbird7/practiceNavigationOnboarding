@@ -55,7 +55,7 @@ export default function SignUpForm() {
       <View style={styles.container2}>
         {/* Header Description */}
         <Text style={styles.headerText}>
-          Please add your taco truck details.
+          Fill Out This Form to Include Your taco truck details.
         </Text>
 
         <TextInput
