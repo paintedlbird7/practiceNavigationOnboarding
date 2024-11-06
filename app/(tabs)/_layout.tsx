@@ -32,15 +32,15 @@ export default function TabLayout() {
           ),
         }}
       />
-      {/* <Tabs.Screen
-        name="explore"
+      <Tabs.Screen
+        name="register"
         options={{
           title: 'Register',
           tabBarIcon: ({ color, focused }) => (
             <TabBarIcon name={focused ? 'code-slash' : 'code-slash-outline'} color={color} />
           ),
         }}
-      /> */}
+      />
     </Tabs>
   );
 }

@@ -1,5 +1,3 @@
-// RootLayout.js
-
 import React, { useEffect } from 'react';
 import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native';
 import { useFonts } from 'expo-font';
@@ -10,7 +8,8 @@ import { createStackNavigator } from '@react-navigation/stack';
 import HomeScreen from '../app/(tabs)/index';
 import SignUpScreen from './SignUpForm';
 import ProfileScreen from '../app/ProfileScreen';
-// import SettingsScreen from './screens/SettingsScreen'; // New tab screen
+import RegisterScreen from './RegisterScreen'; // New tab screen
+import LoginScreen from './LoginScreen'; // New tab screen
 import { useColorScheme } from '@/hooks/useColorScheme';
 
 SplashScreen.preventAutoHideAsync();
@@ -46,8 +45,8 @@ export default function RootLayout() {
               iconName = 'create-outline';
             } else if (route.name === 'Profile') {
               iconName = 'person-outline';
-            } else if (route.name === 'Settings') {
-              iconName = 'settings-outline'; // Icon for the new Settings tab
+            } else if (route.name === 'Register') {
+              iconName = 'log-in'; // Icon for the new Register tab
             }
             return <Ionicons name={iconName} size={size} color={color} />;
           },
@@ -57,8 +56,9 @@ export default function RootLayout() {
       >
         <Tab.Screen name="Home" component={HomeScreen} options={{ title: 'Home' }} />
         <Tab.Screen name="SignUp" component={SignUpScreen} options={{ title: 'Sign Up' }} />
+        {/* Uncomment if needed */}
         {/* <Tab.Screen name="Profile" component={ProfileScreen} options={{ title: 'Profile' }} /> */}
-        {/* <Tab.Screen name="Settings" component={SettingsScreen} options={{ title: 'Settings' }} /> New tab */}
+        <Tab.Screen name="Register" component={RegisterScreen} options={{ title: 'Register' }} />
       </Tab.Navigator>
     );
   }

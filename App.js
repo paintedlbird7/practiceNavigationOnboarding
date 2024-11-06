@@ -1,16 +1,14 @@
-import React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
-// Import other screens as needed
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import HomeScreen from './screens/HomeScreen';
+import RegisterScreen from './screens/RegisterScreen';
 
-const Stack = createStackNavigator();
+const Tab = createBottomTabNavigator();
 
-export default function App() {
+function BottomTabs() {
   return (
-    <NavigationContainer>
-      <Stack.Navigator 
-        {/* Add other screens here */}
-      </Stack.Navigator>
-    </NavigationContainer>
+    <Tab.Navigator>
+      <Tab.Screen name="Home" component={HomeScreen} />
+      <Tab.Screen name="Register" component={RegisterScreen} />
+    </Tab.Navigator>
   );
 }
