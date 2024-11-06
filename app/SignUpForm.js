@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { View, TextInput, TouchableOpacity, Text, Alert, StyleSheet, ScrollView } from 'react-native';
-import styles from "./styles";
+import { View, TextInput, TouchableOpacity, Text, ScrollView } from 'react-native';
+import styles from './styles';
 
 export default function SignUpForm() {
   const [formData, setFormData] = useState({
@@ -33,7 +33,7 @@ export default function SignUpForm() {
       });
 
       if (response.ok) {
-        Alert.alert('Success', 'Thank you! Your taco truck information has been submitted.');
+        alert('Thank you! Your taco truck information has been submitted.');
         setFormData({
           name: '',
           location: '',
@@ -41,19 +41,19 @@ export default function SignUpForm() {
           contactEmail: '',
         });
       } else {
-        Alert.alert('Error', 'There was an error submitting the form.');
+        alert('There was an error submitting the form.');
       }
     } catch (error) {
       console.error(error);
-      Alert.alert('Error', 'Unable to submit the form. Please try again later.');
+      alert('Unable to submit the form. Please try again later.');
     } finally {
       setIsSubmitting(false);
     }
   };
 
   return (
-    <ScrollView contentContainerStyle={styles.scrollViewContent}>
-      <View style={styles.container2}>
+    <ScrollView style={styles.scrollView}>
+      <View style={styles.formContainer}>
         {/* Header Description */}
         <Text style={styles.headerText}>
           Please fill out the form below to submit your taco truck details.
@@ -61,7 +61,7 @@ export default function SignUpForm() {
 
         <TextInput
           style={styles.input}
-          placeholder="Truck Name to be Added"
+          placeholder="Truck Name"
           value={formData.name}
           onChangeText={(value) => handleChange('name', value)}
         />
@@ -84,9 +84,10 @@ export default function SignUpForm() {
           onChangeText={(value) => handleChange('contactEmail', value)}
           keyboardType="email-address"
         />
-        <TouchableOpacity 
-          style={styles.submitButton} 
-          onPress={handleSubmit} 
+
+        <TouchableOpacity
+          style={styles.submitButton}
+          onPress={handleSubmit}
           disabled={isSubmitting}
         >
           <Text style={styles.buttonText}>{isSubmitting ? 'Submitting...' : 'Submit'}</Text>

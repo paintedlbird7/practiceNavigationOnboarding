@@ -12,18 +12,11 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     width: "90%",
-    marginBottom: 20,
     marginLeft: 18,
-    marginTop: 30,  // Increase this value as needed
+    marginTop: 10,  // Increase this value as needed
     borderBottomColor: '#FFA500',
     borderBottomWidth: 2,
-    // flexDirection: "row",
-    // alignItems: "center",
-    // width: "90%",
-    // marginBottom: 20,
-    // marginLeft: 18,
-    // borderBottomColor: '#FFA500', // Set bottom border color to match button
-    // borderBottomWidth: 2,
+    marginTop: -20,  // Decrease or set to 0 for higher placement
   },
   searchBar: {
     height: 40,
@@ -32,7 +25,6 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderRadius: 10,
     paddingHorizontal: 10,
-    // marginRight: 70,
   },
   searchButton: {
     backgroundColor: "orange",
@@ -144,7 +136,7 @@ const styles = StyleSheet.create({
     resizeMode: 'cover',
   },
   headerText: {
-    fontSize: 29,
+    fontSize: 19,
     fontWeight: "bold",
     textAlign: "center",
     marginBottom: 20,
@@ -191,6 +183,75 @@ const styles = StyleSheet.create({
   closeButtonText: {
     color: 'white',
     fontWeight: 'bold',
+  },
+  // Container for the form
+  formContainer: {
+    flex: 1,
+    padding: 20,
+  },
+  scrollView: {
+    flex: 1,
+    paddingHorizontal: 20,
+    paddingTop: 10,
+  },
+  input: {
+    height: 45,
+    borderColor: '#ccc',
+    borderWidth: 1,
+    borderRadius: 10,
+    marginBottom: 15,
+    paddingLeft: 10,
+    fontSize: 16,
+  },
+  submitButton: {
+    backgroundColor: '#FF7F00', // Consistent with SearchButton color
+    paddingVertical: 12,
+    paddingHorizontal: 30,
+    borderRadius: 10,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  buttonText: {
+    color: 'white',
+    fontSize: 16,
+    fontWeight: 'bold',
+  },
+  headerText: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    textAlign: 'center',
+    marginBottom: 20,
+    color: '#333',
+  },
+  // Search Bar Styles (for consistency)
+  searchBarContainer: {
+    flexDirection: "row",
+    alignItems: "center",
+    width: "90%",
+    marginLeft: 18,
+    marginTop: 10,
+    borderBottomColor: '#FFA500',
+    borderBottomWidth: 2,
+  },
+  searchBar: {
+    height: 40,
+    flex: 1,
+    borderColor: "#ccc",
+    borderWidth: 1,
+    borderRadius: 10,
+    paddingHorizontal: 10,
+  },
+  searchButton: {
+    height: 40,
+    backgroundColor: "orange",
+    paddingVertical: 10,
+    paddingHorizontal: 20,
+    borderRadius: 5,
+  },
+  buttonText: {
+    color: "white",
+    fontSize: 16,
+    textAlign: "center",
   },
   // scrollView: {
   //   flex: 1,
