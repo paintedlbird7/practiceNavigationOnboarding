@@ -88,11 +88,15 @@ export default function HomeScreen() {
         setSearchQuery={setSearchQuery}
         handleSearch={handleSearch}
       />
-      <TruckList
-        filteredData={filteredData}
-        openModal={openModal}
-        ratings={ratings}
-      />
+      
+      {/* Wrap TruckList with ScrollView to make results scrollable */}
+      <ScrollView>
+        <TruckList
+          filteredData={filteredData}
+          openModal={openModal}
+          ratings={ratings}
+        />
+      </ScrollView>
 
       {selectedTruck && (
         <TruckModal
