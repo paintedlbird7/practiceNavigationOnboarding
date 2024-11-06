@@ -15,7 +15,6 @@ export default function RegisterScreen({ navigation }) {
 
   const handleSubmit = async () => {
     setIsSubmitting(true);
-
     try {
       Alert.alert('Success', `Welcome, ${formData.username}! Your account has been created.`);
       setFormData({
@@ -65,6 +64,7 @@ export default function RegisterScreen({ navigation }) {
           <Text style={styles.buttonText}>{isSubmitting ? 'Registering...' : 'Register'}</Text>
         </TouchableOpacity>
         
+        {/* Link to LoginScreen */}
         <TouchableOpacity onPress={() => navigation.navigate('LoginScreen')}>
           <Text style={styles.linkText}>Already have an account? Login here</Text>
         </TouchableOpacity>
