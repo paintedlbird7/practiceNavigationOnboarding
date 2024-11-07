@@ -1,210 +1,187 @@
 export const tacoTruckData = [
     {
-    "facility_id": "FA0307988",
-    "record_ID": "PR0451599",
-    "FACILITY_NAME": "TAQUERIA'S JONATHAN 4DL3908",
-    "city": "SAN JOSE",
-    "ZIP": "95134"
-},
-{
-    "facility_id": "FA0307994",
-    "record_ID": "PR0451605",
-    "FACILITY_NAME": "TAQUERIA MIMI EL NOPAL",
-    "city": "SAN JOSE",
-    "ZIP": "95112"
-},
-//     id: "1",
-//     name: "Tacos Los Tres Reyes",
-//     location: "95122",
-//     description: "Popular for authentic Mexican street tacos.",
-//     image: require("../assets/images/taco1.jpg"),
-//     latitude: 37.34908,
-//     longitude: -121.829437,
-//   },
-//   {
-//     id: "2",
-//     name: "La Oaxaquense Food Truck",
-//     location: "95116",
-//     description: "Known for their delicious carne asada and al pastor tacos.",
-//     image: require("../assets/images/taco2.jpg"),
-//     latitude: 37.378892,
-//     longitude: 121.867202,
-//   },
-//   {
-//     id: "3",
-//     name: "Orale taco truck",
-//     location: "95116",
-//     description: "Famous for crispy tacos and fresh ingredients.",
-//     image: require("../assets/images/taco3.jpg"),
-//     latitude: 37.389258,
-//     longitude: -121.844543,
-//   },
-//   {
-//     id: "4",
-//     name: "El Señor De Los Tacos Food Truck",
-//     location: "95127",
-//     description: "Serving amazing birria tacos and quesadillas.",
-//     image: require("../assets/images/taco4.jpg"),
-//     latitude: 37.357079,
-//     longitude: -121.825904,
-//   },
-//   {
-//     id: "5",
-//     name: "Tacos Chencho",
-//     location: "95127",
-//     description: "Great for fish tacos and unique flavors.",
-//     image: require("../assets/images/taco5.jpg"),
-//     latitude: 37.362264,
-//     longitude: -121.819381,
-//   },
-//   {
-//     id: "6",
-//     name: "Tacos Huandacareo Food Truck",
-//     location: "95127",
-//     description: "A local favorite with authentic flavors.",
-//     image: require("../assets/images/taco6.jpg"),
-//     latitude: 37.359126,
-//     longitude: -121.827793,
-//   },
-//   {
-//     id: "7",
-//     name: "Tacos Montero Food Truck",
-//     location: "95122",
-//     description: "Known for their giant tacos and amazing sauces.",
-//     image: require("../assets/images/taco7.jpg"),
-//     latitude: 37.339885,
-//     longitude: -121.853027,
-//   },
-//   {
-//     id: "8",
-//     name: "Hugos Tacos Food Truck",
-//     location: "95122",
-//     description: "Specializes in tacos de lengua and tripa.",
-//     image: require("../assets/images/taco8.jpg"),
-//     latitude: 37.321594,
-//     longitude: -121.883,
-//   },
-//   {
-//     id: "9",
-//     name: "Taqueria Paracuaro",
-//     location: "95113",
-//     description:
-//       "A family-owned taqueria known for authentic Michoacán-style tacos and fresh salsas.",
-//     image: require("../assets/images/taco9.jpg"),
-//     latitude: 37.356432493707636,
-//     longitude: -121.88825403550148,
-//   },
-//   {
-//     id: "10",
-//     name: "Tortilleria La Familiar",
-//     location: "95127",
-//     description:
-//       "Tortilleria La Familiar offers fresh, handmade tortillas and traditional Mexican dishes.",
-//     image: require("../assets/images/taco10.jpg"),
-//     latitude: 37.359174,
-//     longitude: -121.821133,
-//   },
-//   {
-//     id: "11",
-//     name: "Tacos Mi Reynita",
-//     location: "94603",
-//     description:
-//       "Famous for authentic Tijuana-style street tacos with fresh salsas.",
-//     image: require("../assets/images/taco11.jpg"),
-//     latitude: 37.738624,
-//     longitude: -122.166524,
-//   },
-//   {
-//     id: "12",
-//     name: "Tacos Santiaguito",
-//     location: "95129",
-//     description:
-//       "Known for its rich, slow-cooked meats and flavorful toppings.",
-//     image: require("../assets/images/taco12.jpg"),
-//     latitude: 37.322381,
-//     longitude: -121.970633,
-//   },
-//   {
-//     id: "13",
-//     name: "Tacos El Plebe",
-//     location: "95112",
-//     description:
-//       "Specializes in street tacos with a variety of fillings including carne asada and al pastor.",
-//     image: require("../assets/images/taco13.jpg"),
-//     latitude: 37.327337,
-//     longitude: -121.820249,
-//   },
-//   {
-//     id: "14",
-//     name: "Rosario's Tacos",
-//     location: "95110",
-//     description:
-//       "A local favorite, Rosario's Tacos serves up authentic Mexican tacos with homemade tortillas and fresh ingredients.",
-//     image: require("../assets/images/taco14.jpg"),
-//     latitude: 37.321136,
-//     longitude: -121.884015,
-//   },
-//   {
-//     id: "15",
-//     name: "Mariscos y Tacos Los Compas",
-//     location: "95122",
-//     description: "Seafood tacos and delicious salsas.",
-//     image: require("../assets/images/taco15.jpg"),
-//     latitude: 37.341984,
-//     longitude: -121.842094,
-//   },
-//   {
-//     id: "16",
-//     name: "Spartan Taco",
-//     location: "95112",
-//     description: "A popular spot for students with a wide range of tacos.",
-//     image: require("../assets/images/taco16.jpg"),
-//     latitude: 37.338529,
-//     longitude: -121.850009,
-//   },
-//   {
-//     id: "17",
-//     name: "Tustacos Taqueria",
-//     location: "95008",
-//     description: "Known for its variety of tacos and quick service.",
-//     image: require("../assets/images/taco17.jpg"),
-//     latitude: 37.28799,
-//     longitude: -121.97499,
-//   },
-//   {
-//     id: "18",
-//     name: "Taco De Oro Taco Truck",
-//     location: "94089",
-//     description: "Well-loved for golden tacos and delicious fillings.",
-//     image: require("../assets/images/taco18.jpg"),
-//     latitude: 37.406231,
-//     longitude: -121.996075,
-//   },
-//   {
-//     id: "19",
-//     name: "Famosa Taqueria",
-//     location: "95112",
-//     description: "A family-run taqueria with authentic flavors.",
-//     image: require("../assets/images/taco19.jpg"),
-//     latitude: 37.32302,
-//     longitude: -121.872353,
-//   },
-//   {
-//     id: "20",
-//     name: "Taco Genesis",
-//     location: "95127",
-//     description: "Great for late-night tacos with spicy sauces.",
-//     image: require("../assets/images/taco20.jpg"),
-//     latitude: 37.353422,
-//     longitude: -121.822666,
-//   },
-//   {
-//     id: "21",
-//     name: "Tacos La Poderosa",
-//     location: "95127",
-//     description: "Great for late-night tacos with spicy sauces.",
-//     image: require("../assets/images/taco21.jpg"),
-//     latitude: 37.35272,
-//     longitude: -121.88134,
-//   },
-  ]
+      "facility_id": "FA0307988",
+      "FACILITY_NAME": "TAQUERIA'S JONATHAN",
+      "ZIP": "95134",
+      "latitude": 37.7749,
+      "longitude": -122.4194,
+      "image": require("../assets/images/taco1.jpg")
+    },
+    {
+      "facility_id": "FA0307989",
+      "FACILITY_NAME": "TAQUERIA MIMI EL NOPAL",
+      "ZIP": "95112",
+      "latitude": 37.7749,
+      "longitude": -122.4194,
+      "image": require("../assets/images/taco1.jpg")
+    },
+    {
+      "facility_id": "FA0307990",
+      "FACILITY_NAME": "Tacos Los Tres Reyes",
+      "ZIP": "95122",
+      "latitude": 37.34908,
+      "longitude": -121.829437,
+      "image": require("../assets/images/taco1.jpg")
+    },
+    {
+      "facility_id": "FA0307991",
+      "FACILITY_NAME": "La Oaxaquense Food Truck",
+      "ZIP": "95116",
+      "latitude": 37.378892,
+      "longitude": -121.867202,
+      "image": require("../assets/images/taco2.jpg")
+    },
+    {
+      "facility_id": "FA0307992",
+      "FACILITY_NAME": "Orale Taco Truck",
+      "ZIP": "95116",
+      "latitude": 37.389258,
+      "longitude": -121.844543,
+      "image": require("../assets/images/taco3.jpg")
+    },
+    {
+      "facility_id": "FA0307993",
+      "FACILITY_NAME": "El Señor De Los Tacos Food Truck",
+      "ZIP": "95127",
+      "latitude": 37.357079,
+      "longitude": -121.825904,
+      "image": require("../assets/images/taco4.jpg")
+    },
+    {
+      "facility_id": "FA0307994",
+      "FACILITY_NAME": "Tacos Chencho",
+      "ZIP": "95127",
+      "latitude": 37.362264,
+      "longitude": -121.819381,
+      "image": require("../assets/images/taco5.jpg")
+    },
+    {
+      "facility_id": "FA0307995",
+      "FACILITY_NAME": "Tacos Huandacareo Food Truck",
+      "ZIP": "95127",
+      "latitude": 37.359126,
+      "longitude": -121.827793,
+      "image": require("../assets/images/taco6.jpg")
+    },
+    {
+      "facility_id": "FA0307996",
+      "FACILITY_NAME": "Tacos Montero Food Truck",
+      "ZIP": "95122",
+      "latitude": 37.339885,
+      "longitude": -121.853027,
+      "image": require("../assets/images/taco7.jpg")
+    },
+    {
+      "facility_id": "FA0307997",
+      "FACILITY_NAME": "Hugos Tacos Food Truck",
+      "ZIP": "95122",
+      "latitude": 37.321594,
+      "longitude": -121.883,
+      "image": require("../assets/images/taco8.jpg")
+    },
+    {
+      "facility_id": "FA0307998",
+      "FACILITY_NAME": "Taqueria Paracuaro",
+      "ZIP": "95113",
+      "latitude": 37.356432,
+      "longitude": -121.888254,
+      "image": require("../assets/images/taco9.jpg")
+    },
+    {
+      "facility_id": "FA0307999",
+      "FACILITY_NAME": "Tortilleria La Familiar",
+      "ZIP": "95127",
+      "latitude": 37.359174,
+      "longitude": -121.821133,
+      "image": require("../assets/images/taco10.jpg")
+    },
+    {
+      "facility_id": "FA0308000",
+      "FACILITY_NAME": "Tacos Mi Reynita",
+      "ZIP": "94603",
+      "latitude": 37.738624,
+      "longitude": -122.166524,
+      "image": require("../assets/images/taco11.jpg")
+    },
+    {
+      "facility_id": "FA0308001",
+      "FACILITY_NAME": "Tacos Santiaguito",
+      "ZIP": "95129",
+      "latitude": 37.322381,
+      "longitude": -121.970633,
+      "image": require("../assets/images/taco12.jpg")
+    },
+    {
+      "facility_id": "FA0308002",
+      "FACILITY_NAME": "Tacos El Plebe",
+      "ZIP": "95112",
+      "latitude": 37.327337,
+      "longitude": -121.820249,
+      "image": require("../assets/images/taco13.jpg")
+    },
+    {
+      "facility_id": "FA0308003",
+      "FACILITY_NAME": "Rosario's Tacos",
+      "ZIP": "95110",
+      "latitude": 37.321136,
+      "longitude": -121.884015,
+      "image": require("../assets/images/taco14.jpg")
+    },
+    {
+      "facility_id": "FA0308004",
+      "FACILITY_NAME": "Mariscos y Tacos Los Compas",
+      "ZIP": "95122",
+      "latitude": 37.341984,
+      "longitude": -121.842094,
+      "image": require("../assets/images/taco15.jpg")
+    },
+    {
+      "facility_id": "FA0308005",
+      "FACILITY_NAME": "Spartan Taco",
+      "ZIP": "95112",
+      "latitude": 37.338529,
+      "longitude": -121.850009,
+      "image": require("../assets/images/taco16.jpg")
+    },
+    {
+      "facility_id": "FA0308006",
+      "FACILITY_NAME": "Tustacos Taqueria",
+      "ZIP": "95008",
+      "latitude": 37.28799,
+      "longitude": -121.97499,
+      "image": require("../assets/images/taco17.jpg")
+    },
+    {
+      "facility_id": "FA0308007",
+      "FACILITY_NAME": "Taco De Oro Taco Truck",
+      "ZIP": "94089",
+      "latitude": 37.406231,
+      "longitude": -121.996075,
+      "image": require("../assets/images/taco18.jpg")
+    },
+    {
+      "facility_id": "FA0308008",
+      "FACILITY_NAME": "Famosa Taqueria",
+      "ZIP": "95112",
+      "latitude": 37.32302,
+      "longitude": -121.872353,
+      "image": require("../assets/images/taco19.jpg")
+    },
+    {
+      "facility_id": "FA0308009",
+      "FACILITY_NAME": "Taco Genesis",
+      "ZIP": "95127",
+      "latitude": 37.353422,
+      "longitude": -121.822666,
+      "image": require("../assets/images/taco20.jpg")
+    },
+    {
+      "facility_id": "FA0308010",
+      "FACILITY_NAME": "Tacos La Poderosa",
+      "ZIP": "95127",
+      "latitude": 37.35272,
+      "longitude": -121.88134,
+      "image": require("../assets/images/taco21.jpg")
+    }
+  ];
+  
