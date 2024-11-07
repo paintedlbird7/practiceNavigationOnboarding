@@ -7,7 +7,7 @@ export default function TruckList({ filteredData, openModal, ratings }) {
     <TouchableOpacity style={styles.resultItem} onPress={() => openModal(item)}>
       <Text style={styles.resultText}>{item.FACILITY_NAME}</Text>
       <Text style={styles.resultLocation}>Zip Code: {item.ZIP}</Text>
-      <Text style={styles.resultDescription}>{item.description}</Text>
+      <Text style={styles.resultDescription}>{item.PROGRAM_DESCRIPTION}</Text>
       {ratings[item.id] && (
         <Text style={styles.ratingText}>Rating: {ratings[item.id]} ★</Text>
       )}

@@ -25,7 +25,7 @@ export default function TruckModal({
           <Image source={truck.image} style={styles.modalImage} />
           <Text style={styles.modalTitle}>{truck.FACILITY_NAME}</Text>
           <Text style={styles.modalLocation}>Zip Code: {truck.ZIP}</Text>
-          <Text style={styles.modalDescription}>{truck.description}</Text>
+          <Text style={styles.modalDescription}>{truck.PROGRAM_DESCRIPTION}</Text>
 
           <View style={styles.ratingContainer}>
             {[1, 2, 3, 4, 5].map((star) => (
