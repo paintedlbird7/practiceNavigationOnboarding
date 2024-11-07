@@ -5,8 +5,8 @@ import styles from "./styles";
 export default function TruckList({ filteredData, openModal, ratings }) {
   const renderItem = ({ item }) => (
     <TouchableOpacity style={styles.resultItem} onPress={() => openModal(item)}>
-      <Text style={styles.resultText}>{item.name}</Text>
-      <Text style={styles.resultLocation}>Zip Code: {item.location}</Text>
+      <Text style={styles.resultText}>{item.FACILITY_NAME}</Text>
+      <Text style={styles.resultLocation}>Zip Code: {item.ZIP}</Text>
       <Text style={styles.resultDescription}>{item.description}</Text>
       {ratings[item.id] && (
         <Text style={styles.ratingText}>Rating: {ratings[item.id]} ★</Text>

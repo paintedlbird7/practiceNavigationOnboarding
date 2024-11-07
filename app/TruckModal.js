@@ -24,7 +24,7 @@ export default function TruckModal({
         <View style={styles.modalContent}>
           <Image source={truck.image} style={styles.modalImage} />
           <Text style={styles.modalTitle}>{truck.name}</Text>
-          <Text style={styles.modalLocation}>Zip Code: {truck.location}</Text>
+          <Text style={styles.modalLocation}>Zip Code: {truck.Zip}</Text>
           <Text style={styles.modalDescription}>{truck.description}</Text>
 
           <View style={styles.ratingContainer}>

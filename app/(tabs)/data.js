@@ -1,5 +1,18 @@
-// export const tacoTruckData = [
-//   {
+export const tacoTruckData = [
+    {
+    "facility_id": "FA0307988",
+    "record_ID": "PR0451599",
+    "FACILITY_NAME": "TAQUERIA'S JONATHAN 4DL3908",
+    "city": "SAN JOSE",
+    "ZIP": "95134"
+},
+{
+    "facility_id": "FA0307994",
+    "record_ID": "PR0451605",
+    "FACILITY_NAME": "TAQUERIA MIMI EL NOPAL",
+    "city": "SAN JOSE",
+    "ZIP": "95112"
+},
 //     id: "1",
 //     name: "Tacos Los Tres Reyes",
 //     location: "95122",
@@ -194,4 +207,4 @@
 //     latitude: 37.35272,
 //     longitude: -121.88134,
 //   },
-// ];
+  ]

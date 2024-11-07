@@ -1,13 +1,13 @@
-import { Text, TouchableOpacity, ScrollView } from "react-native";
+import { Text, TouchableOpacity, View } from "react-native";
 import React, { useEffect, useState } from "react";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import styles from "../Styles";
-import { tacoTruckData } from "../(tabs)/tacoTruckData";
+import { tacoTruckData } from "../(tabs)/data";
 import HeaderImage from "../HeaderImage";
 import SearchBar from "../SearchBar";
-import TruckList from "../TruckList";
+import TruckList from "../TruckList";  // TruckList should manage its own scrolling
 import TruckModal from "../TruckModal";
-import CustomAlert from '../CustomAlert'; // Assuming this is your custom alert component
+import CustomAlert from '../CustomAlert';
 import SignUpForm from '../SignUpForm';
 
 export default function HomeScreen() {
@@ -36,15 +36,13 @@ export default function HomeScreen() {
   }, []);
 
   const handleSearch = () => {
-    // Check if the search query is empty
     if (searchQuery.trim() === "") {
-      // Show alert when there's no input
       showAlert("Type keyword in the search bar");
     } else {
       const results = data.filter(
         (item) =>
-          item.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-          item.location.includes(searchQuery)
+          item.FACILITY_NAME.toLowerCase().includes(searchQuery.toLowerCase()) ||
+          item.ZIP.includes(searchQuery)
       );
       setFilteredData(results);
       if (results.length === 0) {
@@ -55,7 +53,7 @@ export default function HomeScreen() {
 
   const showAlert = (message) => {
     setAlertMessage(message);
-    setAlertVisible(true); // Make the alert visible
+    setAlertVisible(true);
   };
 
   const handleRating = async (truckId, rating) => {
@@ -73,7 +71,7 @@ export default function HomeScreen() {
   const openModal = (item) => {
     setSelectedTruck(item);
     setModalVisible(true);
-    setAlertVisible(false); // Ensure alert is not visible when opening the modal
+    setAlertVisible(false);
   };
 
   const closeModal = () => {
@@ -90,14 +88,12 @@ export default function HomeScreen() {
         handleSearch={handleSearch}
       />
       
-      {/* Wrap TruckList with ScrollView to make results scrollable */}
-      <ScrollView>
-        <TruckList
-          filteredData={filteredData}
-          openModal={openModal}
-          ratings={ratings}
-        />
-      </ScrollView>
+      {/* Remove ScrollView and directly render TruckList */}
+      <TruckList
+        filteredData={filteredData}
+        openModal={openModal}
+        ratings={ratings}
+      />
 
       {selectedTruck && (
         <TruckModal
@@ -111,7 +107,6 @@ export default function HomeScreen() {
         />
       )}
 
-      {/* Displaying the alert if it's visible */}
       {alertVisible && (
         <CustomAlert
           message={alertMessage}
