@@ -3,17 +3,17 @@ export const tacoTruckData = [
       "facility_id": "FA0307988",
       "FACILITY_NAME": "TAQUERIA'S JONATHAN",
       "ZIP": "95134",
-      "latitude": 37.7749,
+      "latitude": 37.7749, //TODO: look up lat & long in google maps for all approx 10,000 in data
       "longitude": -122.4194,
-      "image": require("../assets/images/taco1.jpg")
+      "image": require("../assets/images/taco1.jpg") //TODO: change this image later for all approx 10,000image data
     },
     {
       "facility_id": "FA0307989",
       "FACILITY_NAME": "TAQUERIA MIMI EL NOPAL",
       "ZIP": "95112",
-      "latitude": 37.7749,
+      "latitude": 37.7749, // TODO: look up lat & long in google maps for all approx 10,000 in data
       "longitude": -122.4194,
-      "image": require("../assets/images/taco1.jpg")
+      "image": require("../assets/images/taco1.jpg") //TODO: change this image later for all approx 10,000image data
     },
     {
       "facility_id": "FA0307990",
