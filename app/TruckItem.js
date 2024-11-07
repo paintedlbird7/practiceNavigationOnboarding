@@ -1,15 +1,33 @@
-// TruckItem.js
-import React from 'react';
-import { TouchableOpacity, Text } from 'react-native';
-import styles from './styles';
+import React from "react";
+import { FlatList, Text, TouchableOpacity, View, ScrollView } from "react-native";
+import styles from "./styles";
 
-const TruckItem = ({ truck, openModal, rating }) => (
-  <TouchableOpacity style={styles.resultItem} onPress={() => openModal(truck)}>
-    <Text style={styles.resultText}>{truck.FACILITY_NAME}</Text>
-    <Text style={styles.resultLocation}>Zip Code: {truck.ZIP}</Text>
-    <Text style={styles.resultDescription}>{truck.description}</Text>
-    {rating && <Text style={styles.ratingText}>Rating: {rating} ★</Text>}
-  </TouchableOpacity>
-);
+export default function TruckList({ filteredData, openModal, ratings }) {
+  const renderItem = ({ item }) => (
+    <TouchableOpacity style={styles.resultItem} onPress={() => openModal(item)}>
+      <Text style={styles.resultText}>{item.FACILITY_NAME}</Text>
+      <Text style={styles.resultLocation}>Zip Code: {item.ZIP}</Text>
+      <Text style={styles.resultDescription}>{item.PROGRAM_DESCRIPTION}</Text>
+      {ratings[item.id] && (
+        <Text style={styles.ratingText}>Rating: {ratings[item.id]} ★</Text>
+      )}
+    </TouchableOpacity>
+  );
 
-export default TruckItem;
+  return (
+    <ScrollView style={styles.scrollContainer}>
+      <View style={styles.listContainer}>
+        {filteredData.length > 0 ? (
+          <FlatList
+            data={filteredData}
+            renderItem={renderItem}
+            keyExtractor={(item) => item.id}
+            style={styles.resultsList}
+          />
+        ) : (
+          <Text style={styles.noResultsText}>No results to display</Text>
+        )}
+      </View>
+    </ScrollView>
+  );
+}
