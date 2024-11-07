@@ -1,4 +1,4 @@
-[
+export const tacoTruckData = [
    
     {
         "facility_id": "FA0206627",
@@ -1274,18 +1274,6 @@
         "PHONE": "4083935599",
         "city": "SAN JOSE",
         "ZIP": "95133"
-    },
-    
-        "facility_id": "FA0287122",
-        "record_ID": "PR0430676",
-        "PROGRAM_IDENTIFIER": "TACOS EL PELON DE OAXACA 4W12920",
-        "FACILITY_NAME": "TACOS EL PELON DE OAXACA 4W12920",
-        "PROGRAM_ELEMENT": "FP26",
-        "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-        "Permit_Status": "FULL, ONGOING PERMIT",
-        "PHONE": "4086124994",
-        "city": "MORGAN HILL",
-        "ZIP": "95037"
     },
     {
         "facility_id": "FA0287466",
