@@ -1407,7 +1407,7 @@ export const tacoTruckData = [
         "city": "SAN JOSE",
         "ZIP": "95133"
     },
-    
+{
         "facility_id": "FA0287122",
         "record_ID": "PR0430676",
         "PROGRAM_IDENTIFIER": "TACOS EL PELON DE OAXACA 4W12920",
