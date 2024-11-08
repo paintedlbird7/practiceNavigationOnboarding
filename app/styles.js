@@ -184,13 +184,19 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   closeButton: {
-    backgroundColor: '#2196F3',
-    borderRadius: 5,
-    padding: 10,
+    position: 'absolute',
+    top: 10,
+    right: 10,
+    zIndex: 1,
+    // backgroundColor: '#2196F3',
+    // borderRadius: 5,
+    // padding: 10,
   },
   closeButtonText: {
-    color: 'white',
-    fontWeight: 'bold',
+    fontSize: 18,
+    color: '#333',
+    // color: 'white',
+    // fontWeight: 'bold',
   },
 
   // container2: {

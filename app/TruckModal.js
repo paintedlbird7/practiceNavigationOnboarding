@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, Image, Modal, Button, TouchableOpacity } from 'react-native';
 import styles from './styles';
 import TruckMap from './TruckMap';
-import CustomAlert from './CustomAlert'; // Import CustomAlert
+import CustomAlert from './CustomAlert';
 
 export default function TruckModal({ 
   truck, 
@@ -22,6 +22,12 @@ export default function TruckModal({
     >
       <View style={styles.modalContainer}>
         <View style={styles.modalContent}>
+          
+          {/* Close Button Positioned at the Top Right */}
+          <TouchableOpacity style={styles.closeButton} onPress={closeModal}>
+            <Text style={styles.closeButtonText}>✕</Text>
+          </TouchableOpacity>
+          
           <Image source={truck.image} style={styles.modalImage} />
           <Text style={styles.modalTitle}>{truck.FACILITY_NAME}</Text>
           <Text style={styles.modalLocation}>Zip Code: {truck.ZIP}</Text>
@@ -29,7 +35,7 @@ export default function TruckModal({
 
           <View style={styles.ratingContainer}>
             {[1, 2, 3, 4, 5].map((star) => (
-              <TouchableOpacity key={star} onPress={() => handleRating(truck.id, star)}>
+              <TouchableOpacity key={star} onPress={() => handleRating(truck.facility_id, star)}>
                 <Text style={styles.ratingStar}>{star} ★</Text>
               </TouchableOpacity>
             ))}
@@ -40,8 +46,6 @@ export default function TruckModal({
             longitude={truck.longitude} 
             name={truck.name} 
           />
-
-          <Button title="Close" onPress={closeModal} />
         </View>
 
         {/* Custom Alert inside TruckModal */}

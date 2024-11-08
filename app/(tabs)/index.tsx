@@ -9,8 +9,8 @@ import HeaderImage from "../HeaderImage";
 import SearchBar from "../SearchBar";
 import TruckList from "../TruckList";
 import TruckModal from "../TruckModal";
-import CustomAlert from '../CustomAlert'; // Assuming this is your custom alert component
-import SignUpForm from '../SignUpForm';
+import CustomAlert from "../CustomAlert"; // Assuming this is your custom alert component
+import SignUpForm from "../SignUpForm";
 
 export default function HomeScreen() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -19,7 +19,7 @@ export default function HomeScreen() {
   const [selectedTruck, setSelectedTruck] = useState(null);
   const [ratings, setRatings] = useState({});
   const [alertVisible, setAlertVisible] = useState(false);
-  const [alertMessage, setAlertMessage] = useState('');
+  const [alertMessage, setAlertMessage] = useState("");
 
   const data = tacoTruckData;
 
@@ -45,8 +45,9 @@ export default function HomeScreen() {
     } else {
       const results = data.filter(
         (item) =>
-          item.FACILITY_NAME.toLowerCase().includes(searchQuery.toLowerCase()) ||
-          item.ZIP.includes(searchQuery)
+          item.FACILITY_NAME.toLowerCase().includes(
+            searchQuery.toLowerCase()
+          ) || item.ZIP.includes(searchQuery)
       );
       setFilteredData(results);
       if (results.length === 0) {
@@ -61,12 +62,14 @@ export default function HomeScreen() {
   };
 
   const handleRating = async (truckId, rating) => {
-    const updatedRatings = { ...ratings, [truckId]: rating };
+    const updatedRatings = { ...ratings, [truckId]: rating }; // Use truckId as key
     setRatings(updatedRatings);
 
     try {
       await AsyncStorage.setItem("ratings", JSON.stringify(updatedRatings));
-      showAlert(`You rated ${selectedTruck.name} ${rating} stars!`);
+      if (selectedTruck) {
+        showAlert(`You rated ${selectedTruck.FACILITY_NAME} ${rating} stars!`);
+      }
     } catch (error) {
       console.error("Failed to save rating", error);
     }
@@ -91,13 +94,13 @@ export default function HomeScreen() {
         setSearchQuery={setSearchQuery}
         handleSearch={handleSearch}
       />
-      
+
       {/* Wrap TruckList with ScrollView to make results scrollable */}
       <ScrollView>
         <TruckList
           filteredData={filteredData}
           openModal={openModal}
-          ratings={ratings}
+          ratings={ratings} // Pass ratings object here
         />
       </ScrollView>
 
@@ -110,6 +113,7 @@ export default function HomeScreen() {
           alertVisible={alertVisible}
           alertMessage={alertMessage}
           onClose={() => setAlertVisible(false)}
+          ratings={ratings} // Pass the ratings to the modal
         />
       )}
 
@@ -117,7 +121,7 @@ export default function HomeScreen() {
       {alertVisible && (
         <CustomAlert
           message={alertMessage}
-          onClose={() => setAlertVisible(false)} 
+          onClose={() => setAlertVisible(false)}
         />
       )}
     </>
