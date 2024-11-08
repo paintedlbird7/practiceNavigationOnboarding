@@ -43,6 +43,9 @@ export default function HomeScreen() {
     try {
       // Store updated ratings in AsyncStorage
       await AsyncStorage.setItem("ratings", JSON.stringify(updatedRatings));
+
+      // Show confirmation alert with the number of stars given
+      showAlert(`You gave ${newRating} ${newRating === 1 ? "star" : "stars"}`);
     } catch (error) {
       console.error("Failed to save rating", error);
     }
