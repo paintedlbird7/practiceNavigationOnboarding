@@ -2,9 +2,7 @@ import { Text, TouchableOpacity, ScrollView } from "react-native";
 import React, { useEffect, useState } from "react";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import styles from "../Styles";
-import { tacoTruckData } from "../(tabs)/data";
-
-// import { tacoTruckData } from "../(tabs)/tacoTruckData";
+import tacoTruckData from "../(tabs)/data";
 import HeaderImage from "../HeaderImage";
 import SearchBar from "../SearchBar";
 import TruckList from "../TruckList";
@@ -21,7 +19,7 @@ export default function HomeScreen() {
   const [alertVisible, setAlertVisible] = useState(false);
   const [alertMessage, setAlertMessage] = useState("");
 
-  const data = tacoTruckData;
+  const data = tacoTruckData || [];  // Ensure tacoTruckData is an array
 
   useEffect(() => {
     const loadRatings = async () => {
@@ -37,22 +35,16 @@ export default function HomeScreen() {
     loadRatings();
   }, []);
 
-  const handleSearch = () => {
-    // Check if the search query is empty
-    if (searchQuery.trim() === "") {
-      // Show alert when there's no input
-      showAlert("Type keyword in the search bar");
-    } else {
-      const results = data.filter(
-        (item) =>
-          item.FACILITY_NAME.toLowerCase().includes(
-            searchQuery.toLowerCase()
-          ) || item.ZIP.includes(searchQuery)
-      );
-      setFilteredData(results);
-      if (results.length === 0) {
-        showAlert("No results found.");
-      }
+  const handleRating = async (truckId, newRating) => {
+    // Update the ratings object with the new rating for the specific truck
+    const updatedRatings = { ...ratings, [truckId]: newRating };
+    setRatings(updatedRatings);
+
+    try {
+      // Store updated ratings in AsyncStorage
+      await AsyncStorage.setItem("ratings", JSON.stringify(updatedRatings));
+    } catch (error) {
+      console.error("Failed to save rating", error);
     }
   };
 
@@ -61,19 +53,27 @@ export default function HomeScreen() {
     setAlertVisible(true); // Make the alert visible
   };
 
-  const handleRating = async (truckId, rating) => {
-    const updatedRatings = { ...ratings, [truckId]: rating }; // Use truckId as key
-    setRatings(updatedRatings);
-
-    try {
-      await AsyncStorage.setItem("ratings", JSON.stringify(updatedRatings));
-      if (selectedTruck) {
-        showAlert(`You rated ${selectedTruck.FACILITY_NAME} ${rating} stars!`);
+  const handleSearch = () => {
+    console.log(data); // Check if data is loaded correctly
+    if (searchQuery.trim() === "") {
+      showAlert("Type keyword in the search bar");
+    } else {
+      const results = data.filter((item) => {
+        const facilityName = item.FACILITY_NAME || "";  // Ensure FACILITY_NAME is always a string
+        const zipCode = item.ZIP || "";  // Ensure ZIP is a string
+  
+        return (
+          facilityName.toLowerCase().includes(searchQuery.toLowerCase()) ||
+          zipCode.includes(searchQuery)
+        );
+      });
+      setFilteredData(results);
+      if (results.length === 0) {
+        showAlert("No results found.");
       }
-    } catch (error) {
-      console.error("Failed to save rating", error);
     }
   };
+  
 
   const openModal = (item) => {
     setSelectedTruck(item);

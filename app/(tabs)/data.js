@@ -1,3472 +1,696 @@
-export const tacoTruckData = [
-        {
-            "facility_id": "FA0210929",
-            "record_ID": "PR0303650",
-            "PROGRAM_IDENTIFIER": "DANERY'S ANTOJITOS 3W62365",
-            "FACILITY_NAME": "DANERY'S ANTOJITOS 3W62365",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4082750700",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0210447",
-            "record_ID": "PR0304223",
-            "PROGRAM_IDENTIFIER": "TACOS SAN JOSE 3T85656",
-            "FACILITY_NAME": "TACOS SAN JOSE 3T85656",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088167854",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0210441",
-            "record_ID": "PR0304478",
-            "PROGRAM_IDENTIFIER": "ANTOJITOS EL PRIMO 2U79688",
-            "FACILITY_NAME": "ANTOJITOS EL PRIMO 2U79688",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4082750700",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0210443",
-            "record_ID": "PR0304536",
-            "PROGRAM_IDENTIFIER": "NENA'S TACOS 3Z55557",
-            "FACILITY_NAME": "NENA'S TACOS 3Z55557",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088167854",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0250851",
-            "record_ID": "PR0305602",
-            "PROGRAM_IDENTIFIER": "HERMANOS LOPEZ 5Z11956",
-            "FACILITY_NAME": "HERMANOS LOPEZ 5Z11956",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4082750700",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0209871",
-            "record_ID": "PR0305960",
-            "PROGRAM_IDENTIFIER": "SAP CENTER-102 ABC PORTABLE",
-            "FACILITY_NAME": "SAP CENTER SAN JOSE",
-            "PROGRAM_ELEMENT": "FP25",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - LIMITED FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4089995860",
-            "city": "SAN JOSE",
-            "ZIP": "95113"
-        },
-        {
-            "facility_id": "FA0230702",
-            "record_ID": "PR0306123",
-            "PROGRAM_IDENTIFIER": "TACOS AL PASTOR 8S33970",
-            "FACILITY_NAME": "TACOS AL PASTOR 8S33970",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4084367122",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0206777",
-            "record_ID": "PR0307940",
-            "PROGRAM_IDENTIFIER": "LA CHAPARRA 6A05118",
-            "FACILITY_NAME": "LA CHAPARRA 6A05118",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4084367522",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0240521",
-            "record_ID": "PR0350060",
-            "PROGRAM_IDENTIFIER": "TACOS LOS 3 HERMANOS 4TH2809",
-            "FACILITY_NAME": "TACOS LOS 3 HERMANOS 4TH2809",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "NULL",
-            "city": "SAN JOSE",
-            "ZIP": "95110"
-        },
-        {
-            "facility_id": "FA0250170",
-            "record_ID": "PR0360451",
-            "PROGRAM_IDENTIFIER": "DULCE VICTORIA AMERICAN AND MEXICAN FOOD 8V21201",
-            "FACILITY_NAME": "DULCE VICTORIA AMERICAN AND MEXICAN FOOD",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4082750700",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0250247",
-            "record_ID": "PR0360559",
-            "PROGRAM_IDENTIFIER": "MC FOOD INC. 5M62715",
-            "FACILITY_NAME": "MC FOOD INC. 5M62715",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4082757191",
-            "city": "SAN JOSE",
-            "ZIP": "95127"
-        },
-        {
-            "facility_id": "FA0250748",
-            "record_ID": "PR0363856",
-            "PROGRAM_IDENTIFIER": "CALIFORNIA DRIVEN 8K70456",
-            "FACILITY_NAME": "CALIFORNIA DRIVEN 8K70456",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4082805014",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0251878",
-            "record_ID": "PR0366151",
-            "PROGRAM_IDENTIFIER": "SABOR MEXICO 2U78848",
-            "FACILITY_NAME": "SABOR MEXICO 2U78848",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4087998011",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        
-        {
-            "facility_id": "FA0256183",
-            "record_ID": "PR0374097",
-            "PROGRAM_IDENTIFIER": "SABOR CASERO INTERNACIONAL 7A28200",
-            "FACILITY_NAME": "SABOR CASERO INTERNACIONAL 7A28200",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "6502750700",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0257608",
-            "record_ID": "PR0376914",
-            "PROGRAM_IDENTIFIER": "2/1/24FELIPE EL KORA 4EU9369",
-            "FACILITY_NAME": "FELIPE EL KORA 4EU9369",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4089262810",
-            "city": "SAN JOSE",
-            "ZIP": "95116"
-        },
-        {
-            "facility_id": "FA0258947",
-            "record_ID": "PR0379318",
-            "PROGRAM_IDENTIFIER": "LAS GRULLAS MEXICAN GRILL 7G22197",
-            "FACILITY_NAME": "LAS GRULLAS MEXICAN GRILL 7G22197",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4089349695",
-            "city": "ALVISO",
-            "ZIP": "95002"
-        },
-        {
-            "facility_id": "FA0259010",
-            "record_ID": "PR0379396",
-            "PROGRAM_IDENTIFIER": "TACOS LA ESTRELLA 50083P2",
-            "FACILITY_NAME": "TACOS LA ESTRELLA 50083P2",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4082943873",
-            "city": "SAN JOSE",
-            "ZIP": "95116"
-        },
-         {
-            "facility_id": "FA0260183",
-            "record_ID": "PR0381307",
-            "PROGRAM_IDENTIFIER": "EL TACO DE ORO 8A62811",
-            "FACILITY_NAME": "EL TACO DE ORO 8A62811",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4089400674",
-            "city": "ALVISO",
-            "ZIP": "95002"
-        },
-        {
-            "facility_id": "FA0260274",
-            "record_ID": "PR0381477",
-            "PROGRAM_IDENTIFIER": "PAULINA'S CATERING 8D94835",
-            "FACILITY_NAME": "PAULINA'S CATERING 8D94835",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4082750700",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0260275",
-            "record_ID": "PR0381478",
-            "PROGRAM_IDENTIFIER": "ROSARIOS TACOS 4SG1630",
-            "FACILITY_NAME": "ROSARIOS TACOS 4SG1630",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4084645480",
-            "city": "SAN JOSE",
-            "ZIP": "95110"
-        },
-        {
-            "facility_id": "FA0260459",
-            "record_ID": "PR0381733",
-            "PROGRAM_IDENTIFIER": "LA JACARANDA OAXAQUENA 4HT6843",
-            "FACILITY_NAME": "LA JACARANDA OAXAQUENA 4HT6843",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088167854",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        
-        {
-            "facility_id": "FA0261182",
-            "record_ID": "PR0382958",
-            "PROGRAM_IDENTIFIER": "EL PAISA ARAUJOS TAQUERIA #2 4FF1682",
-            "FACILITY_NAME": "EL PAISA ARAUJOS TAQUERIA #2 4FF1682",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4083000814",
-            "city": "SAN JOSE",
-            "ZIP": "95111"
-        },
-       
-        {
-            "facility_id": "FA0262597",
-            "record_ID": "PR0385817",
-            "PROGRAM_IDENTIFIER": "GUTIERREZ AUTENTICA COMIDA MEXICANA 35373R1",
-            "FACILITY_NAME": "GUTIERREZ AUTENTICA COMIDA MEXICANA 35373R1",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088167854",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0263306",
-            "record_ID": "PR0387826",
-            "PROGRAM_IDENTIFIER": "ANTOJITOS MI MORENITA 4N99604",
-            "FACILITY_NAME": "ANTOJITOS MI MORENITA 4N99604",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4082750700",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-       
-        {
-            "facility_id": "FA0264929",
-            "record_ID": "PR0390808",
-            "PROGRAM_IDENTIFIER": "CON SABOR A MEXICO #2 3Z56157",
-            "FACILITY_NAME": "CON SABOR A MEXICO #2 3Z56157",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4083935599",
-            "city": "SAN JOSE",
-            "ZIP": "95133"
-        },
-        {
-            "facility_id": "FA0265422",
-            "record_ID": "PR0391652",
-            "PROGRAM_IDENTIFIER": "CMFO - ANTOJITOS PANZAS VERDES 4TE9973",
-            "FACILITY_NAME": "ANTOJITOS PANZAS VERDES 4TE9973",
-            "PROGRAM_ELEMENT": "FP25",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - LIMITED FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4084398903",
-            "city": "SAN JOSE",
-            "ZIP": "95136"
-        },
-        {
-            "facility_id": "FA0265732",
-            "record_ID": "PR0392393",
-            "PROGRAM_IDENTIFIER": "TACOS EL LIDER 4KL6498",
-            "FACILITY_NAME": "TACOS EL LIDER 4KL6498",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088187854",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0265847",
-            "record_ID": "PR0392636",
-            "PROGRAM_IDENTIFIER": "TACOS SANTIAGUITO 57424M1",
-            "FACILITY_NAME": "TACOS SANTIAGUITO 57424M1",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4082750700",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0265950",
-            "record_ID": "PR0392756",
-            "PROGRAM_IDENTIFIER": "CMFO-ANTOJITOS PANZAS VERDES 4KU4363",
-            "FACILITY_NAME": "ANTOJITOS PANZAS VERDES 4KU4363",
-            "PROGRAM_ELEMENT": "FP25",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - LIMITED FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4084601697",
-            "city": "SUNNYVALE",
-            "ZIP": "94086"
-        },
-        {
-            "facility_id": "FA0266175",
-            "record_ID": "PR0393026",
-            "PROGRAM_IDENTIFIER": "ROYAL DOSA 4LH3924",
-            "FACILITY_NAME": "ROYAL DOSA 4LH3924",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4087281358",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        
-        {
-            "facility_id": "FA0266567",
-            "record_ID": "PR0393604",
-            "PROGRAM_IDENTIFIER": "CMFO-LA ETERNA PRIMAVERA 4LC9708",
-            "FACILITY_NAME": "LA ETERNA PRIMAVERA 4LC9708",
-            "PROGRAM_ELEMENT": "FP25",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - LIMITED FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088167854",
-            "city": "SAN JOSE",
-            "ZIP": "95125"
-        },
-        {
-            "facility_id": "FA0267334",
-            "record_ID": "PR0394498",
-            "PROGRAM_IDENTIFIER": "CMFO - ANTOJITOS JUQUILITA 4KU4443",
-            "FACILITY_NAME": "ANTOJITOS JUQUILITA 4KU4443",
-            "PROGRAM_ELEMENT": "FP25",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - LIMITED FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4086144046",
-            "city": "MORGAN HILL",
-            "ZIP": "95037"
-        },
-        {
-            "facility_id": "FA0267702",
-            "record_ID": "PR0395001",
-            "PROGRAM_IDENTIFIER": "MEX*CAL ON WHEELS 8Y55239",
-            "FACILITY_NAME": "MEX*CAL ON WHEELS 8Y55239",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4084209308",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0268101",
-            "record_ID": "PR0395661",
-            "PROGRAM_IDENTIFIER": "ANTOJITOS EL ZOCALO INC. 4LH3930",
-            "FACILITY_NAME": "ANTOJITOS EL ZOCALO INC 4LH3930",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4086202648",
-            "city": "SAN JOSE",
-            "ZIP": "95122"
-        },
-        {
-            "facility_id": "FA0268417",
-            "record_ID": "PR0397885",
-            "PROGRAM_IDENTIFIER": "CMFO - TACOS EL TUCANAZO 4LJ8314",
-            "FACILITY_NAME": "TACOS EL TUCANAZO 4LJ8314",
-            "PROGRAM_ELEMENT": "FP25",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - LIMITED FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4085097721",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0268547",
-            "record_ID": "PR0398312",
-            "PROGRAM_IDENTIFIER": "EL BURRITO CRAZY 4MK9894",
-            "FACILITY_NAME": "EL BURRITO CRAZY 4MK9894",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4082174860",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0268644",
-            "record_ID": "PR0399032",
-            "PROGRAM_IDENTIFIER": "TAQUERIA REYES 4LJ7813",
-            "FACILITY_NAME": "TAQUERIA REYES 4LJ7813",
-            "PROGRAM_ELEMENT": "FP25",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - LIMITED FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4084367522",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0268706",
-            "record_ID": "PR0399177",
-            "PROGRAM_IDENTIFIER": "JUDIE'S TACOS LOCOS 20529G2",
-            "FACILITY_NAME": "JUDIE'S TACOS LOCOS 20529G2",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4084367522",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0269538",
-            "record_ID": "PR0401059",
-            "PROGRAM_IDENTIFIER": "CMFO - TACOS DEL GUERO DE GILROY 4LK8922",
-            "FACILITY_NAME": "TACOS DEL GUERO DE GILROY 4LK8922",
-            "PROGRAM_ELEMENT": "FP25",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - LIMITED FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4086202301",
-            "city": "GILROY",
-            "ZIP": "95020"
-        },
-        {
-            "facility_id": "FA0269966",
-            "record_ID": "PR0401810",
-            "PROGRAM_IDENTIFIER": "EL BUEN PASTOR 6Z36241",
-            "FACILITY_NAME": "VEL BUEN PASTOR 6Z36241",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4082750700",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
+export default tacoTruckData = [
+    {
+        "facility_id": "FA0206627",
+        "FACILITY_NAME": "ROJAS MEXICAN FOOD 2G87024",
+        "PROGRAM_DESCRIPTION": "Full food preparation services for customers.",
+        "ZIP": "95112"
+    },
+    {
+        "facility_id": "FA0210929",
+        "FACILITY_NAME": "DANERY'S ANTOJITOS 3W62365",
+        "PROGRAM_DESCRIPTION": "Offering full food preparation for various dishes.",
+        "ZIP": "95112"
+    },
+    {
+        "facility_id": "FA0210447",
+        "FACILITY_NAME": "TACOS SAN JOSE 3T85656",
+        "PROGRAM_DESCRIPTION": "Specializing in full food preparation of Mexican cuisine.",
+        "ZIP": "95112"
+    },
+    {
+        "facility_id": "FA0210441",
+        "FACILITY_NAME": "ANTOJITOS EL PRIMO 2U79688",
+        "PROGRAM_DESCRIPTION": "Offering a wide selection of Mexican food prepared on-site.",
+        "ZIP": "95112"
+    },
+    {
+        "facility_id": "FA0210443",
+        "FACILITY_NAME": "NENA'S TACOS 3Z55557",
+        "PROGRAM_DESCRIPTION": "Providing fresh, full food preparation on-site.",
+        "ZIP": "95112"
+    },
+    {
+        "facility_id": "FA0250851",
+        "FACILITY_NAME": "HERMANOS LOPEZ 5Z11956",
+        "PROGRAM_DESCRIPTION": "Full-service specializing in authentic Mexican food preparation.",
+        "ZIP": "95112"
+    },
+    {
+        "facility_id": "FA0209871",
+        "FACILITY_NAME": "SAP CENTER SAN JOSE",
+        "PROGRAM_DESCRIPTION": "Limited food preparation available for quick service.",
+        "ZIP": "95113"
+    },
+    {
+        "facility_id": "FA0230702",
+        "FACILITY_NAME": "TACOS AL PASTOR 8S33970",
+        "PROGRAM_DESCRIPTION": "Offering full food preparation with a focus on tacos al pastor.",
+        "ZIP": "95112"
+    },
+    {
+        "facility_id": "FA0206777",
+        "FACILITY_NAME": "LA CHAPARRA 6A05118",
+        "PROGRAM_DESCRIPTION": "Providing full food preparation, offering a variety of traditional Mexican foods.",
+        "ZIP": "95112"
+    },
+    {
+        "facility_id": "FA0240521",
+        "FACILITY_NAME": "TACOS LOS 3 HERMANOS 4TH2809",
+        "PROGRAM_DESCRIPTION": "Specializing in full food preparation of Mexican cuisine.",
+        "ZIP": "95110"
+    },
+    {
+        "facility_id": "FA0250170",
+        "FACILITY_NAME": "DULCE VICTORIA AMERICAN AND MEXICAN FOOD",
+        "PROGRAM_DESCRIPTION": "Offering full food preparation of both American and Mexican dishes.",
+        "ZIP": "95112"
+    },
+
+           {
+               "facility_id": "FA0250247",
+               "FACILITY_NAME": "MC FOOD INC. 5M62715",
+               "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+               "ZIP": "95127"
+           },
+           {
+               "facility_id": "FA0250748",
+               "FACILITY_NAME": "CALIFORNIA DRIVEN 8K70456",
+               "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+               "ZIP": "95112"
+           },
+           {
+               "facility_id": "FA0251878",
+               "FACILITY_NAME": "SABOR MEXICO 2U78848",
+               "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+               "ZIP": "95112"
+           },
+           {
+               "facility_id": "FA0256183",
+               "FACILITY_NAME": "SABOR CASERO INTERNACIONAL 7A28200",
+               "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+               "ZIP": "95112"
+           },
+           {
+               "facility_id": "FA0257608",
+               "FACILITY_NAME": "FELIPE EL KORA 4EU9369",
+               "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+               "ZIP": "95116"
+           },
+           {
+               "facility_id": "FA0258947",
+               "FACILITY_NAME": "LAS GRULLAS MEXICAN GRILL 7G22197",
+               "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+               "ZIP": "95002"
+           },
+           {
+               "facility_id": "FA0259010",
+               "FACILITY_NAME": "TACOS LA ESTRELLA 50083P2",
+               "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+               "ZIP": "95116"
+           },
+           {
+               "facility_id": "FA0260183",
+               "FACILITY_NAME": "EL TACO DE ORO 8A62811",
+               "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+               "ZIP": "95002"
+           },
+           {
+               "facility_id": "FA0260274",
+               "FACILITY_NAME": "PAULINA'S CATERING 8D94835",
+               "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+               "ZIP": "95112"
+           },
+           {
+               "facility_id": "FA0260275",
+               "FACILITY_NAME": "ROSARIOS TACOS 4SG1630",
+               "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+               "ZIP": "95110"
+           },
+           {
+               "facility_id": "FA0260459",
+               "FACILITY_NAME": "LA JACARANDA OAXAQUENA 4HT6843",
+               "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+               "ZIP": "95112"
+           },
+           {
+               "facility_id": "FA0261182",
+               "FACILITY_NAME": "EL PAISA ARAUJOS TAQUERIA #2 4FF1682",
+               "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+               "ZIP": "95111"
+           },
+           {
+               "facility_id": "FA0262597",
+               "FACILITY_NAME": "GUTIERREZ AUTENTICA COMIDA MEXICANA 35373R1",
+               "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+               "ZIP": "95112"
+           },
+
+       {
+           "facility_id": "FA0206627",
+           "FACILITY_NAME": "ROJAS MEXICAN FOOD 2G87024",
+           "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+           "ZIP": "95112"
+       },
+       {
+           "facility_id": "FA0210929",
+           "FACILITY_NAME": "DANERY'S ANTOJITOS 3W62365",
+           "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+           "ZIP": "95112"
+       },
+       {
+           "facility_id": "FA0210447",
+           "FACILITY_NAME": "TACOS SAN JOSE 3T85656",
+           "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+           "ZIP": "95112"
+       },
+       {
+           "facility_id": "FA0210441",
+           "FACILITY_NAME": "ANTOJITOS EL PRIMO 2U79688",
+           "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+           "ZIP": "95112"
+       },
+       {
+           "facility_id": "FA0210443",
+           "FACILITY_NAME": "NENA'S TACOS 3Z55557",
+           "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+           "ZIP": "95112"
+       },
+       {
+           "facility_id": "FA0250851",
+           "FACILITY_NAME": "HERMANOS LOPEZ 5Z11956",
+           "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+           "ZIP": "95112"
+       },
+       {
+           "facility_id": "FA0209871",
+           "FACILITY_NAME": "SAP CENTER SAN JOSE",
+           "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - LIMITED FOOD PREP",
+           "ZIP": "95113"
+       },
+       {
+           "facility_id": "FA0230702",
+           "FACILITY_NAME": "TACOS AL PASTOR 8S33970",
+           "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+           "ZIP": "95112"
+       },
+       {
+           "facility_id": "FA0206777",
+           "FACILITY_NAME": "LA CHAPARRA 6A05118",
+           "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+           "ZIP": "95112"
+       },
+       {
+           "facility_id": "FA0240521",
+           "FACILITY_NAME": "TACOS LOS 3 HERMANOS 4TH2809",
+           "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+           "ZIP": "95110"
+       },
+       {
+           "facility_id": "FA0250170",
+           "FACILITY_NAME": "DULCE VICTORIA AMERICAN AND MEXICAN FOOD",
+           "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+           "ZIP": "95112"
+       },
+       {
+           "facility_id": "FA0250247",
+           "FACILITY_NAME": "MC FOOD INC. 5M62715",
+           "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+           "ZIP": "95127"
+       },
+       {
+           "facility_id": "FA0250748",
+           "FACILITY_NAME": "CALIFORNIA DRIVEN 8K70456",
+           "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+           "ZIP": "95112"
+       },
+       {
+           "facility_id": "FA0251878",
+           "FACILITY_NAME": "SABOR MEXICO 2U78848",
+           "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+           "ZIP": "95112"
+       },
+       {
+           "facility_id": "FA0256183",
+           "FACILITY_NAME": "SABOR CASERO INTERNACIONAL 7A28200",
+           "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+           "ZIP": "95112"
+       },
+       {
+           "facility_id": "FA0257608",
+           "FACILITY_NAME": "FELIPE EL KORA 4EU9369",
+           "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+           "ZIP": "95116"
+       },
+       {
+           "facility_id": "FA0258947",
+           "FACILITY_NAME": "LAS GRULLAS MEXICAN GRILL 7G22197",
+           "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+           "ZIP": "95002"
+       },
+       {
+           "facility_id": "FA0259010",
+           "FACILITY_NAME": "TACOS LA ESTRELLA 50083P2",
+           "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+           "ZIP": "95116"
+       },
+       {
+           "facility_id": "FA0260183",
+           "FACILITY_NAME": "EL TACO DE ORO 8A62811",
+           "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+           "ZIP": "95002"
+       },
+       {
+           "facility_id": "FA0260274",
+           "FACILITY_NAME": "PAULINA'S CATERING 8D94835",
+           "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+           "ZIP": "95112"
+       },
+       {
+           "facility_id": "FA0260275",
+           "FACILITY_NAME": "ROSARIOS TACOS 4SG1630",
+           "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+           "ZIP": "95110"
+       },
+       {
+           "facility_id": "FA0260459",
+           "FACILITY_NAME": "LA JACARANDA OAXAQUENA 4HT6843",
+           "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+           "ZIP": "95112"
+       },
+       {
+           "facility_id": "FA0261182",
+           "FACILITY_NAME": "EL PAISA ARAUJOS TAQUERIA #2 4FF1682",
+           "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+           "ZIP": "95111"
+       },
+       {
+           "facility_id": "FA0262597",
+           "FACILITY_NAME": "GUTIERREZ AUTENTICA COMIDA MEXICANA 35373R1",
+           "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+           "ZIP": "95112"
+       },
+     {
+         "facility_id": "FA0274726",
+         "FACILITY_NAME": "TACOS SOLECITA 40896P3",
+         "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+         "ZIP": "95112"
+     },
+     {
+         "facility_id": "FA0274884",
+         "FACILITY_NAME": "MENDEZ TAQUERIA 15765M1",
+         "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+         "ZIP": "95112"
+     },
+     {
+         "facility_id": "FA0274993",
+         "FACILITY_NAME": "CUNAO'S  FOOD TRUCK 8V43985",
+         "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+         "ZIP": "95035"
+     },
+     {
+         "facility_id": "FA0276126",
+         "FACILITY_NAME": "EL TACOLOCO 7FER201",
+         "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+         "ZIP": "95112"
+     },
+     {
+         "facility_id": "FA0276130",
+         "FACILITY_NAME": "LA ESTRELLITA TAQUERIA #1 4MN7044",
+         "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+         "ZIP": "95112"
+     },
+     {
+         "facility_id": "FA0276258",
+         "FACILITY_NAME": "TACOS LA FAMILIA 8Y11950",
+         "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+         "ZIP": "95054"
+     },
+     {
+         "facility_id": "FA0276750",
+         "FACILITY_NAME": "LA AZTECA TAQUERIA 4KVG912",
+         "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+         "ZIP": "95050"
+     },
+     {
+         "facility_id": "FA0276832",
+         "FACILITY_NAME": "TACOS DEL GUERO 6X02656",
+         "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+         "ZIP": "95020"
+     },
+     {
+         "facility_id": "FA0276834",
+         "FACILITY_NAME": "TLAXIACO'S PIZZA 6S64734",
+         "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+         "ZIP": "95112"
+     },
+     {
+         "facility_id": "FA0276902",
+         "FACILITY_NAME": "EL CAMINANTE AKA SPARTAN TACO TRUCK 5K61992",
+         "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+         "ZIP": "95123"
+     },
+     {
+         "facility_id": "FA0277474",
+         "FACILITY_NAME": "BIRRIA TACOS Y ANTOJITOS ESTILO JALISCO 4ND1863",
+         "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - LIMITED FOOD PREP",
+         "ZIP": "95122"
+     },
+     {
+         "facility_id": "FA0277483",
+         "FACILITY_NAME": "ANTOJITOS PANZAS VERDES 4NL8594",
+         "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+         "ZIP": "95112"
+     },
+     {
+         "facility_id": "FA0277554",
+         "FACILITY_NAME": "EL TORITO AZTECA 49874M1",
+         "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+         "ZIP": "95112"
+     },
+     {
+         "facility_id": "FA0277942",
+         "FACILITY_NAME": "CHULA PUEBLA 48400T1",
+         "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+         "ZIP": "95112"
+     },
+     {
+         "facility_id": "FA0277988",
+         "FACILITY_NAME": "LA PODEROSA AYG TACOS 7W64004",
+         "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+         "ZIP": "95112"
+     },
+     {
+         "facility_id": "FA0278183",
+         "FACILITY_NAME": "EL TACO RANCHERO 7J56022",
+         "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+         "ZIP": "95112"
+     },
+     {
+         "facility_id": "FA0278936",
+         "FACILITY_NAME": "TACOS EL RUFLES 2  89932U1",
+         "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+         "ZIP": "95118"
+     },
+     {
+         "facility_id": "FA0279163",
+         "FACILITY_NAME": "EL SABROSON 16017C1",
+         "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+         "ZIP": "95112"
+     },
     
-        {
-            "facility_id": "FA0269973",
-            "record_ID": "PR0401817",
-            "PROGRAM_IDENTIFIER": "LOS JAROCHOS GRILL 12770G1",
-            "FACILITY_NAME": "LOS JAROCHOS GRILL 12770G1",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4082750700",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0271308",
-            "record_ID": "PR0409647",
-            "PROGRAM_IDENTIFIER": "TAKOZ MOD MEX 2U79558",
-            "FACILITY_NAME": "TAKOZ MOD MEX 2U79558",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4082750700",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0304660",
-            "record_ID": "PR0409658",
-            "PROGRAM_IDENTIFIER": "LAS GRULLAS MEXICAN GRILL #2 41862V3",
-            "FACILITY_NAME": "LAS GRULLAS MEXICAN GRILL #2 41862V3",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4089349695",
-            "city": "ALVISO",
-            "ZIP": "95002"
-        },
-        
-        {
-            "facility_id": "FA0271607",
-            "record_ID": "PR0410385",
-            "PROGRAM_IDENTIFIER": "CMFO-TACOS EL VIEJON 4LW8188",
-            "FACILITY_NAME": "TACOS EL VIEJON 4LW8188",
-            "PROGRAM_ELEMENT": "FP25",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - LIMITED FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4087574894",
-            "city": "SAN JOSE",
-            "ZIP": "95110"
-        },
-        {
-            "facility_id": "FA0271751",
-            "record_ID": "PR0410794",
-            "PROGRAM_IDENTIFIER": "LAS GEMELAS SAGRERO 4MB8361",
-            "FACILITY_NAME": "LAS GEMELAS SAGRERO 4MB8361",
-            "PROGRAM_ELEMENT": "FP25",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - LIMITED FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088167854",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0271786",
-            "record_ID": "PR0410886",
-            "PROGRAM_IDENTIFIER": "TACOS SAN JOSE #1 4EX7842",
-            "FACILITY_NAME": "TACOS SAN JOSE #1 4EX7842",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088167854",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0271916",
-            "record_ID": "PR0411182",
-            "PROGRAM_IDENTIFIER": "TACOS AL VAPOR BLANQUITA 4GX5517",
-            "FACILITY_NAME": "TACOS AL VAPOR BLANQUITA 4GX5517",
-            "PROGRAM_ELEMENT": "FP25",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - LIMITED FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088167054",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        
-        {
-            "facility_id": "FA0272027",
-            "record_ID": "PR0411342",
-            "PROGRAM_IDENTIFIER": "MIO TACO 41445C2",
-            "FACILITY_NAME": "MIO TACO 41445C2",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4089666081",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0272140",
-            "record_ID": "PR0411583",
-            "PROGRAM_IDENTIFIER": "TACOMANIA 4MA3958",
-            "FACILITY_NAME": "TACOMANIA 4MA3958",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4086085317",
-            "city": "SAN JOSE",
-            "ZIP": "95111"
-        },
-      
-        
-        {
-            "facility_id": "FA0272772",
-            "record_ID": "PR0412534",
-            "PROGRAM_IDENTIFIER": "CMFO-TACOS LA OAXAQUENA 4KW9139",
-            "FACILITY_NAME": "TACOS LA OAXAQUENA 4KW9139",
-            "PROGRAM_ELEMENT": "FP25",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - LIMITED FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088167854",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        
-        {
-            "facility_id": "FA0272782",
-            "record_ID": "PR0412546",
-            "PROGRAM_IDENTIFIER": "LOS TOLUCAS 65113J1",
-            "FACILITY_NAME": "LOS TOLUCAS 65113J1",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088167854",
-            "city": "PALO ALTO",
-            "ZIP": "94303"
-        },
-        {
-            "facility_id": "FA0272975",
-            "record_ID": "PR0412793",
-            "PROGRAM_IDENTIFIER": "BIRRIERIA EL PRIMO 6F85921",
-            "FACILITY_NAME": "BIRRIERIA EL PRIMO 6F85921",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "6692052912",
-            "city": "SAN JOSE",
-            "ZIP": "95111"
-        },
-        {
-            "facility_id": "FA0273050",
-            "record_ID": "PR0412898",
-            "PROGRAM_IDENTIFIER": "CMFO-SANCHEZ TACOS 4KH8536",
-            "FACILITY_NAME": "SANCHEZ TACOS 4KH8536",
-            "PROGRAM_ELEMENT": "FP25",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - LIMITED FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4086144046",
-            "city": "GILROY",
-            "ZIP": "95037"
-        },
     
-        {
-            "facility_id": "FA0273174",
-            "record_ID": "PR0413043",
-            "PROGRAM_IDENTIFIER": "TACOS DEL GUERO 4KU4738",
-            "FACILITY_NAME": "TACOS DEL GUERO 4KU4738",
-            "PROGRAM_ELEMENT": "FP25",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - LIMITED FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4086202301",
-            "city": "GILROY",
-            "ZIP": "95020"
-        },
-    
-        {
-            "facility_id": "FA0273370",
-            "record_ID": "PR0413306",
-            "PROGRAM_IDENTIFIER": "TACOS TIME 4LF1353",
-            "FACILITY_NAME": "TACOS TIME 4LF1353",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088167854",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-       
-        {
-            "facility_id": "FA0273453",
-            "record_ID": "PR0413425",
-            "PROGRAM_IDENTIFIER": "TACOS EL ABUELO 4CE7989",
-            "FACILITY_NAME": "TACOS EL ABUELO 4CE7989",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4086144046",
-            "city": "MORGAN HILL",
-            "ZIP": "95037"
-        },
-        {
-            "facility_id": "FA0273485",
-            "record_ID": "PR0413459",
-            "PROGRAM_IDENTIFIER": "TACOS LA ESMERALDA 4MJ5355",
-            "FACILITY_NAME": "TACOS LA ESMERALDA 4MJ5355",
-            "PROGRAM_ELEMENT": "FP25",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - LIMITED FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088167854",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0273995",
-            "record_ID": "PR0414405",
-            "PROGRAM_IDENTIFIER": "TAQUERIA PATZCUARO 4MD5102",
-            "FACILITY_NAME": "TAQUERIA PATZCUARO 4MD5102",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088167854",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        
-        {
-            "facility_id": "FA0274427",
-            "record_ID": "PR0414994",
-            "PROGRAM_IDENTIFIER": "EL VIEJON MEXICAN FOOD 17624X3",
-            "FACILITY_NAME": "EL VIEJON MEXICAN FOOD 17624X3",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088167854",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0274572",
-            "record_ID": "PR0415172",
-            "PROGRAM_IDENTIFIER": "SUPER TACOS PINO SUAREZ 9AUB046",
-            "FACILITY_NAME": "SUPER TACOS PINO SUAREZ 9AUB046",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088167854",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        
-        {
-            "facility_id": "FA0274674",
-            "record_ID": "PR0415261",
-            "PROGRAM_IDENTIFIER": "PUPUSA LADY 7CIN611",
-            "FACILITY_NAME": "PUPUSA LADY 7CIN611",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4089102787",
-            "city": "MORGAN HILL",
-            "ZIP": "95037"
-        },
-        
-        {
-            "facility_id": "FA0274726",
-            "record_ID": "PR0415310",
-            "PROGRAM_IDENTIFIER": "TACOS SOLECITA 40896P3",
-            "FACILITY_NAME": "TACOS SOLECITA 40896P3",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4082750700",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        
-        {
-            "facility_id": "FA0274884",
-            "record_ID": "PR0415491",
-            "PROGRAM_IDENTIFIER": "MENDEZ TAQUERIA 15765M1",
-            "FACILITY_NAME": "MENDEZ TAQUERIA 15765M1",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4084367522",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0276126",
-            "record_ID": "PR0417276",
-            "PROGRAM_IDENTIFIER": "EL TACOLOCO 7FER201",
-            "FACILITY_NAME": "EL TACOLOCO 7FER201",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4084367522",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0276130",
-            "record_ID": "PR0417280",
-            "PROGRAM_IDENTIFIER": "LA ESTRELLITA TAQUERIA #1 4MN7044",
-            "FACILITY_NAME": "LA ESTRELLITA TAQUERIA #1 4MN7044",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4084367522",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0276832",
-            "record_ID": "PR0418364",
-            "PROGRAM_IDENTIFIER": "TACOS DEL GUERO 6X02656",
-            "FACILITY_NAME": "TACOS DEL GUERO 6X02656",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "NULL",
-            "city": "GILROY",
-            "ZIP": "95020"
-        },
-        {
-            "facility_id": "FA0276834",
-            "record_ID": "PR0418367",
-            "PROGRAM_IDENTIFIER": "TLAXIACO'S PIZZA 6S64734",
-            "FACILITY_NAME": "TLAXIACO'S PIZZA 6S64734",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088167854",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0276902",
-            "record_ID": "PR0418476",
-            "PROGRAM_IDENTIFIER": "EL CAMINANTE AKA SPARTAN TACO TRUCK 5K61992",
-            "FACILITY_NAME": "EL CAMINANTE AKA SPARTAN TACO TRUCK 5K61992",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4086132963",
-            "city": "SAN JOSE",
-            "ZIP": "95123"
-        },
-       
-       
-        {
-            "facility_id": "FA0277474",
-            "record_ID": "PR0419351",
-            "PROGRAM_IDENTIFIER": "CMFO - BIRRIA TACOS Y ANTOJITOS ESTILO 4ND1863",
-            "FACILITY_NAME": "BIRRIA TACOS Y ANTOJITOS ESTILO JALISCO 4ND1863",
-            "PROGRAM_ELEMENT": "FP25",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - LIMITED FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4086188958",
-            "city": "SAN JOSE",
-            "ZIP": "95122"
-        },
-        {
-            "facility_id": "FA0277483",
-            "record_ID": "PR0419360",
-            "PROGRAM_IDENTIFIER": "ANTOJITOS PANZAS VERDES 4NL8594",
-            "FACILITY_NAME": "ANTOJITOS PANZAS VERDES 4NL8594",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088167854",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0277554",
-            "record_ID": "PR0419498",
-            "PROGRAM_IDENTIFIER": "EL TORITO AZTECA 49874M1",
-            "FACILITY_NAME": "EL TORITO AZTECA 49874M1",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4082750700",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        
-        {
-            "facility_id": "FA0277942",
-            "record_ID": "PR0420024",
-            "PROGRAM_IDENTIFIER": "CHULA PUEBLA 48400T1",
-            "FACILITY_NAME": "CHULA PUEBLA 48400T1",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4084367522",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-      
-        {
-            "facility_id": "FA0277988",
-            "record_ID": "PR0420096",
-            "PROGRAM_IDENTIFIER": "LA PODEROSA AYG TACOS 7W64004",
-            "FACILITY_NAME": "LA PODEROSA AYG TACOS 7W64004",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4084367522",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0278183",
-            "record_ID": "PR0420306",
-            "PROGRAM_IDENTIFIER": "EL TACO RANCHERO 7J56022",
-            "FACILITY_NAME": "EL TACO RANCHERO 7J56022",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088167854",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0278936",
-            "record_ID": "PR0421047",
-            "PROGRAM_IDENTIFIER": "TACOS EL RUFLES 2  89932U1",
-            "FACILITY_NAME": "TACOS EL RUFLES 2  89932U1",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4087281358",
-            "city": "SAN JOSE",
-            "ZIP": "95118"
-        },
-        
-        {
-            "facility_id": "FA0279163",
-            "record_ID": "PR0421252",
-            "PROGRAM_IDENTIFIER": "EL SABROSON 16017C1",
-            "FACILITY_NAME": "EL SABROSON 16017C1",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4084367522",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
         {
             "facility_id": "FA0279285",
-            "record_ID": "PR0421368",
-            "PROGRAM_IDENTIFIER": "TACOS LA CHOCA 12083M1",
             "FACILITY_NAME": "TACOS LA CHOCA 12083M1",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4087172800",
-            "city": "SAN JOSE",
+            "PROGRAM_DESCRIPTION": "Offering full food preparation services, specializing in tacos.",
             "ZIP": "95122"
         },
         {
             "facility_id": "FA0281272",
-            "record_ID": "PR0422364",
-            "PROGRAM_IDENTIFIER": "TAQUERIA MONARCAS 4NX1752",
             "FACILITY_NAME": "TAQUERIA MONARCAS 4NX1752",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4084367522",
-            "city": "SAN JOSE",
+            "PROGRAM_DESCRIPTION": "Providing full food preparation services, with a focus on authentic Mexican tacos.",
             "ZIP": "95112"
         },
         {
             "facility_id": "FA0281318",
-            "record_ID": "PR0422407",
-            "PROGRAM_IDENTIFIER": "EL BURRITO LOCO 6Y69155",
             "FACILITY_NAME": "EL BURRITO LOCO 6Y69155",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "6502481772",
-            "city": "SAN JOSE",
+            "PROGRAM_DESCRIPTION": "Offering full food prep services, known for its burritos and tacos.",
             "ZIP": "95112"
+        },
+        {
+            "facility_id": "FA0281354",
+            "FACILITY_NAME": "FLEX TRUCK A01007 74644R1",
+            "PROGRAM_DESCRIPTION": "Providing a full food preparation service, offering a variety of food options.",
+            "ZIP": "94043"
         },
         {
             "facility_id": "FA0281403",
-            "record_ID": "PR0422529",
-            "PROGRAM_IDENTIFIER": "TACOS EL RUFLES 8R94906",
             "FACILITY_NAME": "TACOS EL RUFLES 8R94906",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4087281358",
-            "city": "SAN JOSE",
+            "PROGRAM_DESCRIPTION": "Providing full food prep services, specializing in tacos and other Mexican dishes.",
             "ZIP": "95118"
         },
-    
         {
             "facility_id": "FA0282093",
-            "record_ID": "PR0423258",
-            "PROGRAM_IDENTIFIER": "DON PAPA SJ 5H14119",
             "FACILITY_NAME": "DON PAPA SJ 5H14119",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4084367522",
-            "city": "SAN JOSE",
+            "PROGRAM_DESCRIPTION": "Offering full food preparation with a focus on traditional Mexican cuisine.",
             "ZIP": "95112"
         },
-        
         {
             "facility_id": "FA0282627",
-            "record_ID": "PR0423969",
-            "PROGRAM_IDENTIFIER": "TACOS SAN AGUSTIN 08834U1",
             "FACILITY_NAME": "TACOS SAN AGUSTIN 08834U1",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4082750700",
-            "city": "SAN JOSE",
+            "PROGRAM_DESCRIPTION": "Providing full food prep services, offering tacos and other traditional Mexican foods.",
             "ZIP": "95112"
         },
-        
         {
             "facility_id": "FA0282867",
-            "record_ID": "PR0424306",
-            "PROGRAM_IDENTIFIER": "QUIROGA TAQUERIA 4NE6614",
             "FACILITY_NAME": "QUIROGA TAQUERIA 4NE6614",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088167854",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        
-        {
-            "facility_id": "FA0282929",
-            "record_ID": "PR0424407",
-            "PROGRAM_IDENTIFIER": "TACOS EL GORDITO 8G90243",
-            "FACILITY_NAME": "TACOS EL GORDITO 8G90243",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4084367522",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        
-        {
-            "facility_id": "FA0283236",
-            "record_ID": "PR0424863",
-            "PROGRAM_IDENTIFIER": "3 HERMANOS MEXICAN GRILL 5N44985",
-            "FACILITY_NAME": "3 HERMANOS MEXICAN GRILL 5N44985",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4084667406",
-            "city": "SAN JOSE",
-            "ZIP": "95113"
-        },
-        {
-            "facility_id": "FA0283294",
-            "record_ID": "PR0424967",
-            "PROGRAM_IDENTIFIER": "LA COSTENITA 6R37259",
-            "FACILITY_NAME": "LA COSTENITA 6R37259",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4087268270",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-    
-        {
-            "facility_id": "FA0283413",
-            "record_ID": "PR0425118",
-            "PROGRAM_IDENTIFIER": "PATRONA TACOS 7DMZ827",
-            "FACILITY_NAME": "TACOS PANCHITO 7DMZ827",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4084367522",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        
-        {
-            "facility_id": "FA0283588",
-            "record_ID": "PR0425376",
-            "PROGRAM_IDENTIFIER": "CMFO-TACOS EL AUSENTE 4VG7981",
-            "FACILITY_NAME": "TACOS EL AUSENTE 4VG7981",
-            "PROGRAM_ELEMENT": "FP25",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - LIMITED FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4082861932",
-            "city": "SAN JOSE",
-            "ZIP": "95116"
-        },
-        {
-            "facility_id": "FA0283729",
-            "record_ID": "PR0425524",
-            "PROGRAM_IDENTIFIER": "TACOS LOS 3 REYES #3 4NY6323",
-            "FACILITY_NAME": "TACOS LOS 3 REYES #3 4NY6323",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4086493395",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0283761",
-            "record_ID": "PR0425551",
-            "PROGRAM_IDENTIFIER": "CATO'S TACOS 4PP9005",
-            "FACILITY_NAME": "CATO'S TACOS 4PP9005",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088167854",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        
-        {
-            "facility_id": "FA0284014",
-            "record_ID": "PR0425981",
-            "PROGRAM_IDENTIFIER": "CALIFORNIA MEXICAN FOOD 7F84347",
-            "FACILITY_NAME": "CALIFORNIA MEXICAN FOOD 7F84347",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4082750700",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        
-        {
-            "facility_id": "FA0284124",
-            "record_ID": "PR0426135",
-            "PROGRAM_IDENTIFIER": "ADELITA COCINA CENTRO AMERICANA Y MEXICANA 4TU7259",
-            "FACILITY_NAME": "ADELITA COCINA CENTRO AMERICANA Y MEXICANA 4TU7259",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4084367572",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        
-        {
-            "facility_id": "FA0284663",
-            "record_ID": "PR0426882",
-            "PROGRAM_IDENTIFIER": "TACOS DON JOSE 01432A1",
-            "FACILITY_NAME": "TACOS DON JOSE 01432A1",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088167854",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        
-        {
-            "facility_id": "FA0284886",
-            "record_ID": "PR0427183",
-            "PROGRAM_IDENTIFIER": "TACO AXOLOTL 4VK6014",
-            "FACILITY_NAME": "TACO AXOLOTL 4ME8550",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "40837911489",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        
-        {
-            "facility_id": "FA0285113",
-            "record_ID": "PR0427491",
-            "PROGRAM_IDENTIFIER": "AY CHABELA TAQUERIA 4VW6087",
-            "FACILITY_NAME": "AY CHABELA TAQUERIA 4VW6087",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088167854",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0285208",
-            "record_ID": "PR0427606",
-            "PROGRAM_IDENTIFIER": "MARISCOS LOS KORAS #2 12448R1",
-            "FACILITY_NAME": "MARISCOS LOS KORAS #2 12448R1",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4089262810",
-            "city": "SAN JOSE",
-            "ZIP": "95116"
-        },
-    
-        {
-            "facility_id": "FA0285406",
-            "record_ID": "PR0427881",
-            "PROGRAM_IDENTIFIER": "TACOMANIA 4PL5841",
-            "FACILITY_NAME": "TACOMANIA 4PL5841",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "NULL",
-            "city": "SAN JOSE",
-            "ZIP": "95111"
-        },
-        
-        
-        
-        {
-            "facility_id": "FA0286574",
-            "record_ID": "PR0429733",
-            "PROGRAM_IDENTIFIER": "MEXIQUENA 43755J2",
-            "FACILITY_NAME": "MEXIQUENA 43755J2",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4082750700",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        
-        {
-            "facility_id": "FA0286732",
-            "record_ID": "PR0429972",
-            "PROGRAM_IDENTIFIER": "FONSECAS MEXICAN FOOD TRUCK 4RE6351",
-            "FACILITY_NAME": "FONSECAS MEXICAN FOOD TRUCK 4RE6351",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "NULL",
-            "city": "SAN JOSE",
-            "ZIP": "95134"
-        },
-        {
-            "facility_id": "FA0286733",
-            "record_ID": "PR0429975",
-            "PROGRAM_IDENTIFIER": "FERNANDO EL TAQUERO 1TAQERO",
-            "FACILITY_NAME": "FERNANDO EL TAQUERO 1TAQERO",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4087706404",
-            "city": "SAN JOSE",
-            "ZIP": "95125"
-        },
-        {
-            "facility_id": "FA0286862",
-            "record_ID": "PR0430239",
-            "PROGRAM_IDENTIFIER": "LAS TARASCAS 4LY6549",
-            "FACILITY_NAME": "LAS TARASCAS 4LY6549",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088167854",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0286864",
-            "record_ID": "PR0430244",
-            "PROGRAM_IDENTIFIER": "TACOS SANTIAGUITO 8X53332",
-            "FACILITY_NAME": "TACOS SANTIAGUITO 8X53332",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4082750700",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        
-        {
-            "facility_id": "FA0286882",
-            "record_ID": "PR0430266",
-            "PROGRAM_IDENTIFIER": "LOS JAMAYTECOS 65050J2",
-            "FACILITY_NAME": "LOS JAMAYTECOS 65050J2",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088167854",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        
-        {
-            "facility_id": "FA0286908",
-            "record_ID": "PR0430291",
-            "PROGRAM_IDENTIFIER": "EL TACO DE ORO 01535H2",
-            "FACILITY_NAME": "EL TACO DE ORO 01535H2",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "6507993471",
-            "city": "ALVISO",
-            "ZIP": "95002"
-        },
-        
-        {
-            "facility_id": "FA0286942",
-            "record_ID": "PR0430367",
-            "PROGRAM_IDENTIFIER": "CON SABOR A MEXICO 4F55323",
-            "FACILITY_NAME": "CON SABOR A MEXICO 4F55323",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4083935599",
-            "city": "SAN JOSE",
-            "ZIP": "95133"
-        },
-        {
-            "facility_id": "FA0287122",
-            "record_ID": "PR0430676",
-            "PROGRAM_IDENTIFIER": "TACOS EL PELON DE OAXACA 4W12920",
-            "FACILITY_NAME": "TACOS EL PELON DE OAXACA 4W12920",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4086124994",
-            "city": "MORGAN HILL",
-            "ZIP": "95037"
-        },
-        {
-            "facility_id": "FA0287466",
-            "record_ID": "PR0431191",
-            "PROGRAM_IDENTIFIER": "CMFO - LA SONRISA DE CHECKE 4NT6403",
-            "FACILITY_NAME": "LA SONRISA DE CHECKE 4NT6403",
-            "PROGRAM_ELEMENT": "FP25",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - LIMITED FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4082677121",
-            "city": "SAN JOSE",
-            "ZIP": "95125"
-        },
-        
-        {
-            "facility_id": "FA0287617",
-            "record_ID": "PR0431414",
-            "PROGRAM_IDENTIFIER": "CALIFAS CORP. 4RT5397",
-            "FACILITY_NAME": "CALIFAS CORP. 4RT5397",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088167854",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        
-        
-        {
-            "facility_id": "FA0289127",
-            "record_ID": "PR0433499",
-            "PROGRAM_IDENTIFIER": "EL RANCHERO DEL SUR 8K78882",
-            "FACILITY_NAME": "EL RANCHERO DEL SUR 8K78882",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088167854",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0289203",
-            "record_ID": "PR0433610",
-            "PROGRAM_IDENTIFIER": "LA BURRITA 5N92913",
-            "FACILITY_NAME": "LA BURRITA 5N92913",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "6693427337",
-            "city": "SAN JOSE",
-            "ZIP": "95129"
-        },
-        
-        {
-            "facility_id": "FA0289387",
-            "record_ID": "PR0433818",
-            "PROGRAM_IDENTIFIER": "EL CAMALEON 05737P2",
-            "FACILITY_NAME": "EL CAMALEON 05737P2",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4082750700",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        
-        {
-            "facility_id": "FA0289417",
-            "record_ID": "PR0433884",
-            "PROGRAM_IDENTIFIER": "TACOS EL POLLO Y EL POLLITO 99654E2",
-            "FACILITY_NAME": "TACOS EL POLLO Y EL POLLITO 99654E2",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4082185794",
-            "city": "SAN JOSE",
-            "ZIP": "95111"
-        },
-        {
-            "facility_id": "FA0289442",
-            "record_ID": "PR0433910",
-            "PROGRAM_IDENTIFIER": "SHAKOS TACOS 86799D1",
-            "FACILITY_NAME": "SHAKOS TACOS 86799D1",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4083144823",
-            "city": "SAN JOSE",
-            "ZIP": "95116"
-        },
-        {
-            "facility_id": "FA0289563",
-            "record_ID": "PR0434229",
-            "PROGRAM_IDENTIFIER": "LAS MARIAS LONCHERIA 4MK6430",
-            "FACILITY_NAME": "LAS MARIAS LONCHERIA 4MK6430",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4087281358",
-            "city": "SAN JOSE",
-            "ZIP": "95118"
-        },
-       
-        {
-            "facility_id": "FA0289786",
-            "record_ID": "PR0434662",
-            "PROGRAM_IDENTIFIER": "LINDA'S TAQUERIA #1 8E05819",
-            "FACILITY_NAME": "LINDA'S TAQUERIA #1 8E05819",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088167854",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0289808",
-            "record_ID": "PR0434688",
-            "PROGRAM_IDENTIFIER": "TACOS CHENCHO 4RZ7835",
-            "FACILITY_NAME": "TACOS CHENCHO 4RZ7835",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088167854",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        
-        {
-            "facility_id": "FA0290310",
-            "record_ID": "PR0435347",
-            "PROGRAM_IDENTIFIER": "SUPER TACOS EL CONRRO #1 69394R3",
-            "FACILITY_NAME": "SUPER TACOS EL CONRRO #2 69394R3",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4083525123",
-            "city": "SAN JOSE",
-            "ZIP": "95113"
-        },
-        {
-            "facility_id": "FA0290314",
-            "record_ID": "PR0435348",
-            "PROGRAM_IDENTIFIER": "TACOS Y TLAYUDAS EL ELUTECO 61524X2",
-            "FACILITY_NAME": "TACOS Y TLAYUDAS EL ELUTECO 61524X2",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4082750700",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        
-        {
-            "facility_id": "FA0290491",
-            "record_ID": "PR0435614",
-            "PROGRAM_IDENTIFIER": "LA JALISCIENSE 22057T2",
-            "FACILITY_NAME": "LA JALISCIENSE 22057T2",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4082750700",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0290532",
-            "record_ID": "PR0435680",
-            "PROGRAM_IDENTIFIER": "ROLLIN OAXACA 76440M2",
-            "FACILITY_NAME": "ROLLIN OAXACA 76440M2",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088167854",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0302568",
-            "record_ID": "PR0435736",
-            "PROGRAM_IDENTIFIER": "CMFO-TACOS J.L. LP 4SX6938",
-            "FACILITY_NAME": "TACOS J.L. LP 4SX6938",
-            "PROGRAM_ELEMENT": "FP25",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - LIMITED FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4087281358",
-            "city": "SAN JOSE",
-            "ZIP": "95127"
-        },
-        
-        {
-            "facility_id": "FA0290813",
-            "record_ID": "PR0436003",
-            "PROGRAM_IDENTIFIER": "EL TORO TACOS 8J99788",
-            "FACILITY_NAME": "EL TORO TACOS 8J99788",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "NULL",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        
-        {
-            "facility_id": "FA0291028",
-            "record_ID": "PR0436258",
-            "PROGRAM_IDENTIFIER": "LA CHELISA ANTOJITOS 99899E2",
-            "FACILITY_NAME": "LA CHELISA ANTOJITOS 99899E2",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4083144823",
-            "city": "SAN JOSE",
-            "ZIP": "95116"
-        },
-        
-        {
-            "facility_id": "FA0291092",
-            "record_ID": "PR0436345",
-            "PROGRAM_IDENTIFIER": "TACOS EL GUERITO 4RA9196",
-            "FACILITY_NAME": "TACOS EL GUERITO 4RA9196",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4082595292",
-            "city": "SAN JOSE",
-            "ZIP": "95127"
-        },
-        
-        {
-            "facility_id": "FA0291162",
-            "record_ID": "PR0436452",
-            "PROGRAM_IDENTIFIER": "TAQUIZAS EL SUSPIRO 77801T2",
-            "FACILITY_NAME": "TAQUIZAS EL SUSPIRO 77801T2",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088167854",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        
-        {
-            "facility_id": "FA0306002",
-            "record_ID": "PR0437199",
-            "PROGRAM_IDENTIFIER": "TACOMANIA 4SJ4336",
-            "FACILITY_NAME": "TACOMANIA 4SJ4336",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4086085317",
-            "city": "SAN JOSE",
-            "ZIP": "95111"
-        },
-    
-        {
-            "facility_id": "FA0294169",
-            "record_ID": "PR0438493",
-            "PROGRAM_IDENTIFIER": "LA COCINA DE CHATITA 4SJ1073",
-            "FACILITY_NAME": "LA COCINA DE CHATITA 4SJ1073",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088167854",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        
-        {
-            "facility_id": "FA0296186",
-            "record_ID": "PR0438930",
-            "PROGRAM_IDENTIFIER": "CMFO-ANTOJOS LOS COMPAS 4SZ7946",
-            "FACILITY_NAME": "ANTOJOS LOS COMPAS 4SZ7946",
-            "PROGRAM_ELEMENT": "FP25",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - LIMITED FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088167854",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0296394",
-            "record_ID": "PR0438956",
-            "PROGRAM_IDENTIFIER": "LA OAXAQUENSE 73220V2",
-            "FACILITY_NAME": "LA OAXAQUENSE 73220V2",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4087706404",
-            "city": "SAN JOSE",
-            "ZIP": "95134"
-        },
-        {
-            "facility_id": "FA0296402",
-            "record_ID": "PR0438957",
-            "PROGRAM_IDENTIFIER": "SPARTAN TACO TRUCK 38699U2",
-            "FACILITY_NAME": "SPARTAN TACO TRUCK 38699U2",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4087128161",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        
-        {
-            "facility_id": "FA0296922",
-            "record_ID": "PR0439001",
-            "PROGRAM_IDENTIFIER": "COELLO'S FOOD TRUCK 93715E2",
-            "FACILITY_NAME": "COELLO'S FOOD TRUCK 93715E2",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "6693199119",
-            "city": "SAN JOSE",
-            "ZIP": "95122"
-        },
-        {
-            "facility_id": "FA0296954",
-            "record_ID": "PR0439003",
-            "PROGRAM_IDENTIFIER": "LA CHILANGUITA TACO TRUCK 00178S2",
-            "FACILITY_NAME": "LA CHILANGUITA 00178S2",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "2097100037",
-            "city": "LOS BANOS",
-            "ZIP": "93635"
-        },
-        
-        {
-            "facility_id": "FA0297773",
-            "record_ID": "PR0439068",
-            "PROGRAM_IDENTIFIER": "TACOS EL CHORE 4SM5406",
-            "FACILITY_NAME": "TACOS EL CHORE 4SM5406",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4085928785",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0298235",
-            "record_ID": "PR0439120",
-            "PROGRAM_IDENTIFIER": "MI TAQUERIA LA SUPREMA 4SS5481",
-            "FACILITY_NAME": "MI TAQUERIA LA SUPREMA 4SS5481",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088167854",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0298983",
-            "record_ID": "PR0439174",
-            "PROGRAM_IDENTIFIER": "CMFO - CON SABOR A MEXICO 4SZ7948",
-            "FACILITY_NAME": "CON SABOR A MEXICO 4SZ7948",
-            "PROGRAM_ELEMENT": "FP25",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - LIMITED FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4083935599",
-            "city": "SAN JOSE",
-            "ZIP": "95133"
-        },
-        {
-            "facility_id": "FA0299325",
-            "record_ID": "PR0439280",
-            "PROGRAM_IDENTIFIER": "CMFO - LA DELICIAS DE TONITA 4SV9903",
-            "FACILITY_NAME": "LA DELICIAS DE TONITA 4SV9903",
-            "PROGRAM_ELEMENT": "FP25",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - LIMITED FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4082505608",
-            "city": "SAN JOSE",
-            "ZIP": "95127"
-        },
-        {
-            "facility_id": "FA0299326",
-            "record_ID": "PR0439284",
-            "PROGRAM_IDENTIFIER": "MI RINCONCITO OAXAQUENO D14976E",
-            "FACILITY_NAME": "MI RINCONCITO OAXAQUENO 9F35997",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4087080217",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0299340",
-            "record_ID": "PR0439297",
-            "PROGRAM_IDENTIFIER": "RUTA 100 7Z08824",
-            "FACILITY_NAME": "RUTA 100 7Z08824",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4082750700",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        
-        {
-            "facility_id": "FA0299380",
-            "record_ID": "PR0439361",
-            "PROGRAM_IDENTIFIER": "JOE'S TACO SHOP 1UA3530",
-            "FACILITY_NAME": "JOE'S TACO SHOP 1UA3530",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088167854",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0299439",
-            "record_ID": "PR0439452",
-            "PROGRAM_IDENTIFIER": "TACOS SAN JOSE 23760U1",
-            "FACILITY_NAME": "TACOS SAN JOSE 23760U1",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088167854",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0299517",
-            "record_ID": "PR0439530",
-            "PROGRAM_IDENTIFIER": "TACOS Y JUGOS APOLLO 4SJ1098",
-            "FACILITY_NAME": "TACOS Y JUGOS APOLLO 4SJ1098",
-            "PROGRAM_ELEMENT": "FP25",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - LIMITED FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4082677121",
-            "city": "SAN JOSE",
-            "ZIP": "95125"
-        },
-        
-        {
-            "facility_id": "FA0299695",
-            "record_ID": "PR0439799",
-            "PROGRAM_IDENTIFIER": "SONORA TAQUERIA 48161P2",
-            "FACILITY_NAME": "SONORA TAQUERIA 48161P2",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088167854",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0299814",
-            "record_ID": "PR0439911",
-            "PROGRAM_IDENTIFIER": "EL BOMBERO 408 73514C3",
-            "FACILITY_NAME": "EL BOMBERO 408 73514C3",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4084667406",
-            "city": "SAN JOSE",
-            "ZIP": "95113"
-        },
-        {
-            "facility_id": "FA0299816",
-            "record_ID": "PR0439913",
-            "PROGRAM_IDENTIFIER": "CMFO - TACOS DE LA ESQUINA CDMX 4SX8081",
-            "FACILITY_NAME": "TACOS DE LA ESQUINA CDMX 4SX8081",
-            "PROGRAM_ELEMENT": "FP25",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - LIMITED FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088167854",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0299839",
-            "record_ID": "PR0439933",
-            "PROGRAM_IDENTIFIER": "VIRRUETA'S TACOS 8Y27932",
-            "FACILITY_NAME": "VIRRUETA'S TACOS 8Y27932",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088167854",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0300015",
-            "record_ID": "PR0440559",
-            "PROGRAM_IDENTIFIER": "EL TACO DE ORO 91508S2",
-            "FACILITY_NAME": "EL TACO DE ORO 91508S2",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "6507993471",
-            "city": "ALVISO",
-            "ZIP": "95002"
-        },
-        {
-            "facility_id": "FA0300019",
-            "record_ID": "PR0440562",
-            "PROGRAM_IDENTIFIER": "NUEVAS GENERACIONES TAQUERIA 9EVASG1",
-            "FACILITY_NAME": "NUEVAS GENERACIONES TAQUERIA 9EVASG1",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088167854",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0300072",
-            "record_ID": "PR0440621",
-            "PROGRAM_IDENTIFIER": "WONKS STREET TACOS 569994B",
-            "FACILITY_NAME": "WONKS STREET TACOS 569994B",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4084013322",
-            "city": "SAN JOSE",
-            "ZIP": "95125"
-        },
-        {
-            "facility_id": "FA0300155",
-            "record_ID": "PR0440722",
-            "PROGRAM_IDENTIFIER": "NEZA BIRRIERIA #2 81972G3",
-            "FACILITY_NAME": "NEZA BIRRIERIA #2 81972G3",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4082750700",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0300168",
-            "record_ID": "PR0440734",
-            "PROGRAM_IDENTIFIER": "TACOS EL BUEN SABOR #2 8W24687",
-            "FACILITY_NAME": "TACOS EL BUEN SABOR #2 8W24687",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4082750700",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0300794",
-            "record_ID": "PR0441488",
-            "PROGRAM_IDENTIFIER": "TAQUERIA EL JEFE 21380S3",
-            "FACILITY_NAME": "TAQUERIA EL JEFE 21380S3",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088167854",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0301058",
-            "record_ID": "PR0441866",
-            "PROGRAM_IDENTIFIER": "TAQUERIA LAS DELICIAS 83717D3",
-            "FACILITY_NAME": "TAQUERIA LAS DELICIAS 83717D3",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088167854",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        
-        {
-            "facility_id": "FA0301136",
-            "record_ID": "PR0441976",
-            "PROGRAM_IDENTIFIER": "EL CALIFAS TACOS 03412X2",
-            "FACILITY_NAME": "EL CALIFAS TACOS 03412X2",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088167854",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0301283",
-            "record_ID": "PR0442223",
-            "PROGRAM_IDENTIFIER": "RICOS TACOS LOS GUEROS 4SZ4055",
-            "FACILITY_NAME": "RICOS TACOS LOS GUEROS 4SZ4055",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4086908145",
-            "city": "SAN JOSE",
-            "ZIP": "95110"
-        },
-        
-        {
-            "facility_id": "FA0301592",
-            "record_ID": "PR0443009",
-            "PROGRAM_IDENTIFIER": "ANTOJOS LOS COMPAS 29004J3",
-            "FACILITY_NAME": "ANTOJOS LOS COMPAS 29004J3",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088167854",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0301598",
-            "record_ID": "PR0443013",
-            "PROGRAM_IDENTIFIER": "PRE-HISPANIC MX CUISINE X705326",
-            "FACILITY_NAME": "PRE-HISPANIC MX CUISINE X705326",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4087998011",
-            "city": "SAN JOSE",
-            "ZIP": "95134"
-        },
-    
-        {
-            "facility_id": "FA0301616",
-            "record_ID": "PR0443032",
-            "PROGRAM_IDENTIFIER": "RUBI'S TAQUERIA 45V3124",
-            "FACILITY_NAME": "RUBI'S TAQUERIA 45V3124",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088167854",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0301617",
-            "record_ID": "PR0443033",
-            "PROGRAM_IDENTIFIER": "TASTE OF MEXICO 4PJ808",
-            "FACILITY_NAME": "TASTE OF MEXICO 4PJ808",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4087148342",
-            "city": "SAN JOSE",
-            "ZIP": "95113"
-        },
-        {
-            "facility_id": "FA0301620",
-            "record_ID": "PR0443036",
-            "PROGRAM_IDENTIFIER": "TACOS CHENCHO 4TU9833",
-            "FACILITY_NAME": "TACOS CHENCHO 4TU9833",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088167854",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0301668",
-            "record_ID": "PR0443100",
-            "PROGRAM_IDENTIFIER": "BIRRIA Y DELLICIAS LA REYNITA  4TZ2525",
-            "FACILITY_NAME": "BIRRIA Y DELLICIAS LA REYNITA  4TZ2525",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088167954",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        
-        {
-            "facility_id": "FA0301685",
-            "record_ID": "PR0443118",
-            "PROGRAM_IDENTIFIER": "TACOS Y FRUTAS JUQUILITA 87343K3",
-            "FACILITY_NAME": "TACOS Y FRUTAS JUQUILITA 87343K3",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4089633942",
-            "city": "LOS GATOS",
-            "ZIP": "95030"
-        },
-        
-        {
-            "facility_id": "FA0301737",
-            "record_ID": "PR0443256",
-            "PROGRAM_IDENTIFIER": "TAQUERIA CONCHITA #2 16529G3",
-            "FACILITY_NAME": "TAQUERIA CONCHITA #2 16529G3",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "6692052912",
-            "city": "SAN JOSE",
-            "ZIP": "95111"
-        },
-        {
-            "facility_id": "FA0301836",
-            "record_ID": "PR0443546",
-            "PROGRAM_IDENTIFIER": "TACOS Y MARISCOS SANTA CRUZ 4UA4890",
-            "FACILITY_NAME": "TACOS Y MARISCOS SANTA CRUZ 4UA4890",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088167854",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        
-        {
-            "facility_id": "FA0301972",
-            "record_ID": "PR0443768",
-            "PROGRAM_IDENTIFIER": "LA FAMILIA FOOD TRUCK 52933E3",
-            "FACILITY_NAME": "LA FAMILIA FOOD TRUCK 52933E3",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088167854",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0302135",
-            "record_ID": "PR0443992",
-            "PROGRAM_IDENTIFIER": "TACOS MEXICANOS DON ELY ELYHM38",
-            "FACILITY_NAME": "TACOS MEXICANOS DON ELY ELYHM38",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "NULL",
-            "city": "SAN JOSE",
-            "ZIP": "95126"
-        },
-        {
-            "facility_id": "FA0302153",
-            "record_ID": "PR0444030",
-            "PROGRAM_IDENTIFIER": "CMFO - BRAVO TACOS 4SD3678",
-            "FACILITY_NAME": "BRAVO TACOS 4SD3678",
-            "PROGRAM_ELEMENT": "FP25",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - LIMITED FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "9253259268",
-            "city": "PITTSBURG",
-            "ZIP": "94565"
-        },
-        {
-            "facility_id": "FA0302163",
-            "record_ID": "PR0444044",
-            "PROGRAM_IDENTIFIER": "TOTOS TAQUERIA 32750B2",
-            "FACILITY_NAME": "TOTOS TAQUERIA 32750B2",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088167854",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0302285",
-            "record_ID": "PR0444223",
-            "PROGRAM_IDENTIFIER": "RINCON DEL CIELO 01632U3",
-            "FACILITY_NAME": "RINCON DEL CIELO 01632U3",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "6504649897",
-            "city": "REDWOOD CITY",
-            "ZIP": "94063"
-        },
-        
-        {
-            "facility_id": "FA0302346",
-            "record_ID": "PR0444298",
-            "PROGRAM_IDENTIFIER": "TACOS LA GUERA 97773F3",
-            "FACILITY_NAME": "TACOS LA GUERA 97773F3",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4087281358",
-            "city": "SAN JOSE",
-            "ZIP": "95118"
-        },
-        
-        {
-            "facility_id": "FA0302443",
-            "record_ID": "PR0444441",
-            "PROGRAM_IDENTIFIER": "PACIFICO SHRIMP 8XMY789",
-            "FACILITY_NAME": "PACIFICO SHRIMP 8XMY789",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4087706404",
-            "city": "SAN JOSE",
-            "ZIP": "95128"
-        },
-        {
-            "facility_id": "FA0302459",
-            "record_ID": "PR0444454",
-            "PROGRAM_IDENTIFIER": "SUPPER FOODS U566243",
-            "FACILITY_NAME": "SUPPER FOODS",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "6505124495",
-            "city": "REDWOOD CITY",
-            "ZIP": "94063"
-        },
-        {
-            "facility_id": "FA0302511",
-            "record_ID": "PR0444547",
-            "PROGRAM_IDENTIFIER": "PETRAS KITCHEN 6P82315",
-            "FACILITY_NAME": "PETRAS KITCHEN 6P82315",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "6509414373",
-            "city": "MOUNTAIN VIEW",
-            "ZIP": "94040"
-        },
-        {
-            "facility_id": "FA0302706",
-            "record_ID": "PR0444877",
-            "PROGRAM_IDENTIFIER": "MARISCOS EL AQUACHILES 8 #4SS1056",
-            "FACILITY_NAME": "MARISCOS EL AQUACHILES 8 #4SS1056",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4085406774",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0302707",
-            "record_ID": "PR0444880",
-            "PROGRAM_IDENTIFIER": "TACOS EL GUERO ESTILO TEPA #4UF3937",
-            "FACILITY_NAME": "TACOS EL GUERO ESTILO TEPA #4UF3937",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "NULL",
-            "city": "SAN JOSE",
-            "ZIP": "95111"
-        },
-        {
-            "facility_id": "FA0302769",
-            "record_ID": "PR0444964",
-            "PROGRAM_IDENTIFIER": "TACOS GENESIS 4SU2040",
-            "FACILITY_NAME": "TACOS GENESIS 4SU2040",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088167854",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0302803",
-            "record_ID": "PR0444993",
-            "PROGRAM_IDENTIFIER": "VERO'S LITTLE KITCHEN 52859L3",
-            "FACILITY_NAME": "VERO'S LITTLE KITCHEN 52859L3",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4083144823",
-            "city": "SAN JOSE",
-            "ZIP": "95116"
-        },
-        {
-            "facility_id": "FA0302838",
-            "record_ID": "PR0445061",
-            "PROGRAM_IDENTIFIER": "LOS PAMBAZOS 9BMD639",
-            "FACILITY_NAME": "LOS PAMBAZOS 9BMD639",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "NULL",
-            "city": "SAN JOSE",
-            "ZIP": "95134"
-        },
-        {
-            "facility_id": "FA0303045",
-            "record_ID": "PR0445395",
-            "PROGRAM_IDENTIFIER": "SUPER TACOS EL CONRRO #3 4UA6837",
-            "FACILITY_NAME": "SUPER TACOS EL CONRRO #3 4UA6837",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "6506669372",
-            "city": "SAN JOSE",
-            "ZIP": "95113"
-        },
-        {
-            "facility_id": "FA0303093",
-            "record_ID": "PR0445461",
-            "PROGRAM_IDENTIFIER": "MELINA'S KITCHEN/TACOS EL ZAPOTECO 06274Y2",
-            "FACILITY_NAME": "MELINA'S KITCHEN/TACOS EL ZAPOTECO 06274Y2",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "6504545966",
-            "city": "REDWOOD CITY",
-            "ZIP": "94063"
-        },
-        {
-            "facility_id": "FA0303258",
-            "record_ID": "PR0445695",
-            "PROGRAM_IDENTIFIER": "FAMOSA TAQUERIA 4SW4321",
-            "FACILITY_NAME": "FAMOSA TAQUERIA 4SW4321",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4087281358",
-            "city": "SAN JOSE",
-            "ZIP": "95118"
-        },
-        {
-            "facility_id": "FA0303411",
-            "record_ID": "PR0445881",
-            "PROGRAM_IDENTIFIER": "TA' CONTRERAS 4UE2084",
-            "FACILITY_NAME": "TA' CONTRERAS 4UE2084",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "6508638412",
-            "city": "REDWOOD CITY",
-            "ZIP": "94063"
-        },
-        {
-            "facility_id": "FA0303441",
-            "record_ID": "PR0445926",
-            "PROGRAM_IDENTIFIER": "TACOS MONARCA 8Y69712",
-            "FACILITY_NAME": "TACOS MONARCA 8Y69712",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "NULL",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0303442",
-            "record_ID": "PR0445927",
-            "PROGRAM_IDENTIFIER": "TORTILLERIA LA FAMILIAR 4UR5246",
-            "FACILITY_NAME": "TORTILLERIA LA FAMILIAR 4UR5246",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4156994397",
-            "city": "SAN JOSE",
-            "ZIP": "95133"
-        },
-        {
-            "facility_id": "FA0303444",
-            "record_ID": "PR0445931",
-            "PROGRAM_IDENTIFIER": "METRO BALDERAS #4 17676P3",
-            "FACILITY_NAME": "METRO BALDERAS #4 17676P3",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088332213",
-            "city": "SAN JOSE",
-            "ZIP": "95128"
-        },
-        {
-            "facility_id": "FA0303445",
-            "record_ID": "PR0445932",
-            "PROGRAM_IDENTIFIER": "TAQUERIA Y MARISCOS EL PONY 4VA5253",
-            "FACILITY_NAME": "TAQUERIA Y MARISCOS EL PONY 4VA5253",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088167854",
-            "city": "SAN JOSE",
+            "PROGRAM_DESCRIPTION": "Specializing in tacos, with full food preparation services.",
             "ZIP": "95112"
         },
         {
             "facility_id": "FA0303479",
-            "record_ID": "PR0445971",
-            "PROGRAM_IDENTIFIER": "TACOS LA CHOCA 4VB1314",
             "FACILITY_NAME": "TACOS LA CHOCA 4VB1314",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4084367122",
-            "city": "SAN JOSE",
+            "PROGRAM_DESCRIPTION": "Offering full food preparation services with a focus on tacos.",
             "ZIP": "95112"
         },
         {
             "facility_id": "FA0303538",
-            "record_ID": "PR0446039",
-            "PROGRAM_IDENTIFIER": "EL GRAN TAMAL COLOMBIANO 73658P3",
             "FACILITY_NAME": "EL GRAN TAMAL COLOMBIANO 73658P3",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088167854",
-            "city": "SAN JOSE",
+            "PROGRAM_DESCRIPTION": "Offering full food preparation with a focus on Colombian tamales and tacos.",
             "ZIP": "95112"
         },
         {
             "facility_id": "FA0303539",
-            "record_ID": "PR0446040",
-            "PROGRAM_IDENTIFIER": "TACOS Y ANTOJITOS EL TORITO AZTECA 6M19768",
             "FACILITY_NAME": "TACOS Y ANTOJITOS EL TORITO AZTECA 6M19768",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4082750700",
-            "city": "SAN JOSE",
+            "PROGRAM_DESCRIPTION": "Providing full food prep, specializing in tacos and other Mexican snacks.",
             "ZIP": "95112"
         },
         {
             "facility_id": "FA0303540",
-            "record_ID": "PR0446043",
-            "PROGRAM_IDENTIFIER": "GARCIA'S TAQUERIA 4VG9312",
             "FACILITY_NAME": "GARCIA'S TAQUERIA 4VG9312",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4084367522",
-            "city": "SAN JOSE",
+            "PROGRAM_DESCRIPTION": "Specializing in tacos with full food preparation services.",
             "ZIP": "95112"
         },
         {
             "facility_id": "FA0303552",
-            "record_ID": "PR0446068",
-            "PROGRAM_IDENTIFIER": "LA CHAPARRITA OAXAQUENA 20987N3",
             "FACILITY_NAME": "LA CHAPARRITA OAXAQUENA 20987N3",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4082750700",
-            "city": "SAN JOSE",
+            "PROGRAM_DESCRIPTION": "Offering full food prep services, specializing in Oaxacan cuisine including tacos.",
             "ZIP": "95112"
         },
-    
         {
             "facility_id": "FA0303587",
-            "record_ID": "PR0446104",
-            "PROGRAM_IDENTIFIER": "TACOS CHENCHO 4VA4625",
             "FACILITY_NAME": "TACOS CHENCHO 4VA4625",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088167854",
-            "city": "SAN JOSE",
+            "PROGRAM_DESCRIPTION": "Offering full food prep services, specializing in tacos.",
             "ZIP": "95112"
         },
         {
             "facility_id": "FA0303588",
-            "record_ID": "PR0446105",
-            "PROGRAM_IDENTIFIER": "MEXICAN CUISINE LOS TONOS 25864V2",
             "FACILITY_NAME": "MEXICAN CUISINE LOS TONOS 25864V2",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4083957070",
-            "city": "LOS GATOS",
+            "PROGRAM_DESCRIPTION": "Offering full food preparation, specializing in Mexican cuisine, including tacos.",
             "ZIP": "95030"
         },
         {
             "facility_id": "FA0303605",
-            "record_ID": "PR0446122",
-            "PROGRAM_IDENTIFIER": "TACOS LOS 3 REYES 4VJ7955",
             "FACILITY_NAME": "TACOS LOS 3 REYES 4VJ7955",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4086493395",
-            "city": "SAN JOSE",
+            "PROGRAM_DESCRIPTION": "Offering full food preparation services with a focus on tacos.",
             "ZIP": "95112"
         },
         {
             "facility_id": "FA0303606",
-            "record_ID": "PR0446123",
-            "PROGRAM_IDENTIFIER": "MARISCOS & ALITAS EL PATRON 4VZ9002",
             "FACILITY_NAME": "MARISCOS & ALITAS EL PATRON 4VZ9002",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088167854",
-            "city": "SAN JOSE",
+            "PROGRAM_DESCRIPTION": "Offering full food preparation, specializing in tacos, mariscos, and wings.",
             "ZIP": "95111"
         },
         {
             "facility_id": "FA0303628",
-            "record_ID": "PR0446183",
-            "PROGRAM_IDENTIFIER": "EXQUISITO SABOR SALVADORENO 8Z35627",
             "FACILITY_NAME": "EXQUISITO SABOR SALVADORENO 8Z35627",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4084599459",
-            "city": "SAN JOSE",
+            "PROGRAM_DESCRIPTION": "Providing full food prep services, specializing in Salvadoran cuisine and tacos.",
             "ZIP": "95133"
         },
         {
             "facility_id": "FA0303629",
-            "record_ID": "PR0446184",
-            "PROGRAM_IDENTIFIER": "TAQUERIA ORTIZ 4VA5245",
             "FACILITY_NAME": "TAQUERIA ORTIZ 4VA5245",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4089915608",
-            "city": "SAN JOSE",
+            "PROGRAM_DESCRIPTION": "Offering full food preparation services, specializing in tacos.",
             "ZIP": "95121"
         },
         {
             "facility_id": "FA0303642",
-            "record_ID": "PR0446208",
-            "PROGRAM_IDENTIFIER": "MARISCOS COMO EN SINALOA 4UE3417",
             "FACILITY_NAME": "MARISCOS COMO EN SINALOA 4UE3417",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4084214824",
-            "city": "SAN JOSE",
+            "PROGRAM_DESCRIPTION": "Offering full food prep, focusing on Sinaloan mariscos and tacos.",
             "ZIP": "95112"
         },
         {
             "facility_id": "FA0303689",
-            "record_ID": "PR0446335",
-            "PROGRAM_IDENTIFIER": "BIRRIERIA & TAQUERIA LA GRAN SENORA 84826M3",
             "FACILITY_NAME": "BIRRIERIA & TAQUERIA LA GRAN SENORA 84826M3",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4085091111",
-            "city": "SAN JOSE",
+            "PROGRAM_DESCRIPTION": "Offering full food prep, specializing in birria and tacos.",
             "ZIP": "95112"
         },
         {
             "facility_id": "FA0303830",
-            "record_ID": "PR0446503",
-            "PROGRAM_IDENTIFIER": "MI RINCONCITO OAXAQUENO 4VD9344",
-            "FACILITY_NAME": "TAQUERIA MI REGION 4VD9344",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088167854",
-            "city": "SAN JOSE",
+            "FACILITY_NAME": "MI RINCONCITO OAXAQUENO 4VD9344",
+            "PROGRAM_DESCRIPTION": "Offering full food prep, specializing in Oaxacan tacos.",
             "ZIP": "95112"
         },
         {
             "facility_id": "FA0303836",
-            "record_ID": "PR0446516",
-            "PROGRAM_IDENTIFIER": "4VD9519",
             "FACILITY_NAME": "TACOS EL CHAVALON 4VD9519",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4085096599",
-            "city": "SAN JOSE",
+            "PROGRAM_DESCRIPTION": "Providing full food preparation, specializing in tacos.",
             "ZIP": "95134"
         },
         {
             "facility_id": "FA0303908",
-            "record_ID": "PR0446612",
-            "PROGRAM_IDENTIFIER": "TACOS Y MARISCOS EL BARBON 4UF3936",
-            "FACILITY_NAME": "TACOS Y MARISCOS EL BARBON 4UF3939",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088167854",
-            "city": "SAN JOSE",
+            "FACILITY_NAME": "TACOS Y MARISCOS EL BARBON 4UF3936",
+            "PROGRAM_DESCRIPTION": "Offering full food prep, specializing in tacos and mariscos.",
             "ZIP": "95112"
         },
         {
             "facility_id": "FA0303999",
-            "record_ID": "PR0446744",
-            "PROGRAM_IDENTIFIER": "DIEGUITO'S TAQUERIA 4VD1644",
             "FACILITY_NAME": "DIEGUITO'S TAQUERIA 4VD1644",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "6507142294",
-            "city": "SAN JOSE",
+            "PROGRAM_DESCRIPTION": "Providing full food prep services, specializing in tacos.",
             "ZIP": "95110"
         },
         {
             "facility_id": "FA0304032",
-            "record_ID": "PR0446773",
-            "PROGRAM_IDENTIFIER": "TACOS EL POLLO Y EL GALLITO 36621G3",
             "FACILITY_NAME": "TACOS EL POLLO Y EL GALLITO 36621G3",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4085977101",
-            "city": "SAN JOSE",
+            "PROGRAM_DESCRIPTION": "Offering full food prep, specializing in tacos and chicken dishes.",
             "ZIP": "95118"
         },
         {
             "facility_id": "FA0304034",
-            "record_ID": "PR0446775",
-            "PROGRAM_IDENTIFIER": "TARASCO TAQUERIA 21951S3",
             "FACILITY_NAME": "TARASCO TAQUERIA 21951S3",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4082750700",
-            "city": "SAN JOSE",
+            "PROGRAM_DESCRIPTION": "Offering full food prep, specializing in tacos and Mexican cuisine.",
             "ZIP": "95112"
         },
         {
             "facility_id": "FA0304039",
-            "record_ID": "PR0446781",
-            "PROGRAM_IDENTIFIER": "PATRONA TACOS 17084G3",
             "FACILITY_NAME": "PATRONA TACOS 17084G3",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088167854",
-            "city": "SAN JOSE",
+            "PROGRAM_DESCRIPTION": "Offering full food preparation, specializing in tacos.",
             "ZIP": "95112"
         },
         {
             "facility_id": "FA0304043",
-            "record_ID": "PR0446785",
-            "PROGRAM_IDENTIFIER": "TACOS LA PATRONA 4UD3479",
             "FACILITY_NAME": "TACOS LA PATRONA 4UD3479",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088167854",
-            "city": "SAN JOSE",
+            "PROGRAM_DESCRIPTION": "Offering full food prep, specializing in tacos.",
             "ZIP": "95112"
         },
         {
             "facility_id": "FA0304117",
-            "record_ID": "PR0446886",
-            "PROGRAM_IDENTIFIER": "SABROSONIC TOUR 73425K3",
             "FACILITY_NAME": "SABROSONIC TOUR 73425K3",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4084367522",
-            "city": "SAN JOSE",
+            "PROGRAM_DESCRIPTION": "Providing full food prep services, specializing in tacos and other Mexican foods.",
             "ZIP": "95112"
         },
         {
             "facility_id": "FA0304174",
-            "record_ID": "PR0446947",
-            "PROGRAM_IDENTIFIER": "MOMOLICIOUS 8T28569",
             "FACILITY_NAME": "MOMOLICIOUS 8T28569",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4085958192",
-            "city": "OAKLAND",
-            "ZIP": "94607"
-        },
-        {
-            "facility_id": "FA0304175",
-            "record_ID": "PR0446948",
-            "PROGRAM_IDENTIFIER": "MESTIZO 8T88992",
-            "FACILITY_NAME": "MESTIZO 8T88992",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "5103290277",
-            "city": "SAN JOSE",
-            "ZIP": "95116"
-        },
-        {
-            "facility_id": "FA0304292",
-            "record_ID": "PR0447120",
-            "PROGRAM_IDENTIFIER": "TACOS EL POLLO Y EL GALLITO 31820T3",
-            "FACILITY_NAME": "TACOS EL POLLO Y EL GALLITO 31820T3",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4085977101",
-            "city": "SAN JOSE",
-            "ZIP": "95118"
-        },
-        {
-            "facility_id": "FA0304410",
-            "record_ID": "PR0447260",
-            "PROGRAM_IDENTIFIER": "AMANECER 55391T3",
-            "FACILITY_NAME": "AMANECER 55391T3",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4087998011",
-            "city": "SAN JOSE",
-            "ZIP": "95134"
-        },
-        {
-            "facility_id": "FA0304420",
-            "record_ID": "PR0447272",
-            "PROGRAM_IDENTIFIER": "MOZZERIA 27896W1",
-            "FACILITY_NAME": "MOZZERIA 27896W1",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "5105043867",
-            "city": "ALAMEDA",
-            "ZIP": "94501"
-        },
-        {
-            "facility_id": "FA0304429",
-            "record_ID": "PR0447282",
-            "PROGRAM_IDENTIFIER": "TACOS LA CHILANGUITA 99968D3",
-            "FACILITY_NAME": "TACOS LA CHILANGUITA 99968D3",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088167854",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0304602",
-            "record_ID": "PR0447497",
-            "PROGRAM_IDENTIFIER": "TACOS MENDOZA 4G96677",
-            "FACILITY_NAME": "TACOS MENDOZA 4G96677",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4084367522",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
+            "PROGRAM_DESCRIPTION": "Offering full food prep",
+            "ZIP": ""
         },
         {
             "facility_id": "FA0304603",
-            "record_ID": "PR0447498",
-            "PROGRAM_IDENTIFIER": "TOQUE Y SAZON #2 40938P3",
-            "FACILITY_NAME": "TOQUE Y SAZON #2 40938P3",
-            "PROGRAM_ELEMENT": "FP26",
             "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4082750700",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
+            "ZIP": "95112",
+            "description": "Offering full food preparation services located in the 95112 area."
         },
         {
             "facility_id": "FA0304735",
-            "record_ID": "PR0447644",
-            "PROGRAM_IDENTIFIER": "TACOS SANTA ANITA #2 4TC9936",
-            "FACILITY_NAME": "TACOS SANTA ANITA #2 4TC9936",
-            "PROGRAM_ELEMENT": "FP25",
             "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - LIMITED FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4082101002",
-            "city": "SAN JOSE",
-            "ZIP": "95110"
+            "ZIP": "95110",
+            "description": "With limited food preparation located in the 95110 area."
         },
-       {
+        {
             "facility_id": "FA0304990",
-            "record_ID": "PR0447928",
-            "PROGRAM_IDENTIFIER": "CMFO - LONCHERA EL TORO PESADO 4UY1698",
-            "FACILITY_NAME": "LONCHERA EL TORO PESADO 4UY1698",
-            "PROGRAM_ELEMENT": "FP25",
             "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - LIMITED FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088167854",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
+            "ZIP": "95112",
+            "description": "Providing limited food preparation services in the 95112 area."
         },
         {
             "facility_id": "FA0305347",
-            "record_ID": "PR0448320",
-            "PROGRAM_IDENTIFIER": "ROJAS MEXICAN FOOD 7J70016",
-            "FACILITY_NAME": "ROJAS MEXICAN FOOD 7J70016",
-            "PROGRAM_ELEMENT": "FP26",
             "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4082750700",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
+            "ZIP": "95112",
+            "description": "Offering full food preparation in the 95112 region."
         },
         {
             "facility_id": "FA0305455",
-            "record_ID": "PR0448456",
-            "PROGRAM_IDENTIFIER": "FIESTA TACOS 71657G1",
-            "FACILITY_NAME": "FIESTA TACOS 71657G1",
-            "PROGRAM_ELEMENT": "FP26",
             "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088167854",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
+            "ZIP": "95112",
+            "description": "Offering full food preparation services in the 95112 area."
         },
         {
             "facility_id": "FA0305565",
-            "record_ID": "PR0448595",
-            "PROGRAM_IDENTIFIER": "PINTO COCINA MEXICANA LLC 8H18177",
-            "FACILITY_NAME": "PINTO COCINA MEXICANA LLC 8H18177",
-            "PROGRAM_ELEMENT": "FP26",
             "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4086144046",
-            "city": "MORGAN HILL",
-            "ZIP": "95037"
+            "ZIP": "95037",
+            "description": "Providing full food prep services located in the 95037 area."
         },
         {
             "facility_id": "FA0305571",
-            "record_ID": "PR0448599",
-            "PROGRAM_IDENTIFIER": "DELICIA ORIGINAL 5G65899",
-            "FACILITY_NAME": "DELICIA ORIGINAL 5G65899",
-            "PROGRAM_ELEMENT": "FP26",
             "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088167854",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
+            "ZIP": "95112",
+            "description": "Offering full food preparation services in the 95112 area."
         },
         {
             "facility_id": "FA0305678",
-            "record_ID": "PR0448734",
-            "PROGRAM_IDENTIFIER": "TACOS Y TLAYUDAS EL EJUTECO 26289N3",
-            "FACILITY_NAME": "TACOS Y TLAYUDAS EL EJUTECO 26289N3",
-            "PROGRAM_ELEMENT": "FP26",
             "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4082750700",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
+            "ZIP": "95112",
+            "description": "Providing full food preparation in the 95112 area."
         },
         {
             "facility_id": "FA0305697",
-            "record_ID": "PR0448766",
-            "PROGRAM_IDENTIFIER": "EL RANCHON 4UF6430",
-            "FACILITY_NAME": "EL RANCHON 4UF6430",
-            "PROGRAM_ELEMENT": "FP26",
             "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4087281358",
-            "city": "SAN JOSE",
-            "ZIP": "95118"
+            "ZIP": "95118",
+            "description": "Offering full food preparation services in the 95118 area."
         },
         {
             "facility_id": "FA0305795",
-            "record_ID": "PR0448876",
-            "PROGRAM_IDENTIFIER": "TACOS LOS PELUCHES LLC 2G86937",
-            "FACILITY_NAME": "TACOS LOS PELUCHES LLC 2G86937",
-            "PROGRAM_ELEMENT": "FP26",
             "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4084367522",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
+            "ZIP": "95112",
+            "description": "Providing full food prep services in the 95112 area."
         },
         {
             "facility_id": "FA0305810",
-            "record_ID": "PR0448895",
-            "PROGRAM_IDENTIFIER": "CHULA PUEBLA 2 92716V3",
-            "FACILITY_NAME": "CHULA PUEBLA 2",
-            "PROGRAM_ELEMENT": "FP26",
             "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4084367522",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
+            "ZIP": "95112",
+            "description": "Offering full food preparation services in the 95112 area."
         },
         {
             "facility_id": "FA0305826",
-            "record_ID": "PR0448911",
-            "PROGRAM_IDENTIFIER": "MI COCINA CATRACHA 9HJJ804",
-            "FACILITY_NAME": "MI COCINA CATRACHA 9HJJ804",
-            "PROGRAM_ELEMENT": "FP26",
             "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4087998011",
-            "city": "SAN JOSE",
-            "ZIP": "95128"
+            "ZIP": "95128",
+            "description": "Offering full food preparation in the 95128 area."
         },
         {
             "facility_id": "FA0305844",
-            "record_ID": "PR0448933",
-            "PROGRAM_IDENTIFIER": "LA MICRO DEL SABOR 4VN2073",
-            "FACILITY_NAME": "LA MICRO DEL SABOR 4VN2073",
-            "PROGRAM_ELEMENT": "FP26",
             "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088167854",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
+            "ZIP": "95112",
+            "description": "Offering full food preparation services in the 95112 area."
         },
         {
             "facility_id": "FA0305910",
-            "record_ID": "PR0449018",
-            "PROGRAM_IDENTIFIER": "LA MARQUESITA 4PJ4339",
-            "FACILITY_NAME": "LA MARQUESITA 4PJ4339",
-            "PROGRAM_ELEMENT": "FP25",
             "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - LIMITED FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4086611566",
-            "city": "SAN JOSE",
-            "ZIP": "95110"
+            "ZIP": "95110",
+            "description": "Offering limited food prep services in the 95110 area."
         },
         {
             "facility_id": "FA0305941",
-            "record_ID": "PR0449049",
-            "PROGRAM_IDENTIFIER": "EL CULIACANZO 4UY1625",
-            "FACILITY_NAME": "EL CULIACANZO 4UY1625",
-            "PROGRAM_ELEMENT": "FP26",
             "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088366547",
-            "city": "SAN JOSE",
-            "ZIP": "95131"
+            "ZIP": "95131",
+            "description": "Offering full food prep services in the 95131 area."
         },
         {
             "facility_id": "FA0305959",
-            "record_ID": "PR0449073",
-            "PROGRAM_IDENTIFIER": "SENOR J.J. 68171R3",
-            "FACILITY_NAME": "SENOR J.J. 68171R3",
-            "PROGRAM_ELEMENT": "FP26",
             "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "6502455017",
-            "city": "REDWOOD CITY",
-            "ZIP": "94061"
+            "ZIP": "94061",
+            "description": "Offering full food preparation services in the 94061 region."
         },
         {
             "facility_id": "FA0305960",
-            "record_ID": "PR0449074",
-            "PROGRAM_IDENTIFIER": "MR TACO EXPRESS 1322245",
-            "FACILITY_NAME": "MR TACO EXPRESS 1322245",
-            "PROGRAM_ELEMENT": "FP26",
             "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088167854",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
+            "ZIP": "95112",
+            "description": "Offering full food preparation in the 95112 area."
         },
-        
         {
             "facility_id": "FA0305987",
-            "record_ID": "PR0449105",
-            "PROGRAM_IDENTIFIER": "LA MEXICANA BS 8C25194",
-            "FACILITY_NAME": "LA MEXICANA BS 8C25194",
-            "PROGRAM_ELEMENT": "FP26",
             "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4084367522",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0305988",
-            "record_ID": "PR0449106",
-            "PROGRAM_IDENTIFIER": "NEZA BIRRIERA #2 99548E2",
-            "FACILITY_NAME": "NEZA BIRRIERA #2 99548E2",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088167854",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0306006",
-            "record_ID": "PR0449130",
-            "PROGRAM_IDENTIFIER": "ROSAS TAQUERIA 7R66291",
-            "FACILITY_NAME": "ROSAS TAQUERIA 7R66291",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4084367522",
-            "city": "SAN JOSE",
-            "ZIP": "95117"
-        },
-        {
-            "facility_id": "FA0306023",
-            "record_ID": "PR0449155",
-            "PROGRAM_IDENTIFIER": "LA TORTA REAL 86557K3",
-            "FACILITY_NAME": "LA TORTA REAL 86557K3",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4156994397",
-            "city": "SAN JOSE",
-            "ZIP": "95133"
-        },
-        {
-            "facility_id": "FA0306026",
-            "record_ID": "PR0449159",
-            "PROGRAM_IDENTIFIER": "EL BOMBERO 408 4UN2704",
-            "FACILITY_NAME": "EL BOMBERO 408 4UN2704",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4084667406",
-            "city": "SAN JOSE",
-            "ZIP": "95113"
-        },
-        {
-            "facility_id": "FA0306143",
-            "record_ID": "PR0449374",
-            "PROGRAM_IDENTIFIER": "CMFO -TACOS GARCIA 4VK5946",
-            "FACILITY_NAME": "TACOS GARCIA 4VK5946",
-            "PROGRAM_ELEMENT": "FP25",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - LIMITED FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088167854",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0306165",
-            "record_ID": "PR0449404",
-            "PROGRAM_IDENTIFIER": "TACOS LA CHOCA MEXICAN FOOD 4VS4644",
-            "FACILITY_NAME": "TACOS LA CHOCA MEXICAN FOOD 4VS4644",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4084367522",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0306181",
-            "record_ID": "PR0449427",
-            "PROGRAM_IDENTIFIER": "TOLUCAS 63978W3",
-            "FACILITY_NAME": "TOLUCAS 63978W3",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4084367522",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0306182",
-            "record_ID": "PR0449428",
-            "PROGRAM_IDENTIFIER": "LAS CORITAS 4VD9533",
-            "FACILITY_NAME": "LAS CORITAS 4VD9533",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4087574894",
-            "city": "SAN JOSE",
-            "ZIP": "95110"
-        },
-        {
-            "facility_id": "FA0306280",
-            "record_ID": "PR0449563",
-            "PROGRAM_IDENTIFIER": "UN RINCONCITO EN EL CIELO 9CDM861",
-            "FACILITY_NAME": "UN RINCONCITO EN EL CIELO 9CDM861",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4082750700",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0306307",
-            "record_ID": "PR0449589",
-            "PROGRAM_IDENTIFIER": "MI LINDO APATZINGAN 4TV8281",
-            "FACILITY_NAME": "MI LINDO APATZINGAN 4TV8281",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4083144823",
-            "city": "SAN JOSE",
-            "ZIP": "95116"
-        },
-        {
-            "facility_id": "FA0306358",
-            "record_ID": "PR0449651",
-            "PROGRAM_IDENTIFIER": "TACOS EL RUFLES 4UN2729",
-            "FACILITY_NAME": "TACOS EL RUFLES 4UN2729",
-            "PROGRAM_ELEMENT": "FP25",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - LIMITED FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088413009",
-            "city": "GILROY",
-            "ZIP": "95020"
-        },
-        {
-            "facility_id": "FA0306359",
-            "record_ID": "PR0449652",
-            "PROGRAM_IDENTIFIER": "EL PALACIO DEL SABOR 29286J3",
-            "FACILITY_NAME": "EL PALACIO DEL SABOR 29286J3",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4083183072",
-            "city": "SAN JOSE",
-            "ZIP": "95111"
-        },
-        {
-            "facility_id": "FA0306457",
-            "record_ID": "PR0449794",
-            "PROGRAM_IDENTIFIER": "TACOS LA KIKI 4RC1799",
-            "FACILITY_NAME": "TACOS LA KIKI 4RC1799",
-            "PROGRAM_ELEMENT": "FP25",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - LIMITED FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4086611566",
-            "city": "SAN JOSE",
-            "ZIP": "95110"
-        },
-        {
-            "facility_id": "FA0306524",
-            "record_ID": "PR0449865",
-            "PROGRAM_IDENTIFIER": "FAMILY TACOS #1 8U37186",
-            "FACILITY_NAME": "FAMILY TACOS #1 8U37186",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088167854",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0306581",
-            "record_ID": "PR0449930",
-            "PROGRAM_IDENTIFIER": "CMFO-TACOS YIA WIZ 6HSG735",
-            "FACILITY_NAME": "TACOS YIA WIZ 6HSG735",
-            "PROGRAM_ELEMENT": "FP25",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - LIMITED FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088167854",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0306582",
-            "record_ID": "PR0449931",
-            "PROGRAM_IDENTIFIER": "LA COSINA DE TEL70914N3",
-            "FACILITY_NAME": "LA COSINA DE TEL70914N3",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088167854",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0306829",
-            "record_ID": "PR0450214",
-            "PROGRAM_IDENTIFIER": "EL MINI TACO 6A20990",
-            "FACILITY_NAME": "EL MINI TACO 6A20990",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "6505599197",
-            "city": "LOS ALTOS",
-            "ZIP": "94022"
-        },
-        {
-            "facility_id": "FA0306885",
-            "record_ID": "PR0450300",
-            "PROGRAM_IDENTIFIER": "TACO DELISH 4VK5899",
-            "FACILITY_NAME": "TACO DELISH 4VK5899",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088167854",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0306920",
-            "record_ID": "PR0450336",
-            "PROGRAM_IDENTIFIER": "LA BIRRIA MAS BUENA 4WD3694",
-            "FACILITY_NAME": "LA BIRRIA MAS BUENA 4WD3694",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4086144046",
-            "city": "MORGAN HILL",
-            "ZIP": "95037"
-        },
-        {
-            "facility_id": "FA0306988",
-            "record_ID": "PR0450419",
-            "PROGRAM_IDENTIFIER": "BIRRIERIA VILLALOBOS 65813R3",
-            "FACILITY_NAME": "BIRRIERIA VILLALOBOS 65813R3",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4084367522",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0307043",
-            "record_ID": "PR0450487",
-            "PROGRAM_IDENTIFIER": "BIRRIA MARISOL'S 5X73449",
-            "FACILITY_NAME": "BIRRIA MARISOL'S 5X73449",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4084367522",
-            "city": "SAN JOSE",
-            "ZIP": "95116"
-        },
-        {
-            "facility_id": "FA0307079",
-            "record_ID": "PR0450528",
-            "PROGRAM_IDENTIFIER": "TACOS AZTECA INC 4VD2709",
-            "FACILITY_NAME": "TACOS AZTECA INC 4VD2709",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4087222274",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0307084",
-            "record_ID": "PR0450533",
-            "PROGRAM_IDENTIFIER": "ESTRADO'S 42563V3",
-            "FACILITY_NAME": "ESTRADO'S 42563V3",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088167854",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0307158",
-            "record_ID": "PR0450612",
-            "PROGRAM_IDENTIFIER": "MIXTECA POBLANA 8B61254",
-            "FACILITY_NAME": "MIXTECA POBLANA 8B61254",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4156994397",
-            "city": "SAN JOSE",
-            "ZIP": "95133"
-        },
-        {
-            "facility_id": "FA0307160",
-            "record_ID": "PR0450614",
-            "PROGRAM_IDENTIFIER": "FELIPE EL KORO #2 09002A4",
-            "FACILITY_NAME": "FELIPE EL KORO #2 09002A4",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4089262810",
-            "city": "SAN JOSE",
-            "ZIP": "95116"
-        },
-        {
-            "facility_id": "FA0307161",
-            "record_ID": "PR0450615",
-            "PROGRAM_IDENTIFIER": "LAS TRES FRONTERA 7F15874",
-            "FACILITY_NAME": "LAS TRES FRONTERA 7F15874",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4086670849",
-            "city": "SAN JOSE",
-            "ZIP": "95122"
-        },
-        {
-            "facility_id": "FA0307181",
-            "record_ID": "PR0450629",
-            "PROGRAM_IDENTIFIER": "HUGO'S TACOS 17727P3",
-            "FACILITY_NAME": "HUGO'S TACOS 17727P3",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4085904545",
-            "city": "SAN JOSE",
-            "ZIP": "95134"
-        },
-        
-        {
-            "facility_id": "FA0307271",
-            "record_ID": "PR0450731",
-            "PROGRAM_IDENTIFIER": "SHADDAI GUATEMALAN CUISINE 4KU1105",
-            "FACILITY_NAME": "SHADDAI GUATEMALAN CUISINE 4KU1105",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088167854",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0307284",
-            "record_ID": "PR0450744",
-            "PROGRAM_IDENTIFIER": "SAN MIGUEL TAQUERIA 56167A1",
-            "FACILITY_NAME": "SAN MIGUEL TAQUERIA 56167A1",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4084367522",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0307295",
-            "record_ID": "PR0450767",
-            "PROGRAM_IDENTIFIER": "EL BOMBERO 408 4VR6367",
-            "FACILITY_NAME": "EL BOMBERO 408 4VR6367",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4084667406",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0307296",
-            "record_ID": "PR0450768",
-            "PROGRAM_IDENTIFIER": "LAS MINAS GUATEMALAN CUISINE 34118K3",
-            "FACILITY_NAME": "LAS MINAS GUATEMALAN CUISINE 34118K3",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088167854",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0307317",
-            "record_ID": "PR0450790",
-            "PROGRAM_IDENTIFIER": "LAS GEMELAS SAGRERO 4VG7931",
-            "FACILITY_NAME": "LAS GEMELAS SAGRERO 4VG7931",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "NULL",
-            "city": "SAN JOSE",
-            "ZIP": "95125"
-        },
-        {
-            "facility_id": "FA0307370",
-            "record_ID": "PR0450870",
-            "PROGRAM_IDENTIFIER": "NUEVA GENERACIONES TAQUERIA 40748V3",
-            "FACILITY_NAME": "NUEVA GENERACIONES TAQUERIA 40748V3",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088167854",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0307457",
-            "record_ID": "PR0450969",
-            "PROGRAM_IDENTIFIER": "SUPER TACOS PINO SUAREZ 2128823",
-            "FACILITY_NAME": "SUPER TACOS PINO SUAREZ 2128823",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4082750700",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0307461",
-            "record_ID": "PR0450973",
-            "PROGRAM_IDENTIFIER": "LAS TEQUILERAS MEXICAN GRILL 90022X3",
-            "FACILITY_NAME": "LAS TEQUILERAS MEXICAN GRILL 90022X3",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088167854",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0307488",
-            "record_ID": "PR0451012",
-            "PROGRAM_IDENTIFIER": "LA COCINA MENDOZA 4WH4065",
-            "FACILITY_NAME": "LA COCINA MENDOZA 4WH4065",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088167854",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0307498",
-            "record_ID": "PR0451025",
-            "PROGRAM_IDENTIFIER": "MISFIT TACO 5D11212",
-            "FACILITY_NAME": "MISFIT TACO 5D11212",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "5106883200",
-            "city": "HAYWARD",
-            "ZIP": "94544"
-        },
-        {
-            "facility_id": "FA0307585",
-            "record_ID": "PR0451152",
-            "PROGRAM_IDENTIFIER": "LA MICHOACANA 101955S",
-            "FACILITY_NAME": "LA MICHOACANA 101955S",
-            "PROGRAM_ELEMENT": "FP25",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - LIMITED FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4084495920",
-            "city": "SAN JOSE",
-            "ZIP": "95122"
-        },
-          {
-            "facility_id": "FA0307662",
-            "record_ID": "PR0451234",
-            "PROGRAM_IDENTIFIER": "MEXCLA STREET EATS 3U75139",
-            "FACILITY_NAME": "MEXCLA STREET EATS 3U75139",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4085208883",
-            "city": "SAN JOSE",
-            "ZIP": "95126"
-        },
-        {
-            "facility_id": "FA0307688",
-            "record_ID": "PR0451260",
-            "PROGRAM_IDENTIFIER": "CORRE Y SE VA 73546C3",
-            "FACILITY_NAME": "CORRE Y SE VA 73546C3",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4084367522",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0307728",
-            "record_ID": "PR0451300",
-            "PROGRAM_IDENTIFIER": "EL PAISA BY LOS ALEGRES 02565X3",
-            "FACILITY_NAME": "EL PAISA BY LOS ALEGRES 02565X3",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "6507168648",
-            "city": "REDWOOD CITY",
-            "ZIP": "94063"
-        },
-       
-        {
-            "facility_id": "FA0307815",
-            "record_ID": "PR0451407",
-            "PROGRAM_IDENTIFIER": "MONCHIS MARISCOS 5U25941",
-            "FACILITY_NAME": "MONCHIS MARISCOS 5U25941",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4084367522",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0307838",
-            "record_ID": "PR0451432",
-            "PROGRAM_IDENTIFIER": "LOS ALEBRIJES LLC 4WB9920",
-            "FACILITY_NAME": "LOS ALEBRIJES LLC 4WB9920",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088167854",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0307840",
-            "record_ID": "PR0451434",
-            "PROGRAM_IDENTIFIER": "TORRES TAQUERIA 4MJ5292",
-            "FACILITY_NAME": "TORRES TAQUERIA 4MJ5292",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4087706404",
-            "city": "SAN JOSE",
-            "ZIP": "95134"
-        },
-        {
-            "facility_id": "FA0307906",
-            "record_ID": "PR0451502",
-            "PROGRAM_IDENTIFIER": "MARISCOS EL PARAISO TROPICAL 4WC4151",
-            "FACILITY_NAME": "MARISCOS EL PARAISO TROPICAL 4WC4151",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4087406404",
-            "city": "SAN JOSE",
-            "ZIP": "95116"
-        },
-        {
-            "facility_id": "FA0307931",
-            "record_ID": "PR0451535",
-            "PROGRAM_IDENTIFIER": "EL AGUILA",
-            "FACILITY_NAME": "EL AGUILA",
-            "PROGRAM_ELEMENT": "FP25",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - LIMITED FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4156994397",
-            "city": "SAN JOSE",
-            "ZIP": "95133"
-        },
-        {
-            "facility_id": "FA0307944",
-            "record_ID": "PR0451549",
-            "PROGRAM_IDENTIFIER": "TACOS DEL GUERO 4JP4689",
-            "FACILITY_NAME": "TACOS DEL GUERO 4JP4689",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4086202301",
-            "city": "GILROY",
-            "ZIP": "95020"
-        },
-        {
-            "facility_id": "FA0307958",
-            "record_ID": "PR0451565",
-            "PROGRAM_IDENTIFIER": "LAS DELICIAS DE MATEO 4UF4380",
-            "FACILITY_NAME": "LAS DELICIAS DE MATEO 4UF4380",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4087706404",
-            "city": "SAN JOSE",
-            "ZIP": "95134"
-        },
-        {
-            "facility_id": "FA0307973",
-            "record_ID": "PR0451583",
-            "PROGRAM_IDENTIFIER": "LA GARNACHA MEXICANA 01607A4",
-            "FACILITY_NAME": "LA GARNACHA MEXICANA 01607A4",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "8006408880",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
-        {
-            "facility_id": "FA0307988",
-            "record_ID": "PR0451599",
-            "PROGRAM_IDENTIFIER": "CMFO-TAQUERIA'S JONATHAN 4DL3908",
-            "FACILITY_NAME": "TAQUERIA'S JONATHAN 4DL3908",
-            "PROGRAM_ELEMENT": "FP25",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - LIMITED FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4087706404",
-            "city": "SAN JOSE",
-            "ZIP": "95134"
-        },
-        {
-            "facility_id": "FA0307994",
-            "record_ID": "PR0451605",
-            "PROGRAM_IDENTIFIER": "TAQUERIA MIMI EL NOPAL 4WE3827",
-            "FACILITY_NAME": "TAQUERIA MIMI EL NOPAL 4WE3827",
-            "PROGRAM_ELEMENT": "FP26",
-            "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-            "Permit_Status": "FULL, ONGOING PERMIT",
-            "PHONE": "4088167854",
-            "city": "SAN JOSE",
-            "ZIP": "95112"
-        },
+            "ZIP": "95112",
+            "description": "Offering full food prep services in the 95112 area."
+        }
     ]
