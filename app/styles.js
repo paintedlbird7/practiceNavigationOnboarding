@@ -101,7 +101,7 @@ const styles = StyleSheet.create({
     backgroundColor: "rgba(0, 0, 0, 0.5)",
   },
   modalContent: {
-    width: "80%",
+    width: "75%",
     backgroundColor: "white",
     borderRadius: 10,
     padding: 20,
@@ -184,20 +184,39 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   closeButton: {
-    position: 'absolute',
-    top: 10,
-    right: 10,
-    zIndex: 1,
-    // backgroundColor: '#2196F3',
-    // borderRadius: 5,
-    // padding: 10,
+    backgroundColor: "orange",
+    paddingVertical: 10,
+    paddingHorizontal: 70,
+    borderRadius: 5,
+    // position: 'absolute',
+    // top: 10,
+    // right: 10,
+    // backgroundColor: 'orange', // Customize button color
+    // padding: 8,
+    // borderRadius: 20,
+    // zIndex: 1, // Ensure it sits above other elements
   },
   closeButtonText: {
-    fontSize: 18,
-    color: '#333',
-    // color: 'white',
-    // fontWeight: 'bold',
+    color: '#fff',
+    fontSize: 16,
+    fontWeight: 'bold',
+    textAlign: 'center',
+  },  
+  closeModalButton: {
+    backgroundColor: "orange", // Matching other buttons
+    paddingVertical: 10,
+    paddingHorizontal: 20,
+    borderRadius: 5,
+    alignSelf: 'center', // Center the button within the modal
+    marginTop: 20, // Add some space above the button
   },
+  closeModalButtonText: {
+    color: '#fff', // Text color for button
+    fontSize: 16,
+    fontWeight: 'bold',
+    textAlign: 'center',
+  },
+  
 
   // container2: {
   //   flex: 1,

@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, Image, Modal, Button, TouchableOpacity } from 'react-native';
+import { View, Text, Image, Modal, TouchableOpacity } from 'react-native';
 import styles from './styles';
 import TruckMap from './TruckMap';
 import CustomAlert from './CustomAlert';
@@ -23,11 +23,6 @@ export default function TruckModal({
       <View style={styles.modalContainer}>
         <View style={styles.modalContent}>
           
-          {/* Close Button Positioned at the Top Right */}
-          <TouchableOpacity style={styles.closeButton} onPress={closeModal}>
-            <Text style={styles.closeButtonText}>✕</Text>
-          </TouchableOpacity>
-          
           <Image source={truck.image} style={styles.modalImage} />
           <Text style={styles.modalTitle}>{truck.FACILITY_NAME}</Text>
           <Text style={styles.modalLocation}>Zip Code: {truck.ZIP}</Text>
@@ -46,6 +41,12 @@ export default function TruckModal({
             longitude={truck.longitude} 
             name={truck.name} 
           />
+
+          {/* Close Button at the Bottom */}
+          <TouchableOpacity style={styles.closeModalButton} onPress={closeModal}>
+            <Text style={styles.closeModalButtonText}>Close</Text>
+          </TouchableOpacity>
+          
         </View>
 
         {/* Custom Alert inside TruckModal */}
