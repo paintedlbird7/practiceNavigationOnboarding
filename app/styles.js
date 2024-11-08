@@ -1,4 +1,3 @@
-// styles.js
 import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
@@ -17,13 +16,6 @@ const styles = StyleSheet.create({
     marginTop: 30,  // Increase this value as needed
     borderBottomColor: '#FFA500',
     borderBottomWidth: 2,
-    // flexDirection: "row",
-    // alignItems: "center",
-    // width: "90%",
-    // marginBottom: 20,
-    // marginLeft: 18,
-    // borderBottomColor: '#FFA500', // Set bottom border color to match button
-    // borderBottomWidth: 2,
   },
   searchBar: {
     height: 40,
@@ -32,7 +24,6 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderRadius: 10,
     paddingHorizontal: 10,
-    // marginRight: 70,
   },
   searchButton: {
     backgroundColor: "orange",
@@ -61,38 +52,37 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.25,
     shadowRadius: 3.84,
 
-     // Shadow for Android
-     elevation: 5,
-    },
-
-    resultText: {
-      fontSize: 18,
-      fontWeight: 'bold',
-    },
-    resultLocation: {
-      fontSize: 14,
-      color: '#888',
-      marginTop: 4,
-    },
-    resultDescription: {
-      fontSize: 14,
-      color: '#666',
-      marginTop: 4,
-    },
-    ratingText: {
-      fontSize: 14,
-      color: '#ff9500',
-      marginTop: 4,
-    },
-    noResultsText: {
-      textAlign: 'center',
-      marginTop: 20,
-      fontSize: 16,
-      color: '#888',
-    },
-    resultsList: {
-      paddingHorizontal: 10,
-    },
+    // Shadow for Android
+    elevation: 5,
+  },
+  resultText: {
+    fontSize: 18,
+    fontWeight: 'bold',
+  },
+  resultLocation: {
+    fontSize: 14,
+    color: '#888',
+    marginTop: 4,
+  },
+  resultDescription: {
+    fontSize: 14,
+    color: '#666',
+    marginTop: 4,
+  },
+  ratingText: {
+    fontSize: 14,
+    color: '#ff9500',
+    marginTop: 4,
+  },
+  noResultsText: {
+    textAlign: 'center',
+    marginTop: 20,
+    fontSize: 16,
+    color: '#888',
+  },
+  resultsList: {
+    paddingHorizontal: 10,
+  },
 
   modalContainer: {
     flex: 1,
@@ -151,7 +141,6 @@ const styles = StyleSheet.create({
     color: "#333",
     marginLeft: 68,
     marginRight: 68,
-
   },
   ratingContainer: {
     flexDirection: "row",
@@ -170,7 +159,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(0, 0, 0, 0.5)',
     justifyContent: 'center',
     alignItems: 'center',
-    zIndex: 10,  // Make sure the alert appears above other elements
+    zIndex: 10,
   },
   alertBox: {
     width: '80%',
@@ -188,62 +177,12 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
     paddingHorizontal: 70,
     borderRadius: 5,
-    // position: 'absolute',
-    // top: 10,
-    // right: 10,
-    // backgroundColor: 'orange', // Customize button color
-    // padding: 8,
-    // borderRadius: 20,
-    // zIndex: 1, // Ensure it sits above other elements
   },
   closeButtonText: {
     color: '#fff',
-    fontSize: 16,
-    fontWeight: 'bold',
-    textAlign: 'center',
-  },  
-  closeModalButton: {
-    backgroundColor: "orange", // Matching other buttons
-    paddingVertical: 10,
-    paddingHorizontal: 20,
-    borderRadius: 5,
-    alignSelf: 'center', // Center the button within the modal
-    marginTop: 20, // Add some space above the button
-  },
-  closeModalButtonText: {
-    color: '#fff', // Text color for button
-    fontSize: 16,
-    fontWeight: 'bold',
+    fontSize: 18,
     textAlign: 'center',
   },
-  
-
-  // container2: {
-  //   flex: 1,
-  //   padding: 120,
-  //   backgroundColor: '#fff',
-  //   justifyContent: 'flex-start',
-  //   // marginTop: 120,
-  // },
-  // input: {
-  //   height: 40,
-  //   borderColor: '#ccc',
-  //   borderWidth: 1,
-  //   borderRadius: 5,
-  //   paddingHorizontal: 10,
-  //   marginBottom: 10,
-  // },
-  // submitButton: {
-  //   backgroundColor: 'orange',
-  //   paddingVertical: 10,
-  //   paddingHorizontal: 20,
-  //   borderRadius: 5,
-  //   alignItems: 'center',
-  // },
-  // buttonText: {
-  //   color: 'white',
-  //   fontSize: 16,
-  // },
 });
 
 export default styles;
