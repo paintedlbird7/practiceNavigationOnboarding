@@ -318,18 +318,6 @@ export const tacoTruckData = [
         "ZIP": "95133"
     },
     {
-        "facility_id": "FA0265000",
-        "record_ID": "PR0390924",
-        "PROGRAM_IDENTIFIER": "CMFO-ANTOJITOS PANZAS VERDES 4KJ4798",
-        "FACILITY_NAME": "ANTOJITOS PANSAS VERDES 4KJ4798",
-        "PROGRAM_ELEMENT": "FP25",
-        "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - LIMITED FOOD PREP",
-        "Permit_Status": "FULL, ONGOING PERMIT",
-        "PHONE": "4084601697",
-        "city": "SUNNYVALE",
-        "ZIP": "94086"
-    },
-    {
         "facility_id": "FA0265422",
         "record_ID": "PR0391652",
         "PROGRAM_IDENTIFIER": "CMFO - ANTOJITOS PANZAS VERDES 4TE9973",
@@ -403,18 +391,6 @@ export const tacoTruckData = [
         "ZIP": "95125"
     },
     {
-        "facility_id": "FA0267334",
-        "record_ID": "PR0394498",
-        "PROGRAM_IDENTIFIER": "CMFO - ANTOJITOS JUQUILITA 4KU4443",
-        "FACILITY_NAME": "ANTOJITOS JUQUILITA 4KU4443",
-        "PROGRAM_ELEMENT": "FP25",
-        "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - LIMITED FOOD PREP",
-        "Permit_Status": "FULL, ONGOING PERMIT",
-        "PHONE": "4086144046",
-        "city": "MORGAN HILL",
-        "ZIP": "95037"
-    },
-    {
         "facility_id": "FA0267702",
         "record_ID": "PR0395001",
         "PROGRAM_IDENTIFIER": "MEX*CAL ON WHEELS 8Y55239",
@@ -426,19 +402,6 @@ export const tacoTruckData = [
         "city": "SAN JOSE",
         "ZIP": "95112"
     },
-    {
-        "facility_id": "FA0267730",
-        "record_ID": "PR0395045",
-        "PROGRAM_IDENTIFIER": "OAXACAN KITCHEN-MOBILE 8Y72311",
-        "FACILITY_NAME": "OAXACAN KITCHEN-MOBILE 8Y72311",
-        "PROGRAM_ELEMENT": "FP26",
-        "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-        "Permit_Status": "FULL, ONGOING PERMIT",
-        "PHONE": "4089104849",
-        "city": "SANTA CLARA",
-        "ZIP": "95050"
-    },
-    
     {
         "facility_id": "FA0268101",
         "record_ID": "PR0395661",
@@ -725,19 +688,6 @@ export const tacoTruckData = [
         "city": "SAN JOSE",
         "ZIP": "95112"
     },
-   
-    {
-        "facility_id": "FA0273453",
-        "record_ID": "PR0413425",
-        "PROGRAM_IDENTIFIER": "TACOS EL ABUELO 4CE7989",
-        "FACILITY_NAME": "TACOS EL ABUELO 4CE7989",
-        "PROGRAM_ELEMENT": "FP26",
-        "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-        "Permit_Status": "FULL, ONGOING PERMIT",
-        "PHONE": "4086144046",
-        "city": "MORGAN HILL",
-        "ZIP": "95037"
-    },
     {
         "facility_id": "FA0273485",
         "record_ID": "PR0413459",
@@ -787,20 +737,6 @@ export const tacoTruckData = [
         "city": "SAN JOSE",
         "ZIP": "95112"
     },
-    
-    {
-        "facility_id": "FA0274674",
-        "record_ID": "PR0415261",
-        "PROGRAM_IDENTIFIER": "PUPUSA LADY 7CIN611",
-        "FACILITY_NAME": "PUPUSA LADY 7CIN611",
-        "PROGRAM_ELEMENT": "FP26",
-        "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-        "Permit_Status": "FULL, ONGOING PERMIT",
-        "PHONE": "4089102787",
-        "city": "MORGAN HILL",
-        "ZIP": "95037"
-    },
-    
     {
         "facility_id": "FA0274726",
         "record_ID": "PR0415310",
@@ -863,31 +799,6 @@ export const tacoTruckData = [
         "PHONE": "4084367522",
         "city": "SAN JOSE",
         "ZIP": "95112"
-    },
-    {
-        "facility_id": "FA0276258",
-        "record_ID": "PR0417427",
-        "PROGRAM_IDENTIFIER": "TACOS LA FAMILIA 8Y11950",
-        "FACILITY_NAME": "TACOS LA FAMILIA 8Y11950",
-        "PROGRAM_ELEMENT": "FP26",
-        "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-        "Permit_Status": "FULL, ONGOING PERMIT",
-        "PHONE": "4087273000",
-        "city": "SANTA CLARA",
-        "ZIP": "95054"
-    },
-    
-    {
-        "facility_id": "FA0276750",
-        "record_ID": "PR0418144",
-        "PROGRAM_IDENTIFIER": "LA AZTECA TAQUERIA 4KVG912",
-        "FACILITY_NAME": "LA AZTECA TAQUERIA 4KVG912",
-        "PROGRAM_ELEMENT": "FP26",
-        "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-        "Permit_Status": "FULL, ONGOING PERMIT",
-        "PHONE": "4082431868",
-        "city": "SANTA CLARA",
-        "ZIP": "95050"
     },
     {
         "facility_id": "FA0276832",
@@ -1061,19 +972,6 @@ export const tacoTruckData = [
         "PHONE": "6502481772",
         "city": "SAN JOSE",
         "ZIP": "95112"
-    },
-    
-    {
-        "facility_id": "FA0281354",
-        "record_ID": "PR0422453",
-        "PROGRAM_IDENTIFIER": "FLEX TRUCK A01007 74644R1",
-        "FACILITY_NAME": "FLEX TRUCK A01007 74644R1",
-        "PROGRAM_ELEMENT": "FP26",
-        "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-        "Permit_Status": "FULL, ONGOING PERMIT",
-        "PHONE": "6508140808",
-        "city": "MOUNTAIN VIEW",
-        "ZIP": "94043"
     },
     {
         "facility_id": "FA0281403",
@@ -1406,31 +1304,6 @@ export const tacoTruckData = [
         "PHONE": "4083935599",
         "city": "SAN JOSE",
         "ZIP": "95133"
-    },
-{
-        "facility_id": "FA0287122",
-        "record_ID": "PR0430676",
-        "PROGRAM_IDENTIFIER": "TACOS EL PELON DE OAXACA 4W12920",
-        "FACILITY_NAME": "TACOS EL PELON DE OAXACA 4W12920",
-        "PROGRAM_ELEMENT": "FP26",
-        "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-        "Permit_Status": "FULL, ONGOING PERMIT",
-        "PHONE": "4086124994",
-        "city": "MORGAN HILL",
-        "ZIP": "95037"
-    },
-   
-    {
-        "facility_id": "FA0287323",
-        "record_ID": "PR0431005",
-        "PROGRAM_IDENTIFIER": "TACO EL MOLCAJETE 2K36719",
-        "FACILITY_NAME": "TACO EL MOLCAJETE 2K36719",
-        "PROGRAM_ELEMENT": "FP26",
-        "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-        "Permit_Status": "FULL, ONGOING PERMIT",
-        "PHONE": "NULL",
-        "city": "SANTA CLARA",
-        "ZIP": "95054"
     },
     {
         "facility_id": "FA0287466",
@@ -1883,19 +1756,6 @@ export const tacoTruckData = [
         "city": "SAN JOSE",
         "ZIP": "95112"
     },
-    
-    {
-        "facility_id": "FA0299801",
-        "record_ID": "PR0439899",
-        "PROGRAM_IDENTIFIER": "TACOS BUENROSTRO FOOD TRUCK 87340W1",
-        "FACILITY_NAME": "TACOS BUENROSTRO FOOD TRUCK 87340W1",
-        "PROGRAM_ELEMENT": "FP26",
-        "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-        "Permit_Status": "FULL, ONGOING PERMIT",
-        "PHONE": "NULL",
-        "city": "SANTA CLARA",
-        "ZIP": "95054"
-    },
     {
         "facility_id": "FA0299814",
         "record_ID": "PR0439911",
@@ -2103,19 +1963,6 @@ export const tacoTruckData = [
         "city": "SAN JOSE",
         "ZIP": "95112"
     },
-    
-    {
-        "facility_id": "FA0301656",
-        "record_ID": "PR0443084",
-        "PROGRAM_IDENTIFIER": "CMFO - TAQUERIA EL PERICO 4RY3030",
-        "FACILITY_NAME": "TAQUERIA EL PERICO 2 4RY3030",
-        "PROGRAM_ELEMENT": "FP25",
-        "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - LIMITED FOOD PREP",
-        "Permit_Status": "FULL, ONGOING PERMIT",
-        "PHONE": "4088558611",
-        "city": "SANTA CLARA",
-        "ZIP": "95054"
-    },
     {
         "facility_id": "FA0301668",
         "record_ID": "PR0443100",
@@ -2216,31 +2063,6 @@ export const tacoTruckData = [
         "ZIP": "95112"
     },
     {
-        "facility_id": "FA0302182",
-        "record_ID": "PR0444062",
-        "PROGRAM_IDENTIFIER": "CMFO - SUPER TAMALES 4MW8082",
-        "FACILITY_NAME": "SUPER TAMALES 4MW8082",
-        "PROGRAM_ELEMENT": "FP25",
-        "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - LIMITED FOOD PREP",
-        "Permit_Status": "FULL, ONGOING PERMIT",
-        "PHONE": "6693092851",
-        "city": "SANTA CLARA",
-        "ZIP": "95051"
-    },
-    {
-        "facility_id": "FA0302285",
-        "record_ID": "PR0444223",
-        "PROGRAM_IDENTIFIER": "RINCON DEL CIELO 01632U3",
-        "FACILITY_NAME": "RINCON DEL CIELO 01632U3",
-        "PROGRAM_ELEMENT": "FP26",
-        "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-        "Permit_Status": "FULL, ONGOING PERMIT",
-        "PHONE": "6504649897",
-        "city": "REDWOOD CITY",
-        "ZIP": "94063"
-    },
-    
-    {
         "facility_id": "FA0302346",
         "record_ID": "PR0444298",
         "PROGRAM_IDENTIFIER": "TACOS LA GUERA 97773F3",
@@ -2276,30 +2098,6 @@ export const tacoTruckData = [
         "PHONE": "6505124495",
         "city": "REDWOOD CITY",
         "ZIP": "94063"
-    },
-    {
-        "facility_id": "FA0302511",
-        "record_ID": "PR0444547",
-        "PROGRAM_IDENTIFIER": "PETRAS KITCHEN 6P82315",
-        "FACILITY_NAME": "PETRAS KITCHEN 6P82315",
-        "PROGRAM_ELEMENT": "FP26",
-        "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-        "Permit_Status": "FULL, ONGOING PERMIT",
-        "PHONE": "6509414373",
-        "city": "MOUNTAIN VIEW",
-        "ZIP": "94040"
-    },
-    {
-        "facility_id": "FA0302564",
-        "record_ID": "PR0444653",
-        "PROGRAM_IDENTIFIER": "LA PATRONA CMX 4UB4402",
-        "FACILITY_NAME": "LA PATRONA CMX 4UB4402",
-        "PROGRAM_ELEMENT": "FP26",
-        "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-        "Permit_Status": "FULL, ONGOING PERMIT",
-        "PHONE": "4087915495",
-        "city": "SANTA CLARA",
-        "ZIP": "95051"
     },
     {
         "facility_id": "FA0302706",
@@ -2865,18 +2663,6 @@ export const tacoTruckData = [
         "PHONE": "4088167854",
         "city": "SAN JOSE",
         "ZIP": "95112"
-    },
-    {
-        "facility_id": "FA0305565",
-        "record_ID": "PR0448595",
-        "PROGRAM_IDENTIFIER": "PINTO COCINA MEXICANA LLC 8H18177",
-        "FACILITY_NAME": "PINTO COCINA MEXICANA LLC 8H18177",
-        "PROGRAM_ELEMENT": "FP26",
-        "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-        "Permit_Status": "FULL, ONGOING PERMIT",
-        "PHONE": "4086144046",
-        "city": "MORGAN HILL",
-        "ZIP": "95037"
     },
     {
         "facility_id": "FA0305571",
