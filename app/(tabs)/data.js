@@ -197,9 +197,9 @@ const tacoTruckData = [
     "PROGRAM_DESCRIPTION": "Offering full food preparation with a focus on tacos al pastor.",
     "ZIP": "95112",
     "image": require("../assets/images/FINAL-chicken-street-tacos-1-6.jpg"),
-    "latitude": 37.3382,
-    "longitude": -121.8863
-  },
+    "latitude": 37.28979392566415,
+    "longitude": -121.84725744655906,
+},
   {
     "facility_id": "FA0206777",
     "FACILITY_NAME": "LA CHAPARRA 6A05118",
@@ -208,6 +208,7 @@ const tacoTruckData = [
     "image": require("../assets/images/tacos-7759107_1280.jpg"),
     "latitude": 37.3382,
     "longitude": -121.8863
+    //37.37183587143934, -121.90498427553995
   },
   {
     "facility_id": "FA0240521",
@@ -217,6 +218,7 @@ const tacoTruckData = [
     "image": require("../assets/images/download (6).jpeg"),
     "latitude": 37.3382,
     "longitude": -121.8863
+    //37.32029286320422, -121.88204360657782
   },
   {
     "facility_id": "FA0250170",
@@ -226,6 +228,7 @@ const tacoTruckData = [
     "image": require("../assets/images/images (51).jpeg"),
     "latitude": 37.3382,
     "longitude": -121.8863
+    //37.36916930527029, -121.89669491790453
   },
   {
     "facility_id": "FA0250247",
@@ -235,6 +238,7 @@ const tacoTruckData = [
     "image": require("../assets/images/download (5).jpeg"),
     "latitude": 37.3382,
     "longitude": -121.8863
+    //37.36930758491914, -121.83176009091908
   },
   {
     "facility_id": "FA0250748",
@@ -244,6 +248,7 @@ const tacoTruckData = [
     "image": require("../assets/images/images (53).jpeg"),
     "latitude": 37.3382,
     "longitude": -121.8863
+    //37.35844085754493, -121.89057064674095
   },
   {
     "facility_id": "FA0251878",
@@ -253,6 +258,7 @@ const tacoTruckData = [
     "image": require("../assets/images/images (1).jpeg"),
     "latitude": 37.3382,
     "longitude": -121.8863
+    //37.37158867895564, -121.90487696208325
   },
   {
     "facility_id": "FA0256183",
@@ -262,6 +268,7 @@ const tacoTruckData = [
     "image": require("../assets/images/images (2).jpeg"),
     "latitude": 37.3382,
     "longitude": -121.8863
+    //37.369186358566935, -121.89674856208327
   },
   {
     "facility_id": "FA0257608",
@@ -271,6 +278,7 @@ const tacoTruckData = [
     "image": require("../assets/images/images (3).jpeg"),
     "latitude": 37.3382,
     "longitude": -121.8863
+    //37.353974810195524, -121.85443471975579
   },
   {
     "facility_id": "FA0258947",
@@ -280,6 +288,7 @@ const tacoTruckData = [
     "image": require("../assets/images/images (4).jpeg"),
     "latitude": 37.3382,
     "longitude": -121.8863
+    //37.42623545617837, -121.97393311975154
   },
   {
     "facility_id": "FA0259010",
@@ -289,6 +298,7 @@ const tacoTruckData = [
     "image": require("../assets/images/images (5).jpeg"),
     "latitude": 37.3382,
     "longitude": -121.8863
+    //37.35249645742024, -121.86850166208431
   },
   {
     "facility_id": "FA0260183",
@@ -307,6 +317,7 @@ const tacoTruckData = [
     "image": require("../assets/images/images (7).jpeg"),
     "latitude": 37.3382,
     "longitude": -121.8863
+    //37.42638893642734, -121.97452467742305
   },
   {
     "facility_id": "FA0260275",
@@ -316,6 +327,7 @@ const tacoTruckData = [
     "image": require("../assets/images/images (8).jpeg"),
     "latitude": 37.3382,
     "longitude": -121.8863
+    //37.32103373605084, -121.8840199485934
   },
   {
     "facility_id": "FA0260459",
@@ -325,6 +337,7 @@ const tacoTruckData = [
     "image": require("../assets/images/images (9).jpeg"),
     "latitude": 37.3382,
     "longitude": -121.8863
+    //37.360966761932, -121.89924024859113
   },
   {
     "facility_id": "FA0261182",
@@ -334,6 +347,7 @@ const tacoTruckData = [
     "image": require("../assets/images/images (10).jpeg"),
     "latitude": 37.3382,
     "longitude": -121.8863
+    //37.29511400855851, -121.83436167743062
   },
   {
     "facility_id": "FA0262597",
@@ -343,6 +357,7 @@ const tacoTruckData = [
     "image": require("../assets/images/images (11).jpeg"),
     "latitude": 37.3382,
     "longitude": -121.8863
+    //37.36102645497848, -121.89926170626265
   },
   {
     "facility_id": "FA0274726",
@@ -352,6 +367,7 @@ const tacoTruckData = [
     "image": require("../assets/images/images (12).jpeg"),
     "latitude": 37.3382,
     "longitude": -121.8863
+    //37.36924604507476, -121.89679147742632
   },
   {
     "facility_id": "FA0274884",
@@ -361,6 +377,7 @@ const tacoTruckData = [
     "image": require("../assets/images/images (13).jpeg"),
     "latitude": 37.3382,
     "longitude": -121.8863
+    //37.371580152580826, -121.90488769091903
   },
   {
     "facility_id": "FA0274993",
@@ -370,6 +387,7 @@ const tacoTruckData = [
     "image": require("../assets/images/images (14).jpeg"),
     "latitude": 37.3382,
     "longitude": -121.8863
+    //37.42860970943443, -121.9197935332441
   },
   {
     "facility_id": "FA0276126",
@@ -379,6 +397,7 @@ const tacoTruckData = [
     "image": require("../assets/images/images (15).jpeg"),
     "latitude": 37.3382,
     "longitude": -121.8863
+    //37.37158867895564, -121.90489841975477
   },
   {
     "facility_id": "FA0276130",
@@ -388,6 +407,7 @@ const tacoTruckData = [
     "image": require("../assets/images/images (16).jpeg"),
     "latitude": 37.3382,
     "longitude": -121.8863
+    //37.37162278444518, -121.90488769091901
   },
   {
     "facility_id": "FA0276258",
@@ -397,6 +417,7 @@ const tacoTruckData = [
     "image": require("../assets/images/images (17).jpeg"),
     "latitude": 37.3382,
     "longitude": -121.8863
+    //37.38512031815219, -121.94898427742542
   },
   {
     "facility_id": "FA0276750",
@@ -406,15 +427,7 @@ const tacoTruckData = [
     "image": require("../assets/images/images (18).jpeg"),
     "latitude": 37.3382,
     "longitude": -121.8863
-  },
-  {
-    "facility_id": "FA0276832",
-    "FACILITY_NAME": "TACOS DEL GUERO 6X02656",
-    "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-    "ZIP": "95020",
-    "image": require("../assets/images/images (19).jpeg"),
-    "latitude": 37.3382,
-    "longitude": -121.8863
+    //37.35218534408684, -121.9680326774274
   },
   {
     "facility_id": "FA0276834",
@@ -424,6 +437,7 @@ const tacoTruckData = [
     "image": require("../assets/images/images (20).jpeg"),
     "latitude": 37.3382,
     "longitude": -121.8863
+    //37.36101792740333, -121.89919733324808
   },
   {
     "facility_id": "FA0276902",
@@ -433,6 +447,7 @@ const tacoTruckData = [
     "image": require("../assets/images/images (21).jpeg"),
     "latitude": 37.3382,
     "longitude": -121.8863
+    //37.249664158223226, -121.86918364674713
   },
   {
     "facility_id": "FA0277474",
@@ -442,6 +457,7 @@ const tacoTruckData = [
     "image": require("../assets/images/images (20).jpeg"),
     "latitude": 37.3382,
     "longitude": -121.8863
+    //37.344606778939024, -121.83842301975633
   },
   {
     "facility_id": "FA0277483",
@@ -451,6 +467,7 @@ const tacoTruckData = [
     "image": require("../assets/images/images (21).jpeg"),
     "latitude": 37.3382,
     "longitude": -121.8863
+    //37.360941179183264, -121.8991758755766
   },
   {
     "facility_id": "FA0277554",
@@ -460,6 +477,7 @@ const tacoTruckData = [
     "image": require("../assets/images/images (22).jpeg"),
     "latitude": 37.3382,
     "longitude": -121.8863
+    //37.36918635856696, -121.89675929091906
   },
   {
     "facility_id": "FA0277942",
@@ -469,6 +487,7 @@ const tacoTruckData = [
     "image": require("../assets/images/images (23).jpeg"),
     "latitude": 37.3382,
     "longitude": -121.8863
+    //37.371639837184134, -121.90489841975477
   },
   {
     "facility_id": "FA0277988",
@@ -478,6 +497,8 @@ const tacoTruckData = [
     "image": require("../assets/images/images (24).jpeg"),
     "latitude": 37.3382,
     "longitude": -121.8863
+        //37.371639837184134, -121.90489841975477
+
   },
   {
     "facility_id": "FA0210462",
@@ -487,6 +508,7 @@ const tacoTruckData = [
     "image": require("../assets/images/images (40).jpeg"),
     "latitude": 37.3382,
     "longitude": -121.8863
+    //37.332884372486284, -121.87531208907095
   },
   {
     "facility_id": "FA0210443",
@@ -496,6 +518,7 @@ const tacoTruckData = [
     "image": require("../assets/images/images (47).jpeg"),
     "latitude": 37.3382,
     "longitude": -121.8863
+    //326 COMMERCIAL ST	
   },
   {
     "facility_id": "FA0250851",
@@ -505,6 +528,7 @@ const tacoTruckData = [
     "image": require("../assets/images/images (48).jpeg"),
     "latitude": 37.3382,
     "longitude": -121.8863
+    //37.36916930527029, -121.89674856208332
   }
 ];
 console.log(tacoTruckData.length);
