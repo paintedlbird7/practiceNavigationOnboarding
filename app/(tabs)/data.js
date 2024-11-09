@@ -1,4 +1,196 @@
 const tacoTruckData = [
+    {
+      "facility_id": "1",
+      "FACILITY_NAME": "Tacos Los Tres Reyes",
+      "PROGRAM_DESCRIPTION": "Popular for authentic Mexican street tacos.",
+      "ZIP": "95122",
+      "image": require("../assets/images/taco1.jpg"),
+        latitude: 37.34908,
+    longitude: -121.829437,
+    },
+    {
+      "facility_id": "2",
+      "FACILITY_NAME": "La Oaxaquense Food Truck",
+      "PROGRAM_DESCRIPTION": "Known for their delicious carne asada and al pastor tacos.",
+      "ZIP": "95116",
+      "image": require("../assets/images/taco2.jpg"),
+        latitude: 37.378892,
+    longitude: 121.867202,
+    },
+    {
+      "facility_id": "3",
+      "FACILITY_NAME": "Orale taco truck",
+      "PROGRAM_DESCRIPTION": "Famous for crispy tacos and fresh ingredients.",
+      "ZIP": "95116",
+      "image": require("../assets/images/taco3.jpg"),
+        latitude: 37.389258,
+    longitude: -121.844543,
+  },
+
+  {
+    "facility_id": "4",
+    "FACILITY_NAME": "El Señor De Los Tacos Food Truck",
+    "PROGRAM_DESCRIPTION": "Serving amazing birria tacos and quesadillas.",
+    "ZIP": "95127",
+    "image": require("../assets/images/taco4.jpg"),
+    "latitude": 37.357079,
+    "longitude": -121.825904,
+  },
+  {
+    "facility_id": "5",
+    "FACILITY_NAME": "Tacos Chencho",
+    "PROGRAM_DESCRIPTION": "Great for fish tacos and unique flavors.",
+    "ZIP": "95127",
+    "image": require("../assets/images/taco5.jpg"),
+    "latitude": 37.362264,
+    "longitude": -121.819381,
+  },
+  {
+    "facility_id": "6",
+    "FACILITY_NAME": "Tacos Huandacareo Food Truck",
+    "PROGRAM_DESCRIPTION": "A local favorite with authentic flavors.",
+    "ZIP": "95127",
+    "image": require("../assets/images/taco6.jpg"),
+    "latitude": 37.359126,
+    "longitude": -121.827793,
+  },
+  {
+    "facility_id": "7",
+    "FACILITY_NAME": "Tacos Montero Food Truck",
+    "PROGRAM_DESCRIPTION": "Known for their giant tacos and amazing sauces.",
+    "ZIP": "95122",
+    "image": require("../assets/images/taco7.jpg"),
+    "latitude": 37.339885,
+    "longitude": -121.853027,
+  },
+  {
+    "facility_id": "8",
+    "FACILITY_NAME": "Hugos Tacos Food Truck",
+    "PROGRAM_DESCRIPTION": "Specializes in tacos de lengua and tripa.",
+    "ZIP": "95122",
+    "image": require("../assets/images/taco8.jpg"),
+    "latitude": 37.321594,
+    "longitude": -121.883,
+  },
+  {
+    "facility_id": "9",
+    "FACILITY_NAME": "Taqueria Paracuaro",
+    "PROGRAM_DESCRIPTION": "A family-owned taqueria known for authentic Michoacán-style tacos and fresh salsas.",
+    "ZIP": "95113",
+    "image": require("../assets/images/taco9.jpg"),
+    "latitude": 37.356432493707636,
+    "longitude": -121.88825403550148,
+  },
+  {
+    "facility_id": "10",
+    "FACILITY_NAME": "Tortilleria La Familiar",
+    "PROGRAM_DESCRIPTION": "Tortilleria La Familiar offers fresh, handmade tortillas and traditional Mexican dishes.",
+    "ZIP": "95127",
+    "image": require("../assets/images/taco10.jpg"),
+    "latitude": 37.359174,
+    "longitude": -121.821133,
+  },
+  {
+    "facility_id": "11",
+    "FACILITY_NAME": "Tacos Mi Reynita",
+    "PROGRAM_DESCRIPTION": "Famous for authentic Tijuana-style street tacos with fresh salsas.",
+    "ZIP": "94603",
+    "image": require("../assets/images/taco11.jpg"),
+    "latitude": 37.738624,
+    "longitude": -122.166524,
+  },
+  {
+    "facility_id": "12",
+    "FACILITY_NAME": "Tacos Santiaguito",
+    "PROGRAM_DESCRIPTION": "Known for its rich, slow-cooked meats and flavorful toppings.",
+    "ZIP": "95129",
+    "image": require("../assets/images/taco12.jpg"),
+    "latitude": 37.322381,
+    "longitude": -121.970633,
+  },
+  {
+    "facility_id": "13",
+    "FACILITY_NAME": "Tacos El Plebe",
+    "PROGRAM_DESCRIPTION": "Specializes in street tacos with a variety of fillings including carne asada and al pastor.",
+    "ZIP": "95112",
+    "image": require("../assets/images/taco13.jpg"),
+    "latitude": 37.327337,
+    "longitude": -121.820249,
+  },
+  {
+    "facility_id": "14",
+    "FACILITY_NAME": "Rosario's Tacos",
+    "PROGRAM_DESCRIPTION": "Authentic Mexican tacos with homemade tortillas and fresh ingredients.",
+    "ZIP": "95110",
+    "image": require("../assets/images/taco14.jpg"),
+    "latitude": 37.321136,
+    "longitude": -121.884015,
+  },
+  {
+    "facility_id": "15",
+    "FACILITY_NAME": "Mariscos y Tacos Los Compas",
+    "PROGRAM_DESCRIPTION": "Seafood tacos and delicious salsas.",
+    "ZIP": "95122",
+    "image": require("../assets/images/taco15.jpg"),
+    "latitude": 37.341984,
+    "longitude": -121.842094,
+  },
+  {
+    "facility_id": "16",
+    "FACILITY_NAME": "Spartan Taco",
+    "PROGRAM_DESCRIPTION": "A popular spot for students with a wide range of tacos.",
+    "ZIP": "95112",
+    "image": require("../assets/images/taco16.jpg"),
+    "latitude": 37.338529,
+    "longitude": -121.850009,
+  },
+  {
+    "facility_id": "17",
+    "FACILITY_NAME": "Tustacos Taqueria",
+    "PROGRAM_DESCRIPTION": "Known for its variety of tacos and quick service.",
+    "ZIP": "95008",
+    "image": require("../assets/images/taco17.jpg"),
+    "latitude": 37.28799,
+    "longitude": -121.97499,
+  },
+  {
+    "facility_id": "18",
+    "FACILITY_NAME": "Taco De Oro Taco Truck",
+    "PROGRAM_DESCRIPTION": "Well-loved for golden tacos and delicious fillings.",
+    "ZIP": "94089",
+    "image": require("../assets/images/taco18.jpg"),
+    "latitude": 37.406231,
+    "longitude": -121.996075,
+  },
+  {
+    "facility_id": "19",
+    "FACILITY_NAME": "Famosa Taqueria",
+    "PROGRAM_DESCRIPTION": "A family-run taqueria with authentic flavors.",
+    "ZIP": "95112",
+    "image": require("../assets/images/taco19.jpg"),
+    "latitude": 37.32302,
+    "longitude": -121.872353,
+  },
+  {
+    "facility_id": "20",
+    "FACILITY_NAME": "Taco Genesis",
+    "PROGRAM_DESCRIPTION": "Great for late-night tacos with spicy sauces.",
+    "ZIP": "95127",
+    "image": require("../assets/images/taco20.jpg"),
+    "latitude": 37.353422,
+    "longitude": -121.822666,
+  },
+  {
+    "facility_id": "21",
+    "FACILITY_NAME": "Tacos La Poderosa",
+    "PROGRAM_DESCRIPTION": "Great for late-night tacos with spicy sauces.",
+    "ZIP": "95127",
+    "image": require("../assets/images/taco21.jpg"),
+    "latitude": 37.35272,
+    "longitude": -121.88134,
+  },
+
+
 {
   "facility_id": "FA0230702",
   "FACILITY_NAME": "TACOS AL PASTOR 8S33970",
@@ -113,6 +305,7 @@ const tacoTruckData = [
 },
 {
   "facility_id": "FA0262597",
+  "FACILITY_NAME": "GUTIERREZ AUTENTICA COMIDA MEXICANA",
   "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
   "ZIP": "95112",
   "image": require("../assets/images/images (11).jpeg")
@@ -222,138 +415,13 @@ const tacoTruckData = [
   "ZIP": "95112",
   "image": require("../assets/images/images (24).jpeg")
 },
-{
-  "facility_id": "FA0210447",
-  "FACILITY_NAME": "Tacos Los Tres Reyes",
-  "PROGRAM_DESCRIPTION": "Popular for authentic Mexican street tacos.",
-  "ZIP": "95122",
-  "image": require("../assets/images/images (25).jpeg")
-},
-{
-  "facility_id": "FA0210448",
-  "FACILITY_NAME": "La Oaxaquense Food Truck",
-  "PROGRAM_DESCRIPTION": "Known for their delicious carne asada and al pastor tacos.",
-  "ZIP": "95116",
-  "image": require("../assets/images/images (26).jpeg")
-},
-{
-  "facility_id": "FA0210449",
-  "FACILITY_NAME": "Orale Taco Truck",
-  "PROGRAM_DESCRIPTION": "Famous for crispy tacos and fresh ingredients.",
-  "ZIP": "95116",
-  "image": require("../assets/images/images (27).jpeg")
-},
-{
-  "facility_id": "FA0210450",
-  "FACILITY_NAME": "El Señor De Los Tacos Food Truck",
-  "PROGRAM_DESCRIPTION": "Serving amazing birria tacos and quesadillas.",
-  "ZIP": "95127",
-  "image": require("../assets/images/images (28).jpeg")
-},
-{
-  "facility_id": "FA0210451",
-  "FACILITY_NAME": "Tacos Chencho",
-  "PROGRAM_DESCRIPTION": "Great for fish tacos and unique flavors.",
-  "ZIP": "95127",
-  "image": require("../assets/images/images (29).jpeg")
-},
-{
-  "facility_id": "FA0210452",
-  "FACILITY_NAME": "Tacos Huandacareo Food Truck",
-  "PROGRAM_DESCRIPTION": "A local favorite with authentic flavors.",
-  "ZIP": "95127",
-  "image": require("../assets/images/images (30).jpeg")
-},
-{
-  "facility_id": "FA0210453",
-  "FACILITY_NAME": "Tacos Montero Food Truck",
-  "PROGRAM_DESCRIPTION": "Known for their giant tacos and amazing sauces.",
-  "ZIP": "95122",
-  "image": require("../assets/images/images (31).jpeg")
-},
-{
-  "facility_id": "FA0210454",
-  "FACILITY_NAME": "Hugos Tacos Food Truck",
-  "PROGRAM_DESCRIPTION": "Specializes in tacos de lengua and tripa.",
-  "ZIP": "95122",
-  "image": require("../assets/images/images (32).jpeg")
-},
-{
-  "facility_id": "FA0210455",
-  "FACILITY_NAME": "Taqueria Paracuaro",
-  "PROGRAM_DESCRIPTION": "A family-owned taqueria known for authentic Michoacán-style tacos and fresh salsas.",
-  "ZIP": "95113",
-  "image": require("../assets/images/images (33).jpeg")
-},
-{
-  "facility_id": "FA0210456",
-  "FACILITY_NAME": "Tortilleria La Familiar",
-  "PROGRAM_DESCRIPTION": "Offers fresh, handmade tortillas and traditional Mexican dishes.",
-  "ZIP": "95127",
-  "image": require("../assets/images/images (34).jpeg")
-},
-{
-  "facility_id": "FA0210457",
-  "FACILITY_NAME": "Tacos Mi Reynita",
-  "PROGRAM_DESCRIPTION": "Famous for authentic Tijuana-style street tacos with fresh salsas.",
-  "ZIP": "94603",
-  "image": require("../assets/images/images (35).jpeg")
-},
-{
-  "facility_id": "FA0210458",
-  "FACILITY_NAME": "Tacos Santiaguito",
-  "PROGRAM_DESCRIPTION": "Known for its rich, slow-cooked meats and flavorful toppings.",
-  "ZIP": "95129",
-  "image": require("../assets/images/images (36).jpeg")
-},
-{
-  "facility_id": "FA0210459",
-  "FACILITY_NAME": "Tacos El Plebe",
-  "PROGRAM_DESCRIPTION": "Specializes in street tacos with a variety of fillings including carne asada and al pastor.",
-  "ZIP": "95112",
-  "image": require("../assets/images/images (37).jpeg")
-},
-{
-  "facility_id": "FA0210460",
-  "FACILITY_NAME": "Rosario's Tacos",
-  "PROGRAM_DESCRIPTION": "Serves up authentic Mexican tacos with homemade tortillas and fresh ingredients.",
-  "ZIP": "95110",
-  "image": require("../assets/images/images (38).jpeg")
-},
-{
-  "facility_id": "FA0210461",
-  "FACILITY_NAME": "Mariscos y Tacos Los Compas",
-  "PROGRAM_DESCRIPTION": "Seafood tacos and delicious salsas.",
-  "ZIP": "95122",
-  "image": require("../assets/images/images (39).jpeg")
-},
+
 {
   "facility_id": "FA0210462",
   "FACILITY_NAME": "Spartan Taco",
   "PROGRAM_DESCRIPTION": "A popular spot for students with a wide range of tacos.",
   "ZIP": "95112",
   "image": require("../assets/images/images (40).jpeg")
-},
-{
-  "facility_id": "FA0210463",
-  "FACILITY_NAME": "Tustacos Taqueria",
-  "PROGRAM_DESCRIPTION": "Known for its variety of tacos and quick service.",
-  "ZIP": "95008",
-  "image": require("../assets/images/images (41).jpeg")
-},
-{
-  "facility_id": "FA0210464",
-  "FACILITY_NAME": "Taco De Oro Taco Truck",
-  "PROGRAM_DESCRIPTION": "Well-loved for golden tacos and delicious fillings.",
-  "ZIP": "94089",
-  "image": require("../assets/images/images (42).jpeg")
-},
-{
-  "facility_id": "FA0210466",
-  "FACILITY_NAME": "Taco Genesis",
-  "PROGRAM_DESCRIPTION": "Great for late-night tacos with spicy sauces.",
-  "ZIP": "95127",
-  "image": require("../assets/images/images (44).jpeg")
 },
 
 {
