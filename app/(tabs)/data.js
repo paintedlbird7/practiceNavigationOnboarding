@@ -19,7 +19,7 @@ const tacoTruckData = [
   },
   {
     facility_id: "3",
-    FACILITY_NAME: "Orale taco truck",
+    FACILITY_NAME: "Orale Taco Truck",
     PROGRAM_DESCRIPTION: "Famous for crispy tacos and fresh ingredients.",
     ZIP: "95116",
     image: require("../assets/images/taco3.jpg"),
@@ -83,7 +83,7 @@ const tacoTruckData = [
   {
     facility_id: "10",
     FACILITY_NAME: "Tortilleria La Familiar",
-    PROGRAM_DESCRIPTION: "Tortilleria La Familiar offers fresh, handmade tortillas and traditional Mexican dishes.",
+    PROGRAM_DESCRIPTION: "Offers fresh, handmade tortillas and traditional Mexican dishes.",
     ZIP: "95127",
     image: require("../assets/images/taco10.jpg"),
     latitude: 37.359174,
@@ -190,7 +190,7 @@ const tacoTruckData = [
   },
   {
     facility_id: "FA0230702",
-    FACILITY_NAME: "TACOS AL PASTOR",
+    FACILITY_NAME: "Tacos Al Pastor",
     PROGRAM_DESCRIPTION: "Offering full food preparation with a focus on tacos al pastor.",
     ZIP: "95112",
     image: require("../assets/images/FINAL-chicken-street-tacos-1-6.jpg"),
@@ -199,7 +199,7 @@ const tacoTruckData = [
   },
   {
     facility_id: "FA0206777",
-    FACILITY_NAME: "LA CHAPARRA",
+    FACILITY_NAME: "La Chaparra",
     PROGRAM_DESCRIPTION: "Providing full food preparation, offering a variety of traditional Mexican foods.",
     ZIP: "95112",
     image: require("../assets/images/tacos-7759107_1280.jpg"),
@@ -208,7 +208,7 @@ const tacoTruckData = [
   },
   {
     facility_id: "FA0240521",
-    FACILITY_NAME: "TACOS LOS 3 HERMANOS",
+    FACILITY_NAME: "Tacos Los 3 Hermanos",
     PROGRAM_DESCRIPTION: "Specializing in full food preparation of Mexican cuisine.",
     ZIP: "95110",
     image: require("../assets/images/download (6).jpeg"),
@@ -217,7 +217,7 @@ const tacoTruckData = [
   },
   {
     facility_id: "FA0250170",
-    FACILITY_NAME: "DULCE VICTORIA AMERICAN AND MEXICAN FOOD",
+    FACILITY_NAME: "Dulce Victoria American and Mexican Food",
     PROGRAM_DESCRIPTION: "Offering full food preparation of both American and Mexican dishes.",
     ZIP: "95112",
     image: require("../assets/images/images (51).jpeg"),
@@ -227,7 +227,7 @@ const tacoTruckData = [
   {
     facility_id: "FA0250247",
     FACILITY_NAME: "MC FOOD INC.",
-    PROGRAM_DESCRIPTION: "MOBILE FOOD FACILITY - FULL FOOD PREP",
+    PROGRAM_DESCRIPTION: "Serving a variety of delicious tacos with fresh ingredients.",
     ZIP: "95127",
     image: require("../assets/images/download (5).jpeg"),
     latitude: 37.36930758491914,
@@ -236,7 +236,7 @@ const tacoTruckData = [
   {
     facility_id: "FA0250748",
     FACILITY_NAME: "CALIFORNIA DRIVEN",
-    PROGRAM_DESCRIPTION: "MOBILE FOOD FACILITY - FULL FOOD PREP",
+    PROGRAM_DESCRIPTION: "Known for their flavorful Mexican grill specialties.",
     ZIP: "95112",
     image: require("../assets/images/images (53).jpeg"),
     latitude: 37.35844085754493,
@@ -245,7 +245,7 @@ const tacoTruckData = [
   {
     facility_id: "FA0251878",
     FACILITY_NAME: "SABOR MEXICO",
-    PROGRAM_DESCRIPTION: "MOBILE FOOD FACILITY - FULL FOOD PREP",
+    PROGRAM_DESCRIPTION: "Popular for their authentic street tacos and salsas.",
     ZIP: "95112",
     image: require("../assets/images/images (1).jpeg"),
     latitude: 37.37158867895564,
@@ -254,7 +254,7 @@ const tacoTruckData = [
   {
     facility_id: "FA0256183",
     FACILITY_NAME: "SABOR CASERO INTERNACIONAL",
-    PROGRAM_DESCRIPTION: "MOBILE FOOD FACILITY - FULL FOOD PREP",
+    PROGRAM_DESCRIPTION: "Serving a variety of delicious tacos with fresh ingredients.",
     ZIP: "95112",
     image: require("../assets/images/images (2).jpeg"),
     latitude: 37.369186358566935,
@@ -263,34 +263,17 @@ const tacoTruckData = [
   {
     facility_id: "FA0257608",
     FACILITY_NAME: "FELIPE EL KORA",
-    PROGRAM_DESCRIPTION: "MOBILE FOOD FACILITY - FULL FOOD PREP",
+    PROGRAM_DESCRIPTION: "Serving a variety of delicious tacos with fresh ingredients.",
     ZIP: "95116",
     image: require("../assets/images/images (3).jpeg"),
     latitude: 37.353974810195524,
     longitude: -121.85443471975579,
   },
-  {
-    facility_id: "FA0258947",
-    FACILITY_NAME: "LAS GRULLAS MEXICAN GRILL",
-    PROGRAM_DESCRIPTION: "MOBILE FOOD FACILITY - FULL FOOD PREP",
-    ZIP: "95002",
-    image: require("../assets/images/images (4).jpeg"),
-    latitude: 37.42623545617837,
-    longitude: -(-121.97393311975154),
-  },
-  {
-    facility_id: "FA0259010",
-    FACILITY_NAME: "TACOS LA ESTRELLA",
-    PROGRAM_DESCRIPTION: "MOBILE FOOD FACILITY - FULL FOOD PREP",
-    ZIP: "95116",
-    image: require("../assets/images/images (5).jpeg"),
-    latitude: 37.35249645742024,
-    longitude: -121.86850166208431,
-  },
+  
   {
     facility_id: "FA0260274",
     FACILITY_NAME: "PAULINA'S CATERING",
-    PROGRAM_DESCRIPTION: "MOBILE FOOD FACILITY - FULL FOOD PREP",
+    PROGRAM_DESCRIPTION: "Serving a variety of delicious tacos with fresh ingredients.",
     ZIP: "95112",
     image: require("../assets/images/images (7).jpeg"),
     latitude: 37.3382,
@@ -299,7 +282,7 @@ const tacoTruckData = [
   {
     facility_id: "FA0260275",
     FACILITY_NAME: "ROSARIOS TACOS",
-    PROGRAM_DESCRIPTION: "MOBILE FOOD FACILITY - FULL FOOD PREP",
+    PROGRAM_DESCRIPTION: "Known for their flavorful Mexican grill specialties.",
     ZIP: "95110",
     image: require("../assets/images/images (8).jpeg"),
     latitude: 37.3382,
@@ -308,7 +291,7 @@ const tacoTruckData = [
   {
     facility_id: "FA0260459",
     FACILITY_NAME: "LA JACARANDA OAXAQUENA",
-    PROGRAM_DESCRIPTION: "MOBILE FOOD FACILITY - FULL FOOD PREP",
+    PROGRAM_DESCRIPTION: "Popular for their authentic street tacos and salsas.",
     ZIP: "95112",
     image: require("../assets/images/images (9).jpeg"),
     latitude: 37.3382,
@@ -317,7 +300,7 @@ const tacoTruckData = [
   {
     facility_id: "FA0261182",
     FACILITY_NAME: "EL PAISA ARAUJOS TAQUERIA",
-    PROGRAM_DESCRIPTION: "MOBILE FOOD FACILITY - FULL FOOD PREP",
+    PROGRAM_DESCRIPTION: "Serving a variety of delicious tacos with fresh ingredients.",
     ZIP: "95111",
     image: require("../assets/images/images (10).jpeg"),
     latitude: 37.3382,
@@ -326,7 +309,7 @@ const tacoTruckData = [
   {
     facility_id: "FA0262597",
     FACILITY_NAME: "GUTIERREZ AUTENTICA COMIDA MEXICANA",
-    PROGRAM_DESCRIPTION: "MOBILE FOOD FACILITY - FULL FOOD PREP",
+    PROGRAM_DESCRIPTION: "Known for their flavorful Mexican grill specialties.",
     ZIP: "95112",
     image: require("../assets/images/images (11).jpeg"),
     latitude: 37.3382,
@@ -335,7 +318,7 @@ const tacoTruckData = [
   {
     facility_id: "FA0274726",
     FACILITY_NAME: "TACOS SOLECITA",
-    PROGRAM_DESCRIPTION: "MOBILE FOOD FACILITY - FULL FOOD PREP",
+    PROGRAM_DESCRIPTION: "Popular for their authentic street tacos and salsas.",
     ZIP: "95112",
     image: require("../assets/images/images (12).jpeg"),
     latitude: 37.3382,
@@ -344,7 +327,7 @@ const tacoTruckData = [
   {
     facility_id: "FA0274884",
     FACILITY_NAME: "MENDEZ TAQUERIA",
-    PROGRAM_DESCRIPTION: "MOBILE FOOD FACILITY - FULL FOOD PREP",
+    PROGRAM_DESCRIPTION: "Serving a variety of delicious tacos with fresh ingredients.",
     ZIP: "95112",
     image: require("../assets/images/images (13).jpeg"),
     latitude: 37.3382,
@@ -353,7 +336,7 @@ const tacoTruckData = [
   {
     facility_id: "FA0274993",
     FACILITY_NAME: "CUNAO'S FOOD TRUCK",
-    PROGRAM_DESCRIPTION: "MOBILE FOOD FACILITY - FULL FOOD PREP",
+    PROGRAM_DESCRIPTION: "Known for their flavorful Mexican grill specialties.",
     ZIP: "95035",
     image: require("../assets/images/images (14).jpeg"),
     latitude: 37.3382,
@@ -362,7 +345,7 @@ const tacoTruckData = [
   {
     facility_id: "FA0276126",
     FACILITY_NAME: "EL TACOLOCO",
-    PROGRAM_DESCRIPTION: "MOBILE FOOD FACILITY - FULL FOOD PREP",
+    PROGRAM_DESCRIPTION: "Popular for their authentic street tacos and salsas.",
     ZIP: "95112",
     image: require("../assets/images/images (15).jpeg"),
     latitude: 37.3382,
@@ -371,7 +354,7 @@ const tacoTruckData = [
   {
     facility_id: "FA0276130",
     FACILITY_NAME: "LA ESTRELLITA TAQUERIA",
-    PROGRAM_DESCRIPTION: "MOBILE FOOD FACILITY - FULL FOOD PREP",
+    PROGRAM_DESCRIPTION: "Serving a variety of delicious tacos with fresh ingredients.",
     ZIP: "95112",
     image: require("../assets/images/images (16).jpeg"),
     latitude: 37.3382,
@@ -380,7 +363,7 @@ const tacoTruckData = [
   {
     facility_id: "FA0276258",
     FACILITY_NAME: "TACOS LA FAMILIA",
-    PROGRAM_DESCRIPTION: "MOBILE FOOD FACILITY - FULL FOOD PREP",
+    PROGRAM_DESCRIPTION: "Known for their flavorful Mexican grill specialties.",
     ZIP: "95054",
     image: require("../assets/images/images (17).jpeg"),
     latitude: 37.3382,
@@ -389,7 +372,7 @@ const tacoTruckData = [
   {
     facility_id: "FA0276750",
     FACILITY_NAME: "LA AZTECA TAQUERIA",
-    PROGRAM_DESCRIPTION: "MOBILE FOOD FACILITY - FULL FOOD PREP",
+    PROGRAM_DESCRIPTION: "Popular for their authentic street tacos and salsas.",
     ZIP: "95050",
     image: require("../assets/images/images (18).jpeg"),
     latitude: 37.3382,
@@ -398,7 +381,7 @@ const tacoTruckData = [
   {
     facility_id: "FA0276834",
     FACILITY_NAME: "TLAXIACO'S PIZZA",
-    PROGRAM_DESCRIPTION: "MOBILE FOOD FACILITY - FULL FOOD PREP",
+    PROGRAM_DESCRIPTION: "Serving a variety of delicious tacos with fresh ingredients.",
     ZIP: "95112",
     image: require("../assets/images/images (20).jpeg"),
     latitude: 37.36101792740333,
@@ -407,7 +390,7 @@ const tacoTruckData = [
   {
     facility_id: "FA0276902",
     FACILITY_NAME: "EL CAMINANTE AKA SPARTAN TACO TRUCK",
-    PROGRAM_DESCRIPTION: "MOBILE FOOD FACILITY - FULL FOOD PREP",
+    PROGRAM_DESCRIPTION: "Known for their flavorful Mexican grill specialties.",
     ZIP: "95123",
     image: require("../assets/images/images (21).jpeg"),
     latitude: 37.249664158223226,
@@ -416,7 +399,7 @@ const tacoTruckData = [
   {
     facility_id: "FA0277474",
     FACILITY_NAME: "BIRRIA TACOS Y ANTOJITOS ESTILO JALISCO",
-    PROGRAM_DESCRIPTION: "MOBILE FOOD FACILITY - LIMITED FOOD PREP",
+    PROGRAM_DESCRIPTION: "Popular for their authentic street tacos and salsas.",
     ZIP: "95122",
     image: require("../assets/images/images (20).jpeg"),
     latitude: 37.344606778939024,
@@ -425,50 +408,42 @@ const tacoTruckData = [
   {
     facility_id: "FA0277483",
     FACILITY_NAME: "ANTOJITOS PANZAS VERDES",
-    PROGRAM_DESCRIPTION: "MOBILE FOOD FACILITY - FULL FOOD PREP",
+    PROGRAM_DESCRIPTION: "Serving a variety of delicious tacos with fresh ingredients.",
     ZIP: "95112",
     image: require("../assets/images/images (21).jpeg"),
     latitude: 37.360941179183264,
     longitude: -121.8991758755766,
   },
-  {
-    facility_id: "FA0277554",
-    FACILITY_NAME: "EL TORITO AZTECA",
-    PROGRAM_DESCRIPTION: "MOBILE FOOD FACILITY - FULL FOOD PREP",
-    ZIP: "95112",
-    image: require("../assets/images/images (22).jpeg"),
-    latitude: 37.36918635856696,
-    longitude: -121.89675929091906,
-  },
 
+  {
+    facility_id: "FA0258947",
+    FACILITY_NAME: "LAS GRULLAS MEXICAN GRILL",
+    PROGRAM_DESCRIPTION: "Known for their flavorful Mexican grill specialties.",
+    ZIP: "95002",
+    image: require("../assets/images/images (4).jpeg"),
+    latitude: 37.42623545617837,
+    longitude: -(-121.97393311975154),
+  },
+  {
+    facility_id: "FA0259010",
+    FACILITY_NAME: "TACOS LA ESTRELLA",
+    PROGRAM_DESCRIPTION: "Popular for their authentic street tacos and salsas.",
+    ZIP: "95116",
+    image: require("../assets/images/images (5).jpeg"),
+    latitude: 37.35249645742024,
+    longitude: -121.86850166208431,
+  },
 
   {
     facility_id: "FA0277942",
     FACILITY_NAME: "CHULA PUEBLA",
-    PROGRAM_DESCRIPTION: "MOBILE FOOD FACILITY - FULL FOOD PREP",
+    PROGRAM_DESCRIPTION: "Serving delicious Puebla-style tacos.",
     ZIP: "95112",
     image: require("../assets/images/images (23).jpeg"),
     latitude: 37.371639837184134,
     longitude: -121.90489841975477,
   },
-  {
-    facility_id: "FA0277988",
-    FACILITY_NAME: "LA PODEROSA AYG TACOS",
-    PROGRAM_DESCRIPTION: "MOBILE FOOD FACILITY - FULL FOOD PREP",
-    ZIP: "95112",
-    image: require("../assets/images/images (24).jpeg"),
-    latitude: 37.371639837184134,
-    longitude: -121.90489841975477,
-  },
-  {
-    facility_id: "FA0210462",
-    FACILITY_NAME: "Spartan Taco",
-    PROGRAM_DESCRIPTION: "A popular spot for students with a wide range of tacos.",
-    ZIP: "95112",
-    image: require("../assets/images/images (40).jpeg"),
-    latitude: 37.332884372486284,
-    longitude: -121.87531208907095,
-  },
+
   {
     facility_id: "FA0210443",
     FACILITY_NAME: "NENA'S TACOS",
@@ -478,16 +453,8 @@ const tacoTruckData = [
     latitude: 37.361196934321235,
     longitude: -121.8992510025295,
   },
-  {
-    facility_id: "FA0250851",
-    FACILITY_NAME: "HERMANOS LOPEZ",
-    PROGRAM_DESCRIPTION: "Full-service specializing in authentic Mexican food preparation.",
-    ZIP: "95112",
-    image: require("../assets/images/images (48).jpeg"),
-    latitude: 37.36916930527029,
-    longitude: -121.89674856208332,
-  },
-];
-console.log(tacoTruckData.length);
 
-export default tacoTruckData;
+  ];
+  console.log(tacoTruckData.length);
+  
+  export default tacoTruckData;
