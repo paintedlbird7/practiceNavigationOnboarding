@@ -57,8 +57,8 @@ export default function RootLayout() {
         })}
       >
         <Tab.Screen name="Home" component={HomeScreen} options={{ title: 'Home' }} />
-        <Tab.Screen name="SignUp" component={SignUpScreen} options={{ title: 'Sign Up' }} />
         <Tab.Screen name="MapView" component={MapViewScreen} options={{ title: 'Map View' }} />
+        <Tab.Screen name="SignUp" component={SignUpScreen} options={{ title: 'Sign Up' }} />
 
         {/* <Tab.Screen name="Profile" component={ProfileScreen} options={{ title: 'Profile' }} /> */}
         {/* <Tab.Screen name="Settings" component={SettingsScreen} options={{ title: 'Settings' }} /> New tab */}
