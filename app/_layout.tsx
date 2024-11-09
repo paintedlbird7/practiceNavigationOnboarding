@@ -46,9 +46,9 @@ export default function RootLayout() {
             } else if (route.name === 'SignUp') {
               iconName = 'create-outline';
             } else if (route.name === 'Profile') {
-              iconName = 'map-outline';
+              iconName = 'person-outline';
             } else if (route.name === 'MapView') {
-              iconName = 'settings-outline'; // Icon for the new Settings tab
+              iconName = 'map-outline'; // Icon for the new Settings tab
             }
             return <Ionicons name={iconName} size={size} color={color} />;
           },
