@@ -12,6 +12,7 @@ import SignUpScreen from './SignUpForm';
 import ProfileScreen from '../app/ProfileScreen';
 // import SettingsScreen from './screens/SettingsScreen'; // New tab screen
 import { useColorScheme } from '@/hooks/useColorScheme';
+import MapViewScreen from './MapViewScreen';
 
 SplashScreen.preventAutoHideAsync();
 
@@ -45,8 +46,8 @@ export default function RootLayout() {
             } else if (route.name === 'SignUp') {
               iconName = 'create-outline';
             } else if (route.name === 'Profile') {
-              iconName = 'person-outline';
-            } else if (route.name === 'Settings') {
+              iconName = 'map-outline';
+            } else if (route.name === 'MapView') {
               iconName = 'settings-outline'; // Icon for the new Settings tab
             }
             return <Ionicons name={iconName} size={size} color={color} />;
@@ -57,6 +58,8 @@ export default function RootLayout() {
       >
         <Tab.Screen name="Home" component={HomeScreen} options={{ title: 'Home' }} />
         <Tab.Screen name="SignUp" component={SignUpScreen} options={{ title: 'Sign Up' }} />
+        <Tab.Screen name="MapView" component={MapViewScreen} options={{ title: 'Map View' }} />
+
         {/* <Tab.Screen name="Profile" component={ProfileScreen} options={{ title: 'Profile' }} /> */}
         {/* <Tab.Screen name="Settings" component={SettingsScreen} options={{ title: 'Settings' }} /> New tab */}
       </Tab.Navigator>
