@@ -9,6 +9,7 @@ import TruckList from "../TruckList";
 import TruckModal from "../TruckModal";
 import CustomAlert from "../CustomAlert"; // Assuming this is your custom alert component
 import SignUpForm from "../SignUpForm";
+import MapViewScreen from './MapViewScreen';
 
 export default function HomeScreen() {
   const [searchQuery, setSearchQuery] = useState("");
