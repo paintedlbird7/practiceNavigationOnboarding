@@ -190,255 +190,323 @@ const tacoTruckData = [
     "longitude": -121.88134,
   },
 
-
-{
-  "facility_id": "FA0230702",
-  "FACILITY_NAME": "TACOS AL PASTOR 8S33970",
-  "PROGRAM_DESCRIPTION": "Offering full food preparation with a focus on tacos al pastor.",
-  "ZIP": "95112",
-  "image": require("../assets/images/FINAL-chicken-street-tacos-1-6.jpg")
-},
-{
-  "facility_id": "FA0206777",
-  "FACILITY_NAME": "LA CHAPARRA 6A05118",
-  "PROGRAM_DESCRIPTION": "Providing full food preparation, offering a variety of traditional Mexican foods.",
-  "ZIP": "95112",
-  "image": require("../assets/images/tacos-7759107_1280.jpg")
-},
-{
-  "facility_id": "FA0240521",
-  "FACILITY_NAME": "TACOS LOS 3 HERMANOS 4TH2809",
-  "PROGRAM_DESCRIPTION": "Specializing in full food preparation of Mexican cuisine.",
-  "ZIP": "95110",
-  "image": require("../assets/images/download (6).jpeg")
-},
-{
-  "facility_id": "FA0250170",
-  "FACILITY_NAME": "DULCE VICTORIA AMERICAN AND MEXICAN FOOD",
-  "PROGRAM_DESCRIPTION": "Offering full food preparation of both American and Mexican dishes.",
-  "ZIP": "95112",
-  "image": require("../assets/images/images (51).jpeg")
-},
-{
-  "facility_id": "FA0250247",
-  "FACILITY_NAME": "MC FOOD INC. 5M62715",
-  "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-  "ZIP": "95127",
-  "image": require("../assets/images/download (5).jpeg")
-},
-{
-  "facility_id": "FA0250748",
-  "FACILITY_NAME": "CALIFORNIA DRIVEN 8K70456",
-  "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-  "ZIP": "95112",
-  "image": require("../assets/images/images (53).jpeg")
-},
-{
-  "facility_id": "FA0251878",
-  "FACILITY_NAME": "SABOR MEXICO 2U78848",
-  "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-  "ZIP": "95112",
-  "image": require("../assets/images/images (1).jpeg")
-},
-{
-  "facility_id": "FA0256183",
-  "FACILITY_NAME": "SABOR CASERO INTERNACIONAL 7A28200",
-  "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-  "ZIP": "95112",
-  "image": require("../assets/images/images (2).jpeg")
-},
-{
-  "facility_id": "FA0257608",
-  "FACILITY_NAME": "FELIPE EL KORA 4EU9369",
-  "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-  "ZIP": "95116",
-  "image": require("../assets/images/images (3).jpeg")
-},
-{
-  "facility_id": "FA0258947",
-  "FACILITY_NAME": "LAS GRULLAS MEXICAN GRILL 7G22197",
-  "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-  "ZIP": "95002",
-  "image": require("../assets/images/images (4).jpeg")
-},
-{
-  "facility_id": "FA0259010",
-  "FACILITY_NAME": "TACOS LA ESTRELLA 50083P2",
-  "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-  "ZIP": "95116",
-  "image": require("../assets/images/images (5).jpeg")
-},
-{
-  "facility_id": "FA0260183",
-  "FACILITY_NAME": "EL TACO DE ORO 8A62811",
-  "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-  "ZIP": "95002",
-  "image": require("../assets/images/images (6).jpeg")
-},
-{
-  "facility_id": "FA0260274",
-  "FACILITY_NAME": "PAULINA'S CATERING 8D94835",
-  "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-  "ZIP": "95112",
-  "image": require("../assets/images/images (7).jpeg")
-},
-{
-  "facility_id": "FA0260275",
-  "FACILITY_NAME": "ROSARIOS TACOS 4SG1630",
-  "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-  "ZIP": "95110",
-  "image": require("../assets/images/images (8).jpeg")
-},
-{
-  "facility_id": "FA0260459",
-  "FACILITY_NAME": "LA JACARANDA OAXAQUENA 4HT6843",
-  "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-  "ZIP": "95112",
-  "image": require("../assets/images/images (9).jpeg")
-},
-{
-  "facility_id": "FA0261182",
-  "FACILITY_NAME": "EL PAISA ARAUJOS TAQUERIA #2 4FF1682",
-  "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-  "ZIP": "95111",
-  "image": require("../assets/images/images (10).jpeg")
-},
-{
-  "facility_id": "FA0262597",
-  "FACILITY_NAME": "GUTIERREZ AUTENTICA COMIDA MEXICANA",
-  "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-  "ZIP": "95112",
-  "image": require("../assets/images/images (11).jpeg")
-},
-{
-  "facility_id": "FA0274726",
-  "FACILITY_NAME": "TACOS SOLECITA 40896P3",
-  "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-  "ZIP": "95112",
-  "image": require("../assets/images/images (12).jpeg")
-},
-{
-  "facility_id": "FA0274884",
-  "FACILITY_NAME": "MENDEZ TAQUERIA 15765M1",
-  "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-  "ZIP": "95112",
-  "image": require("../assets/images/images (13).jpeg")
-},
-{
-  "facility_id": "FA0274993",
-  "FACILITY_NAME": "CUNAO'S FOOD TRUCK 8V43985",
-  "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-  "ZIP": "95035",
-  "image": require("../assets/images/images (14).jpeg")
-},
-{
-  "facility_id": "FA0276126",
-  "FACILITY_NAME": "EL TACOLOCO 7FER201",
-  "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-  "ZIP": "95112",
-  "image": require("../assets/images/images (15).jpeg")
-},
-{
-  "facility_id": "FA0276130",
-  "FACILITY_NAME": "LA ESTRELLITA TAQUERIA #1 4MN7044",
-  "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-  "ZIP": "95112",
-  "image": require("../assets/images/images (16).jpeg")
-},
-{
-  "facility_id": "FA0276258",
-  "FACILITY_NAME": "TACOS LA FAMILIA",
-  "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-  "ZIP": "95054",
-  "image": require("../assets/images/images (17).jpeg")
-},
-{
-  "facility_id": "FA0276750",
-  "FACILITY_NAME": "LA AZTECA TAQUERIA 4KVG912",
-  "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-  "ZIP": "95050",
-  "image": require("../assets/images/images (18).jpeg")
-},
-{
-  "facility_id": "FA0276832",
-  "FACILITY_NAME": "TACOS DEL GUERO 6X02656",
-  "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-  "ZIP": "95020",
-  "image": require("../assets/images/images (19).jpeg")
-},
-{
-  "facility_id": "FA0276834",
-  "FACILITY_NAME": "TLAXIACO'S PIZZA 6S64734",
-  "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-  "ZIP": "95112",
-  "image": require("../assets/images/images (20).jpeg")
-},
-{
-  "facility_id": "FA0276902",
-  "FACILITY_NAME": "EL CAMINANTE AKA SPARTAN TACO TRUCK 5K61992",
-  "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-  "ZIP": "95123",
-  "image": require("../assets/images/images (21).jpeg")
-},
-{
-  "facility_id": "FA0277474",
-  "FACILITY_NAME": "BIRRIA TACOS Y ANTOJITOS ESTILO JALISCO 4ND1863",
-  "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - LIMITED FOOD PREP",
-  "ZIP": "95122",
-  "image": require("../assets/images/images (20).jpeg")
-},
-    {
-  "facility_id": "FA0277483",
-  "FACILITY_NAME": "ANTOJITOS PANZAS VERDES 4NL8594",
-  "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-  "ZIP": "95112",
-  "image": require("../assets/images/images (21).jpeg")
-},
-{
-  "facility_id": "FA0277554",
-  "FACILITY_NAME": "EL TORITO AZTECA 49874M1",
-  "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-  "ZIP": "95112",
-  "image": require("../assets/images/images (22).jpeg")
-},
-{
-  "facility_id": "FA0277942",
-  "FACILITY_NAME": "CHULA PUEBLA 48400T1",
-  "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-  "ZIP": "95112",
-  "image": require("../assets/images/images (23).jpeg")
-},
-{
-  "facility_id": "FA0277988",
-  "FACILITY_NAME": "LA PODEROSA AYG TACOS 7W64004",
-  "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
-  "ZIP": "95112",
-  "image": require("../assets/images/images (24).jpeg")
-},
-
-{
-  "facility_id": "FA0210462",
-  "FACILITY_NAME": "Spartan Taco",
-  "PROGRAM_DESCRIPTION": "A popular spot for students with a wide range of tacos.",
-  "ZIP": "95112",
-  "image": require("../assets/images/images (40).jpeg")
-},
-
-{
-  "facility_id": "FA0210443",
-  "FACILITY_NAME": "NENA'S TACOS 3Z55557",
-  "PROGRAM_DESCRIPTION": "Providing fresh, full food preparation on-site.",
-  "ZIP": "95112",
-  "image": require("../assets/images/images (47).jpeg")
-},
-{
-  "facility_id": "FA0250851",
-  "FACILITY_NAME": "HERMANOS LOPEZ 5Z11956",
-  "PROGRAM_DESCRIPTION": "Full-service specializing in authentic Mexican food preparation.",
-  "ZIP": "95112",
-  "image": require("../assets/images/images (48).jpeg")
-},
+  // TODO: change the lat & long for the following taco trucks
+  {
+    "facility_id": "FA0230702",
+    "FACILITY_NAME": "TACOS AL PASTOR 8S33970",
+    "PROGRAM_DESCRIPTION": "Offering full food preparation with a focus on tacos al pastor.",
+    "ZIP": "95112",
+    "image": require("../assets/images/FINAL-chicken-street-tacos-1-6.jpg"),
+    "latitude": 37.3382,
+    "longitude": -121.8863
+  },
+  {
+    "facility_id": "FA0206777",
+    "FACILITY_NAME": "LA CHAPARRA 6A05118",
+    "PROGRAM_DESCRIPTION": "Providing full food preparation, offering a variety of traditional Mexican foods.",
+    "ZIP": "95112",
+    "image": require("../assets/images/tacos-7759107_1280.jpg"),
+    "latitude": 37.3382,
+    "longitude": -121.8863
+  },
+  {
+    "facility_id": "FA0240521",
+    "FACILITY_NAME": "TACOS LOS 3 HERMANOS 4TH2809",
+    "PROGRAM_DESCRIPTION": "Specializing in full food preparation of Mexican cuisine.",
+    "ZIP": "95110",
+    "image": require("../assets/images/download (6).jpeg"),
+    "latitude": 37.3382,
+    "longitude": -121.8863
+  },
+  {
+    "facility_id": "FA0250170",
+    "FACILITY_NAME": "DULCE VICTORIA AMERICAN AND MEXICAN FOOD",
+    "PROGRAM_DESCRIPTION": "Offering full food preparation of both American and Mexican dishes.",
+    "ZIP": "95112",
+    "image": require("../assets/images/images (51).jpeg"),
+    "latitude": 37.3382,
+    "longitude": -121.8863
+  },
+  {
+    "facility_id": "FA0250247",
+    "FACILITY_NAME": "MC FOOD INC. 5M62715",
+    "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+    "ZIP": "95127",
+    "image": require("../assets/images/download (5).jpeg"),
+    "latitude": 37.3382,
+    "longitude": -121.8863
+  },
+  {
+    "facility_id": "FA0250748",
+    "FACILITY_NAME": "CALIFORNIA DRIVEN 8K70456",
+    "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+    "ZIP": "95112",
+    "image": require("../assets/images/images (53).jpeg"),
+    "latitude": 37.3382,
+    "longitude": -121.8863
+  },
+  {
+    "facility_id": "FA0251878",
+    "FACILITY_NAME": "SABOR MEXICO 2U78848",
+    "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+    "ZIP": "95112",
+    "image": require("../assets/images/images (1).jpeg"),
+    "latitude": 37.3382,
+    "longitude": -121.8863
+  },
+  {
+    "facility_id": "FA0256183",
+    "FACILITY_NAME": "SABOR CASERO INTERNACIONAL 7A28200",
+    "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+    "ZIP": "95112",
+    "image": require("../assets/images/images (2).jpeg"),
+    "latitude": 37.3382,
+    "longitude": -121.8863
+  },
+  {
+    "facility_id": "FA0257608",
+    "FACILITY_NAME": "FELIPE EL KORA 4EU9369",
+    "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+    "ZIP": "95116",
+    "image": require("../assets/images/images (3).jpeg"),
+    "latitude": 37.3382,
+    "longitude": -121.8863
+  },
+  {
+    "facility_id": "FA0258947",
+    "FACILITY_NAME": "LAS GRULLAS MEXICAN GRILL 7G22197",
+    "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+    "ZIP": "95002",
+    "image": require("../assets/images/images (4).jpeg"),
+    "latitude": 37.3382,
+    "longitude": -121.8863
+  },
+  {
+    "facility_id": "FA0259010",
+    "FACILITY_NAME": "TACOS LA ESTRELLA 50083P2",
+    "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+    "ZIP": "95116",
+    "image": require("../assets/images/images (5).jpeg"),
+    "latitude": 37.3382,
+    "longitude": -121.8863
+  },
+  {
+    "facility_id": "FA0260183",
+    "FACILITY_NAME": "EL TACO DE ORO 8A62811",
+    "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+    "ZIP": "95002",
+    "image": require("../assets/images/images (6).jpeg"),
+    "latitude": 37.3382,
+    "longitude": -121.8863
+  },
+  {
+    "facility_id": "FA0260274",
+    "FACILITY_NAME": "PAULINA'S CATERING 8D94835",
+    "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+    "ZIP": "95112",
+    "image": require("../assets/images/images (7).jpeg"),
+    "latitude": 37.3382,
+    "longitude": -121.8863
+  },
+  {
+    "facility_id": "FA0260275",
+    "FACILITY_NAME": "ROSARIOS TACOS 4SG1630",
+    "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+    "ZIP": "95110",
+    "image": require("../assets/images/images (8).jpeg"),
+    "latitude": 37.3382,
+    "longitude": -121.8863
+  },
+  {
+    "facility_id": "FA0260459",
+    "FACILITY_NAME": "LA JACARANDA OAXAQUENA 4HT6843",
+    "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+    "ZIP": "95112",
+    "image": require("../assets/images/images (9).jpeg"),
+    "latitude": 37.3382,
+    "longitude": -121.8863
+  },
+  {
+    "facility_id": "FA0261182",
+    "FACILITY_NAME": "EL PAISA ARAUJOS TAQUERIA #2 4FF1682",
+    "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+    "ZIP": "95111",
+    "image": require("../assets/images/images (10).jpeg"),
+    "latitude": 37.3382,
+    "longitude": -121.8863
+  },
+  {
+    "facility_id": "FA0262597",
+    "FACILITY_NAME": "GUTIERREZ AUTENTICA COMIDA MEXICANA",
+    "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+    "ZIP": "95112",
+    "image": require("../assets/images/images (11).jpeg"),
+    "latitude": 37.3382,
+    "longitude": -121.8863
+  },
+  {
+    "facility_id": "FA0274726",
+    "FACILITY_NAME": "TACOS SOLECITA 40896P3",
+    "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+    "ZIP": "95112",
+    "image": require("../assets/images/images (12).jpeg"),
+    "latitude": 37.3382,
+    "longitude": -121.8863
+  },
+  {
+    "facility_id": "FA0274884",
+    "FACILITY_NAME": "MENDEZ TAQUERIA 15765M1",
+    "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+    "ZIP": "95112",
+    "image": require("../assets/images/images (13).jpeg"),
+    "latitude": 37.3382,
+    "longitude": -121.8863
+  },
+  {
+    "facility_id": "FA0274993",
+    "FACILITY_NAME": "CUNAO'S FOOD TRUCK 8V43985",
+    "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+    "ZIP": "95035",
+    "image": require("../assets/images/images (14).jpeg"),
+    "latitude": 37.3382,
+    "longitude": -121.8863
+  },
+  {
+    "facility_id": "FA0276126",
+    "FACILITY_NAME": "EL TACOLOCO 7FER201",
+    "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+    "ZIP": "95112",
+    "image": require("../assets/images/images (15).jpeg"),
+    "latitude": 37.3382,
+    "longitude": -121.8863
+  },
+  {
+    "facility_id": "FA0276130",
+    "FACILITY_NAME": "LA ESTRELLITA TAQUERIA #1 4MN7044",
+    "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+    "ZIP": "95112",
+    "image": require("../assets/images/images (16).jpeg"),
+    "latitude": 37.3382,
+    "longitude": -121.8863
+  },
+  {
+    "facility_id": "FA0276258",
+    "FACILITY_NAME": "TACOS LA FAMILIA",
+    "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+    "ZIP": "95054",
+    "image": require("../assets/images/images (17).jpeg"),
+    "latitude": 37.3382,
+    "longitude": -121.8863
+  },
+  {
+    "facility_id": "FA0276750",
+    "FACILITY_NAME": "LA AZTECA TAQUERIA 4KVG912",
+    "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+    "ZIP": "95050",
+    "image": require("../assets/images/images (18).jpeg"),
+    "latitude": 37.3382,
+    "longitude": -121.8863
+  },
+  {
+    "facility_id": "FA0276832",
+    "FACILITY_NAME": "TACOS DEL GUERO 6X02656",
+    "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+    "ZIP": "95020",
+    "image": require("../assets/images/images (19).jpeg"),
+    "latitude": 37.3382,
+    "longitude": -121.8863
+  },
+  {
+    "facility_id": "FA0276834",
+    "FACILITY_NAME": "TLAXIACO'S PIZZA 6S64734",
+    "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+    "ZIP": "95112",
+    "image": require("../assets/images/images (20).jpeg"),
+    "latitude": 37.3382,
+    "longitude": -121.8863
+  },
+  {
+    "facility_id": "FA0276902",
+    "FACILITY_NAME": "EL CAMINANTE AKA SPARTAN TACO TRUCK 5K61992",
+    "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+    "ZIP": "95123",
+    "image": require("../assets/images/images (21).jpeg"),
+    "latitude": 37.3382,
+    "longitude": -121.8863
+  },
+  {
+    "facility_id": "FA0277474",
+    "FACILITY_NAME": "BIRRIA TACOS Y ANTOJITOS ESTILO JALISCO 4ND1863",
+    "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - LIMITED FOOD PREP",
+    "ZIP": "95122",
+    "image": require("../assets/images/images (20).jpeg"),
+    "latitude": 37.3382,
+    "longitude": -121.8863
+  },
+  {
+    "facility_id": "FA0277483",
+    "FACILITY_NAME": "ANTOJITOS PANZAS VERDES 4NL8594",
+    "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+    "ZIP": "95112",
+    "image": require("../assets/images/images (21).jpeg"),
+    "latitude": 37.3382,
+    "longitude": -121.8863
+  },
+  {
+    "facility_id": "FA0277554",
+    "FACILITY_NAME": "EL TORITO AZTECA 49874M1",
+    "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+    "ZIP": "95112",
+    "image": require("../assets/images/images (22).jpeg"),
+    "latitude": 37.3382,
+    "longitude": -121.8863
+  },
+  {
+    "facility_id": "FA0277942",
+    "FACILITY_NAME": "CHULA PUEBLA 48400T1",
+    "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+    "ZIP": "95112",
+    "image": require("../assets/images/images (23).jpeg"),
+    "latitude": 37.3382,
+    "longitude": -121.8863
+  },
+  {
+    "facility_id": "FA0277988",
+    "FACILITY_NAME": "LA PODEROSA AYG TACOS 7W64004",
+    "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+    "ZIP": "95112",
+    "image": require("../assets/images/images (24).jpeg"),
+    "latitude": 37.3382,
+    "longitude": -121.8863
+  },
+  {
+    "facility_id": "FA0210462",
+    "FACILITY_NAME": "Spartan Taco",
+    "PROGRAM_DESCRIPTION": "A popular spot for students with a wide range of tacos.",
+    "ZIP": "95112",
+    "image": require("../assets/images/images (40).jpeg"),
+    "latitude": 37.3382,
+    "longitude": -121.8863
+  },
+  {
+    "facility_id": "FA0210443",
+    "FACILITY_NAME": "NENA'S TACOS 3Z55557",
+    "PROGRAM_DESCRIPTION": "Providing fresh, full food preparation on-site.",
+    "ZIP": "95112",
+    "image": require("../assets/images/images (47).jpeg"),
+    "latitude": 37.3382,
+    "longitude": -121.8863
+  },
+  {
+    "facility_id": "FA0250851",
+    "FACILITY_NAME": "HERMANOS LOPEZ 5Z11956",
+    "PROGRAM_DESCRIPTION": "Full-service specializing in authentic Mexican food preparation.",
+    "ZIP": "95112",
+    "image": require("../assets/images/images (48).jpeg"),
+    "latitude": 37.3382,
+    "longitude": -121.8863
+  }
 ];
 console.log(tacoTruckData.length);
-  
+
 export default tacoTruckData;
