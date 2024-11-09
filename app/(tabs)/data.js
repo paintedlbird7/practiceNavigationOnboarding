@@ -11,8 +11,7 @@ const tacoTruckData = [
   {
     facility_id: "2",
     FACILITY_NAME: "La Oaxaquense Food Truck",
-    PROGRAM_DESCRIPTION:
-      "Known for their delicious carne asada and al pastor tacos.",
+    PROGRAM_DESCRIPTION: "Known for their delicious carne asada and al pastor tacos.",
     ZIP: "95116",
     image: require("../assets/images/taco2.jpg"),
     latitude: 37.378892,
@@ -27,7 +26,6 @@ const tacoTruckData = [
     latitude: 37.389258,
     longitude: -121.844543,
   },
-
   {
     facility_id: "4",
     FACILITY_NAME: "El Señor De Los Tacos Food Truck",
@@ -76,8 +74,7 @@ const tacoTruckData = [
   {
     facility_id: "9",
     FACILITY_NAME: "Taqueria Paracuaro",
-    PROGRAM_DESCRIPTION:
-      "A family-owned taqueria known for authentic Michoacán-style tacos and fresh salsas.",
+    PROGRAM_DESCRIPTION: "A family-owned taqueria known for authentic Michoacán-style tacos and fresh salsas.",
     ZIP: "95113",
     image: require("../assets/images/taco9.jpg"),
     latitude: 37.356432493707636,
@@ -86,8 +83,7 @@ const tacoTruckData = [
   {
     facility_id: "10",
     FACILITY_NAME: "Tortilleria La Familiar",
-    PROGRAM_DESCRIPTION:
-      "Tortilleria La Familiar offers fresh, handmade tortillas and traditional Mexican dishes.",
+    PROGRAM_DESCRIPTION: "Tortilleria La Familiar offers fresh, handmade tortillas and traditional Mexican dishes.",
     ZIP: "95127",
     image: require("../assets/images/taco10.jpg"),
     latitude: 37.359174,
@@ -96,8 +92,7 @@ const tacoTruckData = [
   {
     facility_id: "11",
     FACILITY_NAME: "Tacos Mi Reynita",
-    PROGRAM_DESCRIPTION:
-      "Famous for authentic Tijuana-style street tacos with fresh salsas.",
+    PROGRAM_DESCRIPTION: "Famous for authentic Tijuana-style street tacos with fresh salsas.",
     ZIP: "94603",
     image: require("../assets/images/taco11.jpg"),
     latitude: 37.738624,
@@ -106,8 +101,7 @@ const tacoTruckData = [
   {
     facility_id: "12",
     FACILITY_NAME: "Tacos Santiaguito",
-    PROGRAM_DESCRIPTION:
-      "Known for its rich, slow-cooked meats and flavorful toppings.",
+    PROGRAM_DESCRIPTION: "Known for its rich, slow-cooked meats and flavorful toppings.",
     ZIP: "95129",
     image: require("../assets/images/taco12.jpg"),
     latitude: 37.322381,
@@ -116,8 +110,7 @@ const tacoTruckData = [
   {
     facility_id: "13",
     FACILITY_NAME: "Tacos El Plebe",
-    PROGRAM_DESCRIPTION:
-      "Specializes in street tacos with a variety of fillings including carne asada and al pastor.",
+    PROGRAM_DESCRIPTION: "Specializes in street tacos with a variety of fillings including carne asada and al pastor.",
     ZIP: "95112",
     image: require("../assets/images/taco13.jpg"),
     latitude: 37.327337,
@@ -126,8 +119,7 @@ const tacoTruckData = [
   {
     facility_id: "14",
     FACILITY_NAME: "Rosario's Tacos",
-    PROGRAM_DESCRIPTION:
-      "Authentic Mexican tacos with homemade tortillas and fresh ingredients.",
+    PROGRAM_DESCRIPTION: "Authentic Mexican tacos with homemade tortillas and fresh ingredients.",
     ZIP: "95110",
     image: require("../assets/images/taco14.jpg"),
     latitude: 37.321136,
@@ -145,8 +137,7 @@ const tacoTruckData = [
   {
     facility_id: "16",
     FACILITY_NAME: "Spartan Taco",
-    PROGRAM_DESCRIPTION:
-      "A popular spot for students with a wide range of tacos.",
+    PROGRAM_DESCRIPTION: "A popular spot for students with a wide range of tacos.",
     ZIP: "95112",
     image: require("../assets/images/taco16.jpg"),
     latitude: 37.338529,
@@ -197,12 +188,10 @@ const tacoTruckData = [
     latitude: 37.35272,
     longitude: -121.88134,
   },
-
   {
     facility_id: "FA0230702",
-    FACILITY_NAME: "TACOS AL PASTOR 8S33970",
-    PROGRAM_DESCRIPTION:
-      "Offering full food preparation with a focus on tacos al pastor.",
+    FACILITY_NAME: "TACOS AL PASTOR",
+    PROGRAM_DESCRIPTION: "Offering full food preparation with a focus on tacos al pastor.",
     ZIP: "95112",
     image: require("../assets/images/FINAL-chicken-street-tacos-1-6.jpg"),
     latitude: 37.28979392566415,
@@ -210,9 +199,8 @@ const tacoTruckData = [
   },
   {
     facility_id: "FA0206777",
-    FACILITY_NAME: "LA CHAPARRA 6A05118",
-    PROGRAM_DESCRIPTION:
-      "Providing full food preparation, offering a variety of traditional Mexican foods.",
+    FACILITY_NAME: "LA CHAPARRA",
+    PROGRAM_DESCRIPTION: "Providing full food preparation, offering a variety of traditional Mexican foods.",
     ZIP: "95112",
     image: require("../assets/images/tacos-7759107_1280.jpg"),
     latitude: 37.37183587143934,
@@ -220,9 +208,8 @@ const tacoTruckData = [
   },
   {
     facility_id: "FA0240521",
-    FACILITY_NAME: "TACOS LOS 3 HERMANOS 4TH2809",
-    PROGRAM_DESCRIPTION:
-      "Specializing in full food preparation of Mexican cuisine.",
+    FACILITY_NAME: "TACOS LOS 3 HERMANOS",
+    PROGRAM_DESCRIPTION: "Specializing in full food preparation of Mexican cuisine.",
     ZIP: "95110",
     image: require("../assets/images/download (6).jpeg"),
     latitude: 37.32029286320422,
@@ -231,8 +218,7 @@ const tacoTruckData = [
   {
     facility_id: "FA0250170",
     FACILITY_NAME: "DULCE VICTORIA AMERICAN AND MEXICAN FOOD",
-    PROGRAM_DESCRIPTION:
-      "Offering full food preparation of both American and Mexican dishes.",
+    PROGRAM_DESCRIPTION: "Offering full food preparation of both American and Mexican dishes.",
     ZIP: "95112",
     image: require("../assets/images/images (51).jpeg"),
     latitude: 37.36916930527029,
@@ -240,7 +226,7 @@ const tacoTruckData = [
   },
   {
     facility_id: "FA0250247",
-    FACILITY_NAME: "MC FOOD INC. 5M62715",
+    FACILITY_NAME: "MC FOOD INC.",
     PROGRAM_DESCRIPTION: "MOBILE FOOD FACILITY - FULL FOOD PREP",
     ZIP: "95127",
     image: require("../assets/images/download (5).jpeg"),
@@ -249,7 +235,7 @@ const tacoTruckData = [
   },
   {
     facility_id: "FA0250748",
-    FACILITY_NAME: "CALIFORNIA DRIVEN 8K70456",
+    FACILITY_NAME: "CALIFORNIA DRIVEN",
     PROGRAM_DESCRIPTION: "MOBILE FOOD FACILITY - FULL FOOD PREP",
     ZIP: "95112",
     image: require("../assets/images/images (53).jpeg"),
@@ -258,7 +244,7 @@ const tacoTruckData = [
   },
   {
     facility_id: "FA0251878",
-    FACILITY_NAME: "SABOR MEXICO 2U78848",
+    FACILITY_NAME: "SABOR MEXICO",
     PROGRAM_DESCRIPTION: "MOBILE FOOD FACILITY - FULL FOOD PREP",
     ZIP: "95112",
     image: require("../assets/images/images (1).jpeg"),
@@ -267,7 +253,7 @@ const tacoTruckData = [
   },
   {
     facility_id: "FA0256183",
-    FACILITY_NAME: "SABOR CASERO INTERNACIONAL 7A28200",
+    FACILITY_NAME: "SABOR CASERO INTERNACIONAL",
     PROGRAM_DESCRIPTION: "MOBILE FOOD FACILITY - FULL FOOD PREP",
     ZIP: "95112",
     image: require("../assets/images/images (2).jpeg"),
@@ -276,7 +262,7 @@ const tacoTruckData = [
   },
   {
     facility_id: "FA0257608",
-    FACILITY_NAME: "FELIPE EL KORA 4EU9369",
+    FACILITY_NAME: "FELIPE EL KORA",
     PROGRAM_DESCRIPTION: "MOBILE FOOD FACILITY - FULL FOOD PREP",
     ZIP: "95116",
     image: require("../assets/images/images (3).jpeg"),
@@ -285,7 +271,7 @@ const tacoTruckData = [
   },
   {
     facility_id: "FA0258947",
-    FACILITY_NAME: "LAS GRULLAS MEXICAN GRILL 7G22197",
+    FACILITY_NAME: "LAS GRULLAS MEXICAN GRILL",
     PROGRAM_DESCRIPTION: "MOBILE FOOD FACILITY - FULL FOOD PREP",
     ZIP: "95002",
     image: require("../assets/images/images (4).jpeg"),
@@ -294,53 +280,48 @@ const tacoTruckData = [
   },
   {
     facility_id: "FA0259010",
-    FACILITY_NAME: "TACOS LA ESTRELLA 50083P2",
+    FACILITY_NAME: "TACOS LA ESTRELLA",
     PROGRAM_DESCRIPTION: "MOBILE FOOD FACILITY - FULL FOOD PREP",
     ZIP: "95116",
     image: require("../assets/images/images (5).jpeg"),
     latitude: 37.35249645742024,
-
     longitude: -121.86850166208431,
   },
   {
     facility_id: "FA0260274",
-    FACILITY_NAME: "PAULINA'S CATERING 8D94835",
+    FACILITY_NAME: "PAULINA'S CATERING",
     PROGRAM_DESCRIPTION: "MOBILE FOOD FACILITY - FULL FOOD PREP",
     ZIP: "95112",
     image: require("../assets/images/images (7).jpeg"),
     latitude: 37.3382,
     longitude: -121.8863,
-    //37.42638893642734, -121.97452467742305
   },
   {
     facility_id: "FA0260275",
-    FACILITY_NAME: "ROSARIOS TACOS 4SG1630",
+    FACILITY_NAME: "ROSARIOS TACOS",
     PROGRAM_DESCRIPTION: "MOBILE FOOD FACILITY - FULL FOOD PREP",
     ZIP: "95110",
     image: require("../assets/images/images (8).jpeg"),
     latitude: 37.3382,
     longitude: -121.8863,
-    //37.32103373605084, -121.8840199485934
   },
   {
     facility_id: "FA0260459",
-    FACILITY_NAME: "LA JACARANDA OAXAQUENA 4HT6843",
+    FACILITY_NAME: "LA JACARANDA OAXAQUENA",
     PROGRAM_DESCRIPTION: "MOBILE FOOD FACILITY - FULL FOOD PREP",
     ZIP: "95112",
     image: require("../assets/images/images (9).jpeg"),
     latitude: 37.3382,
     longitude: -121.8863,
-    //37.360966761932, -121.89924024859113
   },
   {
     facility_id: "FA0261182",
-    FACILITY_NAME: "EL PAISA ARAUJOS TAQUERIA #2 4FF1682",
+    FACILITY_NAME: "EL PAISA ARAUJOS TAQUERIA",
     PROGRAM_DESCRIPTION: "MOBILE FOOD FACILITY - FULL FOOD PREP",
     ZIP: "95111",
     image: require("../assets/images/images (10).jpeg"),
     latitude: 37.3382,
     longitude: -121.8863,
-    //37.29511400855851, -121.83436167743062
   },
   {
     facility_id: "FA0262597",
@@ -350,57 +331,51 @@ const tacoTruckData = [
     image: require("../assets/images/images (11).jpeg"),
     latitude: 37.3382,
     longitude: -121.8863,
-    //37.36102645497848, -121.89926170626265
   },
   {
     facility_id: "FA0274726",
-    FACILITY_NAME: "TACOS SOLECITA 40896P3",
+    FACILITY_NAME: "TACOS SOLECITA",
     PROGRAM_DESCRIPTION: "MOBILE FOOD FACILITY - FULL FOOD PREP",
     ZIP: "95112",
     image: require("../assets/images/images (12).jpeg"),
     latitude: 37.3382,
     longitude: -121.8863,
-    //37.36924604507476, -121.89679147742632
   },
   {
     facility_id: "FA0274884",
-    FACILITY_NAME: "MENDEZ TAQUERIA 15765M1",
+    FACILITY_NAME: "MENDEZ TAQUERIA",
     PROGRAM_DESCRIPTION: "MOBILE FOOD FACILITY - FULL FOOD PREP",
     ZIP: "95112",
     image: require("../assets/images/images (13).jpeg"),
     latitude: 37.3382,
     longitude: -121.8863,
-    //37.371580152580826, -121.90488769091903
   },
   {
     facility_id: "FA0274993",
-    FACILITY_NAME: "CUNAO'S FOOD TRUCK 8V43985",
+    FACILITY_NAME: "CUNAO'S FOOD TRUCK",
     PROGRAM_DESCRIPTION: "MOBILE FOOD FACILITY - FULL FOOD PREP",
     ZIP: "95035",
     image: require("../assets/images/images (14).jpeg"),
     latitude: 37.3382,
     longitude: -121.8863,
-    //37.42860970943443, -121.9197935332441
   },
   {
     facility_id: "FA0276126",
-    FACILITY_NAME: "EL TACOLOCO 7FER201",
+    FACILITY_NAME: "EL TACOLOCO",
     PROGRAM_DESCRIPTION: "MOBILE FOOD FACILITY - FULL FOOD PREP",
     ZIP: "95112",
     image: require("../assets/images/images (15).jpeg"),
     latitude: 37.3382,
     longitude: -121.8863,
-    //37.37158867895564, -121.90489841975477
   },
   {
     facility_id: "FA0276130",
-    FACILITY_NAME: "LA ESTRELLITA TAQUERIA #1 4MN7044",
+    FACILITY_NAME: "LA ESTRELLITA TAQUERIA",
     PROGRAM_DESCRIPTION: "MOBILE FOOD FACILITY - FULL FOOD PREP",
     ZIP: "95112",
     image: require("../assets/images/images (16).jpeg"),
     latitude: 37.3382,
     longitude: -121.8863,
-    //37.37162278444518, -121.90488769091901
   },
   {
     facility_id: "FA0276258",
@@ -410,21 +385,19 @@ const tacoTruckData = [
     image: require("../assets/images/images (17).jpeg"),
     latitude: 37.3382,
     longitude: -121.8863,
-    //37.38512031815219, -121.94898427742542
   },
   {
     facility_id: "FA0276750",
-    FACILITY_NAME: "LA AZTECA TAQUERIA 4KVG912",
+    FACILITY_NAME: "LA AZTECA TAQUERIA",
     PROGRAM_DESCRIPTION: "MOBILE FOOD FACILITY - FULL FOOD PREP",
     ZIP: "95050",
     image: require("../assets/images/images (18).jpeg"),
     latitude: 37.3382,
     longitude: -121.8863,
-    //37.35218534408684, -121.9680326774274
   },
   {
     facility_id: "FA0276834",
-    FACILITY_NAME: "TLAXIACO'S PIZZA 6S64734",
+    FACILITY_NAME: "TLAXIACO'S PIZZA",
     PROGRAM_DESCRIPTION: "MOBILE FOOD FACILITY - FULL FOOD PREP",
     ZIP: "95112",
     image: require("../assets/images/images (20).jpeg"),
@@ -433,7 +406,7 @@ const tacoTruckData = [
   },
   {
     facility_id: "FA0276902",
-    FACILITY_NAME: "EL CAMINANTE AKA SPARTAN TACO TRUCK 5K61992",
+    FACILITY_NAME: "EL CAMINANTE AKA SPARTAN TACO TRUCK",
     PROGRAM_DESCRIPTION: "MOBILE FOOD FACILITY - FULL FOOD PREP",
     ZIP: "95123",
     image: require("../assets/images/images (21).jpeg"),
@@ -442,7 +415,7 @@ const tacoTruckData = [
   },
   {
     facility_id: "FA0277474",
-    FACILITY_NAME: "BIRRIA TACOS Y ANTOJITOS ESTILO JALISCO 4ND1863",
+    FACILITY_NAME: "BIRRIA TACOS Y ANTOJITOS ESTILO JALISCO",
     PROGRAM_DESCRIPTION: "MOBILE FOOD FACILITY - LIMITED FOOD PREP",
     ZIP: "95122",
     image: require("../assets/images/images (20).jpeg"),
@@ -451,7 +424,7 @@ const tacoTruckData = [
   },
   {
     facility_id: "FA0277483",
-    FACILITY_NAME: "ANTOJITOS PANZAS VERDES 4NL8594",
+    FACILITY_NAME: "ANTOJITOS PANZAS VERDES",
     PROGRAM_DESCRIPTION: "MOBILE FOOD FACILITY - FULL FOOD PREP",
     ZIP: "95112",
     image: require("../assets/images/images (21).jpeg"),
@@ -460,16 +433,18 @@ const tacoTruckData = [
   },
   {
     facility_id: "FA0277554",
-    FACILITY_NAME: "EL TORITO AZTECA 49874M1",
+    FACILITY_NAME: "EL TORITO AZTECA",
     PROGRAM_DESCRIPTION: "MOBILE FOOD FACILITY - FULL FOOD PREP",
     ZIP: "95112",
     image: require("../assets/images/images (22).jpeg"),
     latitude: 37.36918635856696,
     longitude: -121.89675929091906,
   },
+
+
   {
     facility_id: "FA0277942",
-    FACILITY_NAME: "CHULA PUEBLA 48400T1",
+    FACILITY_NAME: "CHULA PUEBLA",
     PROGRAM_DESCRIPTION: "MOBILE FOOD FACILITY - FULL FOOD PREP",
     ZIP: "95112",
     image: require("../assets/images/images (23).jpeg"),
@@ -478,7 +453,7 @@ const tacoTruckData = [
   },
   {
     facility_id: "FA0277988",
-    FACILITY_NAME: "LA PODEROSA AYG TACOS 7W64004",
+    FACILITY_NAME: "LA PODEROSA AYG TACOS",
     PROGRAM_DESCRIPTION: "MOBILE FOOD FACILITY - FULL FOOD PREP",
     ZIP: "95112",
     image: require("../assets/images/images (24).jpeg"),
@@ -488,8 +463,7 @@ const tacoTruckData = [
   {
     facility_id: "FA0210462",
     FACILITY_NAME: "Spartan Taco",
-    PROGRAM_DESCRIPTION:
-      "A popular spot for students with a wide range of tacos.",
+    PROGRAM_DESCRIPTION: "A popular spot for students with a wide range of tacos.",
     ZIP: "95112",
     image: require("../assets/images/images (40).jpeg"),
     latitude: 37.332884372486284,
@@ -497,7 +471,7 @@ const tacoTruckData = [
   },
   {
     facility_id: "FA0210443",
-    FACILITY_NAME: "NENA'S TACOS 3Z55557",
+    FACILITY_NAME: "NENA'S TACOS",
     PROGRAM_DESCRIPTION: "Providing fresh, full food preparation on-site.",
     ZIP: "95112",
     image: require("../assets/images/images (47).jpeg"),
@@ -506,9 +480,8 @@ const tacoTruckData = [
   },
   {
     facility_id: "FA0250851",
-    FACILITY_NAME: "HERMANOS LOPEZ 5Z11956",
-    PROGRAM_DESCRIPTION:
-      "Full-service specializing in authentic Mexican food preparation.",
+    FACILITY_NAME: "HERMANOS LOPEZ",
+    PROGRAM_DESCRIPTION: "Full-service specializing in authentic Mexican food preparation.",
     ZIP: "95112",
     image: require("../assets/images/images (48).jpeg"),
     latitude: 37.36916930527029,
