@@ -53,7 +53,6 @@ export default function SignUpForm() {
   return (
     <ScrollView contentContainerStyle={styles.scrollViewContent}>
       <View style={styles.container2}>
-        {/* Header Description */}
         <Text style={styles.headerText}>
           Fill Out This Form To Include Your Taco Truck Details.
         </Text>
@@ -61,24 +60,28 @@ export default function SignUpForm() {
         <TextInput
           style={styles.input}
           placeholder="Truck Name to be Added"
+          placeholderTextColor="#666"
           value={formData.name}
           onChangeText={(value) => handleChange('name', value)}
         />
         <TextInput
           style={styles.input}
           placeholder="Zip Code"
+          placeholderTextColor="#666"
           value={formData.location}
           onChangeText={(value) => handleChange('location', value)}
         />
         <TextInput
           style={styles.input}
           placeholder="Description"
+          placeholderTextColor="#666"
           value={formData.description}
           onChangeText={(value) => handleChange('description', value)}
         />
         <TextInput
           style={styles.input}
           placeholder="Contact Email"
+          placeholderTextColor="#666"
           value={formData.contactEmail}
           onChangeText={(value) => handleChange('contactEmail', value)}
           keyboardType="email-address"
@@ -95,7 +98,6 @@ export default function SignUpForm() {
   );
 }
 
-// Define styles here
 const styles = StyleSheet.create({
   scrollViewContent: {
     flexGrow: 1,
@@ -113,12 +115,6 @@ const styles = StyleSheet.create({
     color: "#333",
     marginLeft: 68,
     marginRight: 68,
-
-    // fontSize: 18,
-    // fontWeight: 'bold',
-    // textAlign: 'center',
-    // marginBottom: 20,
-    // color: '#333',
   },
   input: {
     height: 40,
