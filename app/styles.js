@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
     width: "90%",
     marginBottom: 20,
     marginLeft: 18,
-    marginTop: 30,  // Increase this value as needed
+    marginTop: -40,  // Increase this value as needed
     borderBottomColor: '#FFA500',
     borderBottomWidth: 2,
   },
@@ -134,7 +134,7 @@ const styles = StyleSheet.create({
     resizeMode: 'cover',
   },
   headerText: {
-    fontSize: 29,
+    fontSize: 14,
     fontWeight: "bold",
     textAlign: "center",
     marginBottom: 20,

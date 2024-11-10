@@ -58,7 +58,7 @@ export default function HomeScreen() {
   };
 
   const handleSearch = () => {
-    console.log(data); // Check if data is loaded correctly
+    // console.log(data); // Check if data is loaded correctly
     if (searchQuery.trim() === "") {
       showAlert("Type keyword in the search bar");
     } else {

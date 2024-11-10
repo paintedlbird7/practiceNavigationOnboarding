@@ -54,7 +54,7 @@ export default function SignUpForm() {
     <ScrollView contentContainerStyle={styles.scrollViewContent}>
       <View style={styles.container2}>
         <Text style={styles.headerText}>
-          Fill Out This Form To Include Your Taco Truck Details.
+          Fill Out This Form To Include Your Taco Truck.
         </Text>
 
         <TextInput
@@ -101,20 +101,19 @@ export default function SignUpForm() {
 const styles = StyleSheet.create({
   scrollViewContent: {
     flexGrow: 1,
-    justifyContent: 'center',
   },
   container2: {
     padding: 20,
     backgroundColor: '#fff',
   },
   headerText: {
-    fontSize: 27,
+    fontSize: 13,
     fontWeight: "bold",
     textAlign: "center",
     marginBottom: 20,
     color: "#333",
-    marginLeft: 68,
-    marginRight: 68,
+    marginHorizontal: 20,
+    marginTop: 40,  // Adjust this value to move the header higher
   },
   input: {
     height: 40,
