@@ -134,4 +134,15 @@ const styles = StyleSheet.create({
     color: 'white',
     fontSize: 16,
   },
+  modalButton: {
+    backgroundColor: "orange",
+    paddingVertical: 10,
+    paddingHorizontal: 20,
+    borderRadius: 5,
+    alignItems: "center",
+  },
+  modalButtonText: {
+    color: "white",
+    fontSize: 16,
+  },
 });

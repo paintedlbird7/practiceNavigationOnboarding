@@ -183,6 +183,19 @@ const styles = StyleSheet.create({
     fontSize: 18,
     textAlign: 'center',
   },
+  closeModalButton: {
+    backgroundColor: "orange",
+    paddingVertical: 10,
+    paddingHorizontal: 20,
+    borderRadius: 5,
+    alignItems: "center",
+    width: "80%", // Optional: makes the button 80% of the modal's width
+
+  },
+  closeModalButtonText: {
+    color: "white",
+    fontSize: 16,
+  },
 });
 
 export default styles;
