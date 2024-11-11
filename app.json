@@ -2,7 +2,7 @@
   "expo": {
     "name": "Rosa's Taco Truck Finder",
     "slug": "Rosa",
-    "version": "1.0.8",
+    "version": "1.0.9",
     "orientation": "portrait",
     "icon": "./assets/images/rp_icon_1024x1024.png", 
     "scheme": "myapp",
@@ -15,7 +15,7 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.paintedlbird7.Rosa",
-      "buildNumber": "18"
+      "buildNumber": "19"
     },
     "android": {
       "adaptiveIcon": null,
