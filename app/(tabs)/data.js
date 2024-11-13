@@ -5,7 +5,7 @@ const tacoTruckData = [
     program_description:
       "A popular food cart offering a variety of traditional Mexican paletas and refreshing cold treats in the heart of the city.",
     zip: "95126",
-    image: require("../app/assets/images/taco1.jpg"),
+    image: require("../assets/images/nieve1.jpg"),
     latitude: 37.32255761,
     longitude: -121.9106322,
   },
@@ -15,7 +15,7 @@ const tacoTruckData = [
     program_description:
       "Famous for its handmade paletas and Mexican street snacks, this food cart provides fresh flavors daily.",
     zip: "95126",
-    image: require("../app/assets/images/taco1.jpg"),
+    image: require("../assets/images/nieve2.jpg"),
     latitude: 37.32255761,
     longitude: -121.9106322,
   },
@@ -25,7 +25,7 @@ const tacoTruckData = [
     program_description:
       "A family-owned cart specializing in a wide range of paletas and ice creams, bringing a taste of Mexico.",
     zip: "95126",
-    image: require("../app/assets/images/taco1.jpg"),
+    image: require("../assets/images/nieve3.jpg"),
     latitude: 37.32255761,
     longitude: -121.9106322,
   },
@@ -35,7 +35,7 @@ const tacoTruckData = [
     program_description:
       "Known for unique paleta flavors and classic Mexican desserts, a local favorite for refreshing treats.",
     zip: "95126",
-    image: require("../app/assets/images/taco1.jpg"),
+    image: require("../assets/images/nieve4.jpg"),
     latitude: 37.32255761,
     longitude: -121.9106322,
   },
@@ -45,7 +45,7 @@ const tacoTruckData = [
     program_description:
       "A go-to spot for delicious paletas and cold snacks, serving authentic flavors and vibrant options.",
     zip: "95126",
-    image: require("../app/assets/images/taco1.jpg"),
+    image: require("../assets/images/nieve5.jpg"),
     latitude: 37.32255761,
     longitude: -121.9106322,
   },
@@ -55,7 +55,7 @@ const tacoTruckData = [
     program_description:
       "This cart offers traditional Mexican paletas and frozen desserts, loved by locals for its friendly service.",
     zip: "95126",
-    image: require("../app/assets/images/taco1.jpg"),
+    image: require("../assets/images/nieve6.jpg"),
     latitude: 37.32255761,
     longitude: -121.9106322,
   },
@@ -65,7 +65,7 @@ const tacoTruckData = [
     program_description:
       "Serving a mix of authentic paletas and ice creams, a must-visit for cooling off on hot days.",
     zip: "95126",
-    image: require("../app/assets/images/taco1.jpg"),
+    image: require("../assets/images/nieve7.jpg"),
     latitude: 37.32255761,
     longitude: -121.9106322,
   },
@@ -75,7 +75,7 @@ const tacoTruckData = [
     program_description:
       "A vibrant cart featuring Mexican paletas and unique frozen treats, adding a burst of flavor to the neighborhood.",
     zip: "95116",
-    image: require("../app/assets/images/taco1.jpg"),
+    image: require("../assets/images/nieve8.jpg"),
     latitude: 37.34362367,
     longitude: -121.8641312,
   },
@@ -85,7 +85,7 @@ const tacoTruckData = [
     program_description:
       "Offers a wide range of paletas and refreshing snacks, perfect for a quick break from the heat.",
     zip: "95116",
-    image: require("../app/assets/images/taco1.jpg"),
+    // image: require("../app/assets/images/nieve8.jpg"),
     latitude: 37.34362367,
     longitude: -121.8641312,
   },
@@ -95,7 +95,7 @@ const tacoTruckData = [
     program_description:
       "A local favorite for classic hot dogs with a Mexican twist, known for fresh toppings and tasty combos.",
     zip: "95112",
-    image: require("../app/assets/images/taco1.jpg"),
+    // image: require("../app/assets/images/taco1.jpg"),
     latitude: 37.36096676,
     longitude: -121.8992403,
   },
@@ -105,7 +105,7 @@ const tacoTruckData = [
     program_description:
       "This cart serves up hot, crispy churros with a variety of sweet fillings and dipping sauces.",
     zip: "95113",
-    image: require("../app/assets/images/taco1.jpg"),
+    // image: require("../app/assets/images/taco1.jpg"),
     latitude: 37.36839039,
     longitude: -121.8790957,
   },
@@ -115,7 +115,7 @@ const tacoTruckData = [
     program_description:
       "Known for authentic churros with a soft, fluffy center and crispy exterior, a must-try for churro fans.",
     zip: "95112",
-    image: require("../app/assets/images/taco1.jpg"),
+    // image: require("../app/assets/images/taco1.jpg"),
     latitude: 37.37476424,
     longitude: -121.9091645,
   },
@@ -125,7 +125,7 @@ const tacoTruckData = [
     program_description:
       "Delicious churros with a range of filling options, perfect for a quick and sweet snack on the go.",
     zip: "95112",
-    image: require("../app/assets/images/taco1.jpg"),
+    // image: require("../app/assets/images/taco1.jpg"),
     latitude: 37.32127868,
     longitude: -121.8623648,
   },
@@ -135,10 +135,12 @@ const tacoTruckData = [
     program_description:
       "Specializing in crispy churros with unique filling options, this cart is popular for its tasty desserts.",
     zip: "95113",
-    image: require("../app/assets/images/taco1.jpg"),
+    // image: require("../app/assets/images/taco1.jpg"),
     latitude: 37.36839039,
     longitude: -121.8790957,
   },
+
+
   {
     facility_id: "1",
     FACILITY_NAME: "Tacos Los Tres Reyes",
