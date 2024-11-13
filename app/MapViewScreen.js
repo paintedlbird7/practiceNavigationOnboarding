@@ -463,7 +463,7 @@ const tacoTruckData = [
     console.log(tacoTruckData.length);
     
 const TruckMap = () => {
-    console.log(tacoTruckData); // Debugging line to verify if the data is loaded
+    // console.log(tacoTruckData); // Debugging line to verify if the data is loaded
 
   // Check if tacoTruckData exists and is not empty
   if (!tacoTruckData || tacoTruckData.length === 0) {
