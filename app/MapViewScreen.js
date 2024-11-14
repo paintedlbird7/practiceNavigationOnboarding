@@ -1,9 +1,86 @@
 import React from "react";
 import { View, Text, Image, StyleSheet } from "react-native";
 import MapView, { Marker } from "react-native-maps";
-// import { tacoTruckData } from './(tabs)/data'; // Correct import path
+// import { tacoTruckData } from './(tabs)/data';
 
 const tacoTruckData = [
+  [
+    {
+      "facility_id": "FA0206627",
+      "FACILITY_NAME": "ROJAS MEXICAN FOOD",
+      "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+      "ZIP": 95112,
+      "LATITUDE": "",
+      "LONGITUDE": ""
+    },
+    {
+      "facility_id": "FA0210475",
+      "FACILITY_NAME": "FRESH CATCH POKE",
+      "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+      "ZIP": 95136,
+      "LATITUDE": "",
+      "LONGITUDE": ""
+    },
+    {
+      "facility_id": "FA0212743",
+      "FACILITY_NAME": "CHICK N' BROS",
+      "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+      "ZIP": 95112,
+      "LATITUDE": "",
+      "LONGITUDE": ""
+    },
+    {
+      "facility_id": "FA0212727",
+      "FACILITY_NAME": "LAURA ROSAS",
+      "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+      "ZIP": 95112,
+      "LATITUDE": "",
+      "LONGITUDE": ""
+    },
+    {
+      "facility_id": "FA0212704",
+      "FACILITY_NAME": "ROAD DOGS",
+      "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+      "ZIP": 95112,
+      "LATITUDE": "",
+      "LONGITUDE": ""
+    },
+    {
+      "facility_id": "FA0250851",
+      "FACILITY_NAME": "HERMANOS LOPEZ",
+      "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+      "ZIP": 95112,
+      "LATITUDE": "",
+      "LONGITUDE": ""
+    },
+    {
+      "facility_id": "FA0211117",
+      "FACILITY_NAME": "LOTO JA ICE CREAM",
+      "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - NO FOOD PREP",
+      "ZIP": 95116,
+      "LATITUDE": "",
+      "LONGITUDE": ""
+    },
+    {
+      "facility_id": "FA0210477",
+      "FACILITY_NAME": "SCRATCH COOKERY",
+      "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - FULL FOOD PREP",
+      "ZIP": 95113,
+      "LATITUDE": "",
+      "LONGITUDE": ""
+    },
+    {
+      "facility_id": "FA0212413",
+      "FACILITY_NAME": "SUPER STAR ICE CREAM",
+      "PROGRAM_DESCRIPTION": "MOBILE FOOD FACILITY - NO FOOD PREP",
+      "ZIP": 95126,
+      "LATITUDE": "",
+      "LONGITUDE": ""
+    },
+    
+    
+
+    
   {
     facility_id: "FA0256184",
     facility_name: "CMFO - PALETERIA 3 HERMANOS #1",
@@ -90,7 +167,7 @@ const tacoTruckData = [
     program_description:
       "Offers a wide range of paletas and refreshing snacks, perfect for a quick break from the heat.",
     zip: "95116",
-    image: require("../app/assets/images/nieve8.jpg"),
+    image: require("../app/assets/images/nieve9.jpg"),
     latitude: 37.34362367,
     longitude: -121.8641312,
   },
@@ -100,7 +177,7 @@ const tacoTruckData = [
     program_description:
       "A local favorite for classic hot dogs with a Mexican twist, known for fresh toppings and tasty combos.",
     zip: "95112",
-    // image: require("../app/assets/images/taco1.jpg"),
+    image: require("./assets/images/hotdog1.jpg"),
     latitude: 37.36096676,
     longitude: -121.8992403,
   },
@@ -110,7 +187,7 @@ const tacoTruckData = [
     program_description:
       "Known for authentic churros with a soft, fluffy center and crispy exterior, a must-try for churro fans.",
     zip: "95112",
-    // image: require("../app/assets/images/taco1.jpg"),
+    image: require("../app/assets/images/churro2.jpg"),
     latitude: 37.37476424,
     longitude: -121.9091645,
   },
@@ -120,7 +197,7 @@ const tacoTruckData = [
     program_description:
       "Delicious churros with a range of filling options, perfect for a quick and sweet snack on the go.",
     zip: "95112",
-    // image: require("../app/assets/images/taco1.jpg"),
+    image: require("../app/assets/images/churro3.jpg"),
     latitude: 37.32127868,
     longitude: -121.8623648,
   },
@@ -130,7 +207,7 @@ const tacoTruckData = [
     program_description:
       "Specializing in crispy churros with unique filling options, this cart is popular for its tasty desserts.",
     zip: "95113",
-    // image: require("../app/assets/images/taco1.jpg"),
+    image: require("../app/assets/images/churro4.jpg"),
     latitude: 37.36839039,
     longitude: -121.8790957,
   },
