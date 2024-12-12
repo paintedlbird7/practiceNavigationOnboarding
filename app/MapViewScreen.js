@@ -6,140 +6,140 @@ import MapView, { Marker } from "react-native-maps";
 const tacoTruckData = [
   {
     facility_id: "FA0256184",
-    facility_name: "CMFO - PALETERIA 3 HERMANOS #1",
-    program_description:
+    FACILITY_NAME: "CMFO - PALETERIA 3 HERMANOS #1",
+    PROGRAM_DESCRIPTION:
       "A popular food cart offering a variety of traditional Mexican paletas and refreshing cold treats in the heart of the city.",
-    zip: "95126",
+    ZIP: "95126",
     image: require("../app/assets/images/nieve1.jpg"),
     latitude: 37.32255761,
     longitude: -121.9106322,
   },
   {
     facility_id: "FA0304382",
-    facility_name: "PALETERIA CHIVE",
-    program_description:
+    FACILITY_NAME: "PALETERIA CHIVE",
+    PROGRAM_DESCRIPTION:
       "Famous for its handmade paletas and Mexican street snacks, this food cart provides fresh flavors daily.",
-    zip: "95126",
+    ZIP: "95126",
     image: require("../app/assets/images/nieve2.jpg"),
     latitude: 37.32255761,
     longitude: -121.9106322,
   },
   {
     facility_id: "FA0259911",
-    facility_name: "CMFO - PALETERIA EL RINCON #10",
-    program_description:
+    FACILITY_NAME: "CMFO - PALETERIA EL RINCON #10",
+    PROGRAM_DESCRIPTION:
       "A family-owned cart specializing in a wide range of paletas and ice creams, bringing a taste of Mexico.",
-    zip: "95126",
+    ZIP: "95126",
     image: require("../app/assets/images/nieve3.jpg"),
     latitude: 37.32255761,
     longitude: -121.9106322,
   },
   {
     facility_id: "FA0299894",
-    facility_name: "PALETERIA AMIGO",
-    program_description:
+    FACILITY_NAME: "PALETERIA AMIGO",
+    PROGRAM_DESCRIPTION:
       "Known for unique paleta flavors and classic Mexican desserts, a local favorite for refreshing treats.",
-    zip: "95126",
+    ZIP: "95126",
     image: require("../app/assets/images/nieve4.jpg"),
     latitude: 37.32255761,
     longitude: -121.9106322,
   },
   {
     facility_id: "FA0287662",
-    facility_name: "PALETERIA DON OLE #1",
-    program_description:
+    FACILITY_NAME: "PALETERIA DON OLE #1",
+    PROGRAM_DESCRIPTION:
       "A go-to spot for delicious paletas and cold snacks, serving authentic flavors and vibrant options.",
-    zip: "95126",
+    ZIP: "95126",
     image: require("../app/assets/images/nieve5.jpg"),
     latitude: 37.32255761,
     longitude: -121.9106322,
   },
   {
     facility_id: "FA0270205",
-    facility_name: "PALETERIA JORGE #1",
-    program_description:
+    FACILITY_NAME: "PALETERIA JORGE #1",
+    PROGRAM_DESCRIPTION:
       "This cart offers traditional Mexican paletas and frozen desserts, loved by locals for its friendly service.",
-    zip: "95126",
+    ZIP: "95126",
     image: require("../app/assets/images/nieve6.jpg"),
     latitude: 37.32255761,
     longitude: -121.9106322,
   },
   {
     facility_id: "FA0260697",
-    facility_name: "PALETERIA SAN JOSE #1",
-    program_description:
+    FACILITY_NAME: "PALETERIA SAN JOSE #1",
+    PROGRAM_DESCRIPTION:
       "Serving a mix of authentic paletas and ice creams, a must-visit for cooling off on hot days.",
-    zip: "95126",
+    ZIP: "95126",
     image: require("../app/assets/images/nieve7.jpg"),
     latitude: 37.32255761,
     longitude: -121.9106322,
   },
   {
     facility_id: "FA0277796",
-    facility_name: "PALETERIA EL RINCON 79648T1",
-    program_description:
+    FACILITY_NAME: "PALETERIA EL RINCON",
+    PROGRAM_DESCRIPTION:
       "A vibrant cart featuring Mexican paletas and unique frozen treats, adding a burst of flavor to the neighborhood.",
-    zip: "95116",
+    ZIP: "95116",
     image: require("../app/assets/images/nieve8.jpg"),
     latitude: 37.34362367,
     longitude: -121.8641312,
   },
   {
     facility_id: "FA0294277",
-    facility_name: "PALETERIA RAMIREZ",
-    program_description:
+    FACILITY_NAME: "PALETERIA RAMIREZ",
+    PROGRAM_DESCRIPTION:
       "Offers a wide range of paletas and refreshing snacks, perfect for a quick break from the heat.",
-    zip: "95116",
+    ZIP: "95116",
     image: require("../app/assets/images/nieve9.jpg"),
     latitude: 37.34362367,
     longitude: -121.8641312,
   },
   {
     facility_id: "FA0303553",
-    facility_name: "VANESSA'S HOT DOG 8U59761",
-    program_description:
+    FACILITY_NAME: "VANESSA'S HOT DOG",
+    PROGRAM_DESCRIPTION:
       "A local favorite for classic hot dogs with a Mexican twist, known for fresh toppings and tasty combos.",
-    zip: "95112",
+    ZIP: "95112",
     image: require("../app/assets/images/hotdog1.jpg"),
     latitude: 37.36096676,
     longitude: -121.8992403,
   },
   {
     facility_id: "FA0306914",
-    facility_name: "CHURROS LAND",
-    program_description:
+    FACILITY_NAME: "CHURROS LAND",
+    PROGRAM_DESCRIPTION:
       "This cart serves up hot, crispy churros with a variety of sweet fillings and dipping sauces.",
-    zip: "95113",
+    ZIP: "95113",
     image: require("../app/assets/images/churro1.jpg"),
     latitude: 37.36839039,
     longitude: -121.8790957,
   },
   {
     facility_id: "FA0266375",
-    facility_name: "CHURROS EL GUERO 4NX1751",
-    program_description:
+    FACILITY_NAME: "CHURROS EL GUERO",
+    PROGRAM_DESCRIPTION:
       "Known for authentic churros with a soft, fluffy center and crispy exterior, a must-try for churro fans.",
-    zip: "95112",
+    ZIP: "95112",
     image: require("../app/assets/images/churro2.jpg"),
     latitude: 37.37476424,
     longitude: -121.9091645,
   },
   {
     facility_id: "FA0307208",
-    facility_name: "OLIMPOS CHURROS # 2 4EP5650",
-    program_description:
+    FACILITY_NAME: "OLIMPOS CHURROS # 2",
+    PROGRAM_DESCRIPTION:
       "Delicious churros with a range of filling options, perfect for a quick and sweet snack on the go.",
-    zip: "95112",
+    ZIP: "95112",
     image: require("../app/assets/images/churro4.jpg"),
     latitude: 37.32127868,
     longitude: -121.8623648,
   },
   {
     facility_id: "FA0306914",
-    facility_name: "CHURROS LAND",
-    program_description:
+    FACILITY_NAME: "CHURROS LAND",
+    PROGRAM_DESCRIPTION:
       "Specializing in crispy churros with unique filling options, this cart is popular for its tasty desserts.",
-    zip: "95113",
+    ZIP: "95113",
     image: require("../app/assets/images/churro1.jpg"),
     latitude: 37.36839039,
     longitude: -121.8790957,
